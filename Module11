@@ -1,0 +1,100 @@
+•	1.5x speed 
+•	Turn on subtitles
+•	Watch first
+•	Watch again but take notes, like summarize or bullet list stuff in the video
+•	take a break when timer expires
+WGU exam top to bottom
+1.	Configures Network Connectivity - 20% of assessment
+2.	Remediates AWS Issues - 20% of assessment (got close on this)
+3.	Automates Cloud Provisioning - 18% of assessment
+4.	Implements AWS Systems - 17% of assessment
+5.	Implements AWS Protection Services - 13% of assessment
+6.	Determines Optimal Cost and Performance Baseline - 12% of assessment
+
+Module 11 Notes
+Chapter 11
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/b5b5013b06ba4a838fc0a4568930895c/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%408cea03ed2399469eabfe14be47fa6ac7
+
+
+Summary of all of chapter 11? :
+
+"Creating Automated and Repeatable Deployments" (new tab) (1:08)
+------------------------------------
+•	Skip this, this is just the what you will learn
+"Configuration Management in the Cloud" (new tab) (4:36)
+------------------------------------
+•	Aws offers many methods to help configure and manage infrastructure deployed in the cloud
+•	Be proactive not reactive when it comes to planning resources
+•	Typical resources include EC2, Auto scaling groups, security groups , load balancers
+•	Avoid time consuming and error prone method of manually configuring systems
+•	The ability to automate, monitor and track configuration changes is a key component of any configuration management solution
+•	One of the key benefits of configuration management is you can automate launching new resources quickly and consistently 
+•	Most frequently used configuration management services are CloudFormation and OpsWorks -CloudWatch complements these services
+•	CloudWatch provides a monitoring service that can trigger actions when changes to resources occur 
+•	CloudFormation is a service you can use to create and manage your infrastructures
+•	CloudFormation enables you to configure architectures for repeatable and consistent deployments
+•	After establishing what will be included in any custom AMIs, the next step is to decide which configuration software to use such as CloudFormation or OpsWorks to manage the configurable rapid-changing components that you want to deploy
+•	Best practice is having a version control system
+•	CodeComit can be used to version control the AMI templates and configurations used for the deployment – this is called infrastructure as code
+•	Developing an effective configuration management solution is an Iterative process where you try an approach and continually improve it
+"Using Configuration Software" (new tab) (8:18)
+------------------------------------
+•	You can simply many common admin tasks with a configuration server such as AWS OpsWorks with Chef or puppet – the most common example is provisioning and deleting user access to EC2 instances 
+•	One advantage of using a configuration server is that resource creation and configuration happens once and only once if manual modifications are made to an instance the configuration server detects those changes and rolls them back.(this helps insure that the integrity of the instance isn’t compromised by accident)
+•	You can use the User data option to run a script when you launch an EC2 instance
+•	There are tradeoffs between simplify and flexibility
+•	A fully baked AMI boots faster but takes longer to produce and build
+•	A plain AMI that uses user data will take a long time to boot due to the installs that take place during launch
+•	The more complex an AMI is the greater the risk that your application will be vulnerable to a security issue
+•	Security updates to all items in the AMI will need to be applied on a regular basis - the goal is to find the right combination of trade-offs for your organization.
+•	For more information search for “AWS AMI design” in the AWS documentation.
+•	AMIs when created with ether CLI, console or API only exist in the region it was created in
+•	FYI when you create and AMI from an instance the instance will be rebooted to ensure consistency – this default behavior can be overridden
+•	@4:08
+"Amazon EC2 Launch Templates" (new tab) (6:37)
+------------------------------------
+•	Resource management life cycle:
+ 
+
+•	Resource provisioning – you need a repeatable process for instantiating resources consistently _ helps with this
+•	Configuration management tools such as EC2 systems manager and OpsWorks enables you to define an action that is performed in one or more instances.
+•	CloudWatch enables monitoring and performance, metrics provide visibility and your organization can respond automatically to events. CloudWatch provides the flexibility to  maintain infrastructure health
+•	Governance and Compliance – Aws Config is the service for versioning and change management of your implementation 
+•	Resource optimization – Trusted Advisor can help with this by reviewing performance data and identity changes that you need to optimize the environment. Changes such as security, performance and cost management 
+•	In summary by using infrastructure as code your organization can automatically deploy consistently built, secure and reliable environments 
+
+"Introduction to JSON and YAML" (new tab) (8:59)
+------------------------------------
+
+"AWS CloudFormation" (new tab) (8:26)
+------------------------------------
+I like this section
+
+"AWS CloudFormation (Part 2)" (new tab) (7:48)
+------------------------------------
+"AWS CloudFormation (Part 3)" (new tab) (6:58)
+------------------------------------
+
+"Continuous Deployment and Continuous Integration on AWS" (new tab) (7:41)
+------------------------------------
+
+"Using Launch Templates Demonstration" (new tab) (6:54)
+------------------------------------
+
+"Module Wrap-Up" (new tab) (1:24)
+
+
+
+
+Complete the Module 11 knowledge check
+
+•	One of the first things to check is if the user has the permission to create it if a resource creation fails
+•	Fn:Select intrinsic function should be used to refer to a value in a comma-delimited list within AWS CloudFormation
+•	The CloudFormation:Init code is the source of the error if a WaitConditions times out or returns an error
+•	With Amazon Cloud Formation you can built a script-like template to represent complex resource stacks
+•	Custom AMIs are only available in the region where they were created
+•	EC2 auto scaling uses launch templates to increase capacity
+•	AWS CloudFormation templates can contain code describing AWS resources and AWS Cli Commands
+•	There is no native support for binary data in JSON documents
+•	CloudFormation init resource can provide metadata about an EC2 instance for the cfn-init helper script
+•	There is no limit  to the size of the repository you use with AWS CodeComit 
