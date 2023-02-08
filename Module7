@@ -1,0 +1,191 @@
+•	1.5x speed 
+•	Turn on subtitles
+•	Watch first
+•	Watch again but take notes, like summarize or bullet list stuff in the video
+•	take a break when timer expires
+WGU exam top to bottom
+1.	Configures Network Connectivity - 20% of assessment
+2.	Remediates AWS Issues - 20% of assessment (got close on this)
+3.	Automates Cloud Provisioning - 18% of assessment
+4.	Implements AWS Systems - 17% of assessment
+5.	Implements AWS Protection Services - 13% of assessment
+6.	Determines Optimal Cost and Performance Baseline - 12% of assessment
+
+AWS Academy Module 7 Activities
+Chapter 7
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/11a7788bdf2b4957acfd85bacc281c3f/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40af29d8fd25314ed0836c702a7a61400a
+
+"Networking" (new tab) (1:17)
+------------------------------------
+•	VPC virtual private cloud or VPC
+•	You will examine components of a vpc including subnets, route tables and gateways
+•	VPC connectivity options, security mechanisms and guidelines for VPC troubleshooting
+•	you will learn to troubleshoot basic VPC networking issues
+
+"AWS Cloud Networking" (new tab) (8:41)
+------------------------------------
+•	VPC is the foundation of an AWS cloud network infrastructure 
+•	In its most basic form a cloud-based network is a private IP address space where you can deploy computing resources , in AWS this private space is provided by Amazon VPC
+•	You can deploy AWS computing resources inside the virtual network such as EC2 or RDS
+•	You can also define how and whether your private network connects to endpoints in your network topology
+•	Subnets are logical subdivisions of your VPC, they allow you to segment your VPC into smaller networks in a single availability zone
+•	Default setting of a subnet is private
+•	When created a subnet is an isolated segment in a VPC
+•	A subnet is public if its route table contains a reference to a public internet traffic being processed by an internet gateway attached to the VPC
+•	A subnet is required to deploy an instance into a VPC
+Security groups
+•	A security group is a set of firewall rules that secure instances
+•	Security groups allow you to define inbound and outbound traffic to an instance
+•	If a security group is not specified at launce time the default security group is used
+NICS
+•	NIC is a virtual network interface that connects an instance to a network
+•	Each instance in a VPC has a default network interface also called a primary network interface – this cannot be detached from the instance
+•	The default (primary) network interface cannot be detached from the instance
+Routers
+•	A router is a component that routes traffic within the VPC (normally you don’t deal with them)
+•	You define route tables and attach them to subnets
+Internet gateways
+•	Internet gateways allow communications between instances in a VPC and public internet
+Virtual private gateways
+•	Virtual private gateways can be defined on the AWS side of a virtual private network connection (VPN)
+VPNs
+•	VPNS provide a secure and encrypted tunnel between two network endpoints
+Customer gateways 
+•	Customer gateways are ether a physical device or software application on the client side of a VPN connection
+•	When you create a VPC you specify its allowable IP address range – this range represents IPv4 addresses in CIDR
+•	The required range is known as the primary CIDR block of the VPC
+•	After you create the VPC you can optionally add up to 4 secondary CIDR blocks for a total of 5 IPv4 CIDR blocks per VPC
+•	You can only define VPCs with CIDR blocks of /16 through /28 inclusive – this means a VPC can contain up to 16 to 65,536 ip addresses with max of 200 subnets per VPC
+•	Best practice is using RFC 1918 addresses 
+•	Not recommended is using ranges of IP addresses that overlaps with other VPCs  - this will stop you from connecting to those VPCs
+IPv6 in VPCs
+•	IPv6 can also be used with VPCs
+•	IPv6 has a fixed prefix of /56 – you cannot choose the range of addresses or the IPv6 CIDR block size 
+•	You can only have one IPv6 CIDR block per VPC
+•	Amazon VPC reserved IP addresses 
+•	First 4 and last are reserved in each CIDR block are not available and cannot be assigned to an instance – these are used by AWS see below for reasoning:
+ 
+•	For VPCs with multiple CIDR blocks the IP addresses of the DNS server is located in the primary CIDR block
+•	VPCs can span multiple availability zones in an AWS region
+•	VPCs have an implicit router that routes all traffic in the VPC
+•	VPCs have a default route table that specifies the allow routes out of the VPC, this table defines a route or rule that allows all traffic for its CIDR IP address range to be routed locally
+
+"Amazon VPC Components" (new tab) (12:57)
+	Covers: mostly subnet stuff
+------------------------------------
+•	You can create up to 200 subnets per VPC
+•	For IPv4 minimum size of a subnet is /28 or 16 IP addresses 
+•	For IPv6 the subnet size is fixed to be /64 (fixed prefix length) and only on IPv6 CIDR block can be allocated to a subnet
+•	For more reading search for “VPC subnet basics” in AWS docs
+•	Subnets can only exist in one availability zone
+•	The address range of a subnet CIDR block must be a subset of the address range for the VPC
+•	Subnet CIDR blocks in a VPC must not overlap
+•	After you create a subnet you can specify whether you want to automatically assign a public IP address to new EC2 instances that are located in the same subnet. – Useful for public subnet that is intended to host EC2 instances that are accessible to internet clients.
+•	Only instances launched in a default Amazon VPC receive IP address during creation – need to find out what this means
+•	Instances created in custom VPCs require overriding the default setting to receive public IP addresses.
+•	Alternatively, configure the “Modify auto assign IP settings” on subnets to automatically assign public IP addresses to instances
+•	Unlike Elastic IP addresses, public IP addresses are not static <– FYI Elastic IP address is a reserved public IP address that you can assign to any EC2 instance in a particular region, until you choose to release it.
+•	Before an instance can be publicly accessed  it must be assigned a public IP address
+•	By enabling the subnet feature you can automate the assignment of an IPv4 or IPv6 address to EC2 instances that are launched into the subnet. – To enable the setting in the VPC console, go to the modify auto-assign IP settings configuration page for the subnet. Then select the Enable auto-assign public IPv4/IPv6 address checkbox. – Note that the assigned IP address is not an elastic one, the IP will be released when the instance is stopped or terminated. 
+•	Unlike an elastic IP address, which is a static IPv4 address that is reachable from the internet.
+•	Each VPC comes with an implicit router that directs traffic between the resources in each subnet, but also directs traffic out of the subnet. The router uses a route table to determine valid IP destinations out of a subnet. It also used the route table to determine the corresponding target that is used to reach the destination. 
+•	A route table is a mechanism that routes traffic that originates from an associated subnet in a VPC. Contains a set of rules which are also called routes that determine where traffic is sent, a route table contains a destination and a target.
+•	A router read a traffic like this: any traffic that goes to a destination should be routed via the target. A target could be a specific instance ID, a network interface ID, an internet gateway or a virtual private gateway.
+•	When you create a VPC, a default route table is also created, the default route table has a rule that routes local traffic anywhere in the IP address range of the VPC
+•	You can add more routes to the default route table, when you create a subnet, it is automatically associated with the default route table of the VPC. – If you do not want to use the route table you can create a custom route table and associate it with the subnet instead. 
+•	Each VPC might also have an internet gateway attached to it
+•	An internet gateway is a service that routes traffic to the internet.
+•	When an internet gateway is attached to a VPC, route tables that belong to public subnets might use it to forward traffic out to the internet.
+-Review from last chapter-
+•	An elastic network interface is a virtual NIC attached to an EC2 instance it provides the connection point that allows an instance to communicate with a network
+•	Each instance has a primary elastic network interface that cannot be detached from it 
+•	You can attached additional network interfaces to an instance
+•	Each network interface has one primary IP address plus additional secondary IP addresses s well as its own mac address and security groups
+•	Every instance in a VPC has a default network interface that is called the primary network interface – this interface is assigned a private IPv4 address from the IPv4 address range of the VPC
+•	You cannot detach a primary network interface from an instance, you can create and attach additional network interface to an instance.
+•	The number of network interfaces you can attach varies by instance type
+•	An additional network interface can be attached to an instance, detached from an instance and then attach to another instance, detached from that instance and then attach to another instance. A network interfaces attributes follow it when it is attached or detached from instances.
+•	When you move a network interface from one instance to another instance, network traffic is redirected to the new instance.
+•	Two reason you might need multiple network interfaces: 
+One: Some network appliances prefer to be configured with multiple network interfaces such as load balancers, network address translation or NAT server and proxy servers.
+•	You can create an attached secondary network interfaces to a VPC that run these types or applications
+•	You can also configure the additional interfaces with their own public and private IP addresses and their own security groups.
+•	Two: If you are connecting an instances to a service that is powered by AWS private link, you must create an interface endpoint for it that also creates a network interface. You must then attach the network interface to the invoking instance.
+•	When you create an AWS account AWS automatically creates a default VPC for you with a CIDR block of 172.31.0.0/16 (65,536 IP Addresses!) – This default VPC enables you to start using VPC features immediately.
+•	AWS also automatically creates an internet gateway,  a default route table and public subnet in the default VPC
+•	The default route table includes rules to send traffic to the IP addresses in the VPC address range to a local route, it send traffic to any other IP address to the internet gateway
+•	Skipping down
+•	The AWS provided DNS server in a VPC is called AMZ route 53 resolver.
+•	By default, resolver directly answers DNS queries for domain names in the VPC, it also preforms recursive lookups against public name server for all other domain names.
+•	You don’t need to use AMZ route 53 resolver you can use your own DNS (in order to do this it requires specifying a special set of dynamic host configurations protocol or DHCP options for the VPC.
+•	You can also use an AMZ route 53 private hosted zone, this is a container that holds information about how AMZ route 53 routes traffic for the domains in a VPC.
+•	A public hosted zone allows amazon route 53 to route internet traffic to resources inside of VPC – an example of this is a customer could allow a website that runs on EC2 instance. In contrast a private hosted zone is used for route 53 to route traffic in one or more VPCs without exposing resources to the internet.
+•	One common use case for creating a private hosted zone DNS is called split horizon DNS – this pairs a private hosted zone DNS with a public hosted zone DNS With this implementation, a given DNS host name resolves differently, depending on whether the loop up comes from inside or outside the VPC. If a lookup is initiated from within the VPC, the DNS host name resolves to a specified IP address. However, if the lookup originates from outside the VPC, the same DNS host name resolves to a different IP address. An example scenario for using a split horizon DNS is when you want to maintain internal and external versions of the same website. Split horizon DNS allows you to access the internal version of the website by using the same domain name that is used for the public website.
+•	For more information about the VPC, DNS and route 53 private hosted zones Search for VPC DNS or hosted zones private in the Amazon online documentation.
+
+"Amazon VPC Connectivity Options" (new tab) (14:51)
+"Additional VPC Connectivity Options" (new tab) (10:44)
+"Securing Your Network" (new tab) (11:48)
+•	Watching this on 1/22/2023 – 
+-Layered network defense for VPCs-
+•	Having a private subnet with no direct path to the internet is one of the best ways to protect your internal computing resources against unauthorized access
+•	The second level of security is network access control lists or NACLs, with NACLs you can define the default security behavior of your subnets.
+•	The VPC or subnet layer security is typically controlled by the network security team. 
+•	Security groups are used to control behavior at the level of the instance or network interface.
+•	You might choose to use some form of third-party host based detection software that monitors individual ec2 instances for specific threats or issues , such as malware, OS vulnerabilities, and security auditing 
+- More about layers in detail-
+•	Use security groups to restrict traffic in and out of the associated network interfaces
+•	FYI a VPC has a default security group that allows all outbound traffic, but denies all inbound traffic
+•	When you launch an instance in an VPC and do not specify a security group for it, the instance is automatically assigned to the default security group
+•	Rules are defined in two separate inbound and outbound tables, you specify allow rules but not deny rules.
+•	All rules are evaluated before traffic is allowed.
+•	All outbound traffic in response to an inbound request is permitted.
+•	Typically you will configure security groups with the help of the application development team, because they understand the protocols and port numbers their applications use.
+•	NACLs are associated with a subnet in a VPC, they define rules that allow or deny inbound and outbound traffic in the subnet
+•	NACLs are stateless. If a type of request is allowed inbound, you must explicitly define an outbound rule for the same type to allow the response traffic.
+•	You define rules for inbound and outbound traffic in two separate tables, each rule is identified with a unique rule number.
+•	When the network access control list decides whether to allow traffic, the rules are evaluated in ascending order of the rule number.
+•	The special rule number that is represented by an asterisk is evaluated last. It represents a catch-all if no match with a previous rule was found.
+•	Inbound and outbound rules are defined by, first, specified the type of rule such as custom TCP. Then provide a rule number and define the port range that will be allowed or denied for inbound or outbound traffic.
+•	Finally specify the resource or destination IP address or range that will be allowed or denied for inbound or outbound traffic.
+•	After you define the network ACL you can associated it to one or more subnets in a VPC.
+•	A bastion host is a jump point from the public internet to the ec2 instances and other resources in a private subnet.
+•	By using a bastion host, you can access private recourses publicly through the internet, in a way that minimizes the attack surface of your private subnet.
+•	Users must have valid keys for both the bastion host and private instances.
+•	Recommended that you use different key pairs for the bastion host and for the resources in the private subnet. 
+•	The keys for the private subnet should not be stored on the bastion host – any attacker that breaks into your bastion host would then have access to the resources in your private subnet.
+•	For Linux instances most SSH clients support what is known as agent forwarding. – This allows your local SSH program such as putty to pass your private key from the client through the SSH connection with the bastion host, It will then pass the private key through the SSH connection to your private network resources.
+•	For M$ instances you can use the Ec2 console to generate a login password by using the private key, you then use the remote desktop client program to log into the private instance with the generated password.
+•	You must configure security groups to allow the bastion host to access an instance in your private subnet. First you can configure your bastion host to allow only connection from your corporate network. – This prevents any one that is outside your organization from accessing the bastion host. Next you create a rule in the private instances security group that allows only incoming traffic from instances that belong to the bastion host security group.
+•	Instead of specifying an IP address it is more flexible and reusable to specify a security group
+•	It is best practice to apply the principal of least privilege when you configure your security groups 
+•	You can setup a M$ remote desktop or RD gateway server as a bastion host – you can configure the RD gateway to accept connections via HTTPS then proxy the connection to your other :Windows 
+•	For more information about how to configure a windows bastion host to use RD gateway search for controlling network access to ec2 instances by using a bastion host in the AWS documentation
+-Troubleshooting networks on AWS- or recommended steps for troubleshooting common issues that are related to VPCs:
+ 
+- Note the above is not an exhaustive list but should prove a good starting point for troubleshooting problems
+•	Don’t forget to use ping for connectivity checks
+•	If you cannot reach resources in a peered network verify that the peering request was approved, also verify that the CIDR block ranges are configured to allow access across the VPCs
+•	For further details about troubleshooting VPC peering, search for VPC peering connectively in the AWS documentation
+"Module Wrap-Up" (new tab) (1:25)
+•	Practice question with keywords
+•	Module 7 guided lab: Configure an Amazon Virtual private cloud
+•	Begin Module 7 Challenge lab: troubleshoot a VPC (to support the mom and pop café)
+Practice questions to review (stuff I got wrong or I feel week on)
+•	Aws reserves 5 IP address in a subnet
+•	The main route table is associated with the subnet by default
+•	Which statements about a default VPC are true (pick 2):
+ – got wrong, picked a default VPC spans multiple regions and “by default each default VPC is available to one AWS account. --- still don’t know what the correct ones are
+•	(kind of need practice on) a VPC can span multiple availability zones
+•	Which statements describe security groups (Choose two):
+A security group can be applied across multiple instances; multiple security groups can be assigned to an instance and security group associations can be added and modified after an instance in created
+•	(Kind of need practice on) an AMZ VPC has an implicit router and default route table that routes local traffic within it.
+•	(kind of need practice on) a subnet is a logical network signet within a virtual private cloud (VPC) that can only exist within a single availability zone
+Items from PA
+You can store (AMZ calls it publishes) VPC flow logs in the following locations:
+•	S3
+•	CloudWatch
+AWS Redshift = is a data ware house product it uses SQL to analyze structured and semi-structured data across data warehouses
+AWS Athena – provides a simplified, flexible way to analyze petabytes of data where it lives.
+Amazon ElastiCache – it’s a cache service for database performance or cases that don’t require durability
+
