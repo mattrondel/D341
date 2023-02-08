@@ -1,0 +1,38 @@
+•	1.5x speed 
+•	Turn on subtitles
+•	Watch first
+•	Watch again but take notes, like summarize or bullet list stuff in the video
+•	take a break when timer expires
+WGU exam top to bottom
+1.	Configures Network Connectivity - 20% of assessment
+2.	Remediates AWS Issues - 20% of assessment (got close on this)
+3.	Automates Cloud Provisioning - 18% of assessment
+4.	Implements AWS Systems - 17% of assessment
+5.	Implements AWS Protection Services - 13% of assessment
+6.	Determines Optimal Cost and Performance Baseline - 12% of assessment
+
+AWS Academy Module 8 Activities
+Chapter 8
+
+
+•	"Storage and Archiving" (new tab) (0:55)
+•	"Cloud Storage Overview" (new tab) (9:51)
+•	"Amazon Elastic Block Store (Amazon EBS)" (new tab) (9:31)
+•	"Amazon Elastic File System" (new tab) (6:15)
+•	"Amazon S3" (new tab) (15:05)
+•	"Amazon S3 Glacier" (new tab) (14:13)
+•	"Module Wrap-Up" (new tab) (1:22)
+Knowledge check 
+•	Amazon Elastic block store (Amazon EBS) volume is tied to availability zones
+•	Amazon Data lifecycle manager policies need to be specified:
+•	Resources type 
+•	Target tag
+•	Schedule
+•	Amazon elastic block store (Amazon EBS) snapshots are based on deltas, which means that only changes to previous snapshots are saved to Amazon simple storage service (S3) (Snapshots are based on deltas)
+•	Amazon EBS Elastic Block storage can be network-attached to an Amazon Elastic compute cloud (EC2) instance
+•	Once versioning is enabled on S3 buckets it cannot be disabled 
+•	AWS Lambda, SQS (all)
+•	Instance store (ephemeral) is best suited as a cache or buffer
+•	S3 glacier takes 5-12 hours to retrieve archived data by using the bulk retrieve option 
+•	Amazon EFS can span across multiple availability zones 
+•	Versioning enabled would result in the addition of a marker when an object is deleted
