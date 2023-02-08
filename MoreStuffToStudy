@@ -1,0 +1,122 @@
+EventBridge and CloudWatch are interchangeable
+Cron & RATE EXPRESSIONS I emphasize RATE! not regular
+  •	SSM Vs Event Bridge Vs OpsWork Vs Fargate
+  SSM - 
+  Eventbridge -  EventBridge
+  OpsWork – OpsWorks
+    Anything that mentions containers with Chef or Puppet is OPSWORK
+  Fargate – 
+  Anything with Managing containers without the mention of Chef/puppet is Fargate
+
+Know how VPC's are connected to onsite network
+doc: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
+Anything pertaining to Patching will be SSM 
+Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
+Know what are VPC endpoints and the purpose
+Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long
+Know the difference between geolocation and geoproximity
+What is AWS Mace Vs Inspector Vs Guard Duty and how they are used
+Know cloud formation and the intrinsic functions.
+Know cloudwatch metrics and what default metrics are tracked vs which metrics needs the the cloud watch agent. 
+EventBridge and cron expression
+cron expressions and rate for Lambda functions. 
+AWS Athena is for querying S3 objects.
+EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines)
+CloudFormation and the functions, stuff like stacksets
+System Manager like a lot especially the automation documents. 
+NAT instance vs NAT Gateway.
+
+WGU specific:
+Study the PA, every answer, even the wrong answers, and figure out why they're wrong.
+Use the WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding 
+
+
+
+
+How they are used, know the difference between geolocation and geoproximity
+
+Ok so I was able to pass this one on Friday here are my thoughts or some strategies that I found to be extremely useful, 
+First off the youtube video found here is extremely useful vital IMO : 
+
+https://www.youtube.com/watch?v=KX_AfyrhlgQ
+
+Now for the stuff you absolutely need to know - Cron & RATE EXPRESSIONS I emphasize RATE! not regular, they will try to 
+
+Trick on this -- the video series does not cover this in detail at all please use this link 
+
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html SSM Vs Event Bridge Vs OpsWork Vs Fargate 
+
+know the difference between those and how they are used anything pertaining to Patching will be SSM -- 
+Anything that mentions containers with Chef or Puppet is OPSWORK anything with Managing containers without the mention of 
+Chef/puppet is Fargate Know how VPC's are connected to onsite networks very IMPORTANT! transit gateway VS Direct Connect 
+Vs Site-to-to site VPN know those inside out. 
+Know what are VPC endpoints and the purpose Also Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long know what is AWS Mace Vs Inspector Vs Guard Duty and 
+How they are used know the difference between geolocation and geoproximity 
+
+Know cloud formation and the intrinsic functions.
+
+Also know cloudwatch metrics and what default metrics are tracked vs which metrics needs the the cloud watch agent. 
+
+Study Strategy ---- Use the WGU material as your main source of study go over the youtube stuff for things you may have 
+
+difficulty understanding I'd recommend watching the youtube video at 2x speed first then go over the WGU materials as much
+
+ of the exam will be based on that --labs are not necessary to pass but they'll def help -- I skipped the labs-- Pay close 
+
+attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course Good Luck Everyone
+
+
+EventBridge and cron expression
+
+Watch the EventBridge sections on the youtube video in the Course Tips
+
+Research cron expressions and rate for Lambda functions. AWS Athena is for querying S3 objects.
+
+Study the PA, every answer, even the wrong answers, and figure out why they're wrong.
+
+EventBridge and CloudWatch are interchangeable
+
+Stephane Maarek's practice tests on Udemy
+
+https://www.youtube.com/watch?v=KX_AfyrhlgQ
+I would also look over the AWS documentation for things like: EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines), etc.
+
+many eventbridge questions
+
+Spend adequate time learning about CloudFormation and the functions, stuff like stacksets as well. System Manager like a lot especially the automation documents. NAT instance vs NAT Gateway.
+
+Neal Davis 
+
+However do extra study on LAMBDA and RATE/CRON.
+
+EventBridge and how it works, the file formats used and the language. 
+
+if a question mentions volume it talking about EBS, file it referring to EFS. Quite a few questions on cloudwatch, System Mgr, AWS Config and NACL/ALB.
+
+EventBridge is used a lot here. 
+-------------------------------------------
+Reddit stuff
+
+Watched all of the AWS Academy videos
+Did the knowledge checks at the end of each module
+Took the Sections tests at the end of each section
+Took the little practice test at the end of the material
+Took the PA, open-book style. Used it to research concepts or AWS services I was not very familiar with as I went along. If I thought I knew an answer, I'd go ahead and give that question a shot without looking at any material (this is usually how I take PAs)
+Took the PA later without help and made 100% (Understandably as I studied the questions awhile taking it)
+Read through the Course Chatter. People mentioned that you should know EventBridge well and understand cron expressions. And to be honest, a cron question came up on the OA and I was kind of unsure about the answer because it the syntax didn't really stick with me.
+
+
+https://www.youtube.com/watch?v=KX\_AfyrhlgQ
+
+Now for the stuff you absolutely need to know - Cron & RATE EXPRESSIONS I emphasize RATE! not regular, they will try to trick on this -- the video series does not cover this in detail at all please use this link https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
+
+SSM Vs EventBridge Vs OpsWork Vs Fargate know the difference between those and how they are used anything pertaining to Patching will be SSM -- Anything that mentions containers with Chef or Puppet is OPSWORK anything with Managing containers without the mention of Chef/puppet is Fargate Know how VPC's are connected to onsite networks very IMPORTANT! transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out. Know what are VPC endpoints and the purpose Also Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long know what is AWS Mace Vs Inspector Vs Guard Duty and how they are used Know the difference between geolocation and geoproximity Know cloud formation and the intrinsic functions. Also know cloudwatch metrics and what default metrics are tracked vs which metrics needs the the cloud watch agent.
+
+Study Strategy ---- Use the
+
+WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding I'd recommend watching the youtube video at 2x speed first then go over the WGU materials as much of the exam will be based on that --labs are not necessary to pass but they'll def help -- I skipped the labs-- Pay close attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course -- see course chatter.
+
+udemy
+https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practice-exams-soa-c01/
+
+
