@@ -21,3 +21,9 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860
 •	"Containers on AWS" (new tab) (10:18)
 •	"Amazon Fargate and Amazon Elastic Container Service" (new tab) (13:03)
 •	"Module Wrap-Up" (new tab) (1:46)
+
+
+Complete the Module 5 knowledge check 
+These AWS services can increase the ease of running and managing Docker containers:
+ ECS, EKS and Fargate
+ AWS Lambda automatically scales to support incoming requests without the need for additional configuration, and it remains fault-tolerant 
