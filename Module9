@@ -1,0 +1,41 @@
+•	1.5x speed 
+•	Turn on subtitles
+•	Watch first
+•	Watch again but take notes, like summarize or bullet list stuff in the video
+•	take a break when timer expires
+WGU exam top to bottom
+1.	Configures Network Connectivity - 20% of assessment
+2.	Remediates AWS Issues - 20% of assessment (got close on this)
+3.	Automates Cloud Provisioning - 18% of assessment
+4.	Implements AWS Systems - 17% of assessment
+5.	Implements AWS Protection Services - 13% of assessment
+6.	Determines Optimal Cost and Performance Baseline - 12% of assessment
+
+AWS Academy Module 7 Activities
+Chapter 9
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/b724456924e449a18e0089d8e86c1163/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40a2ff5b6fb9ef438396e16f34e7b9e5dc
+
+•	"Monitoring and Security" (new tab) (0:52)
+•	"Amazon CloudWatch" (new tab) (12:11)
+•	"Amazon CloudWatch Events" (new tab) (8:29)
+•	"AWS CloudTrail" (new tab) (7:57)
+•	"Module Wrap-Up" (new tab) (1:12)
+Module 9 knowledge check
+•	Amazon Cloud Watch alarms are issued in near real-time in response to changes
+•	Amazon cloud watch events can be set to automatically trigger based on rate expressions
+•	A dimension is a name/value pair that is used for metric identification, and can assist with the design structure for a statistics plan
+•	Amazon Simple storage server (S3) Can be used with AWS CloudTrail to store event logs
+•	AWS CloudTrail allows an Admin to determine for a given request made to AWS config: 
+Who Made the Request 
+Source IP address of the request
+Time of the Request
+Type of the request
+•	Custom metrics is a feature of amazon CloudWatch that would you use to publish a statistic on service memory usage for an HTTP server running on an Amazon EC2 instance
+•	An Amazon CloudWatch event indicates a change in resource in your AWS environment
+•	Possible states of an Amazon CloudWatch alarm: 
+Insufficient Data
+OK
+Alarm
+•	AWS Config can provide a list of all AWS resources used by an account
+•	AWS CloudWatch alarms are sent when a metric value changes
+
