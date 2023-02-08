@@ -1,0 +1,36 @@
+•	1.5x speed 
+•	Turn on subtitles
+•	Watch first
+•	Watch again but take notes, like summarize or bullet list stuff in the video
+•	take a break when timer expires
+WGU exam top to bottom
+1.	Configures Network Connectivity - 20% of assessment
+2.	Remediates AWS Issues - 20% of assessment (got close on this)
+3.	Automates Cloud Provisioning - 18% of assessment
+4.	Implements AWS Systems - 17% of assessment
+5.	Implements AWS Protection Services - 13% of assessment
+6.	Determines Optimal Cost and Performance Baseline - 12% of assessment
+Module (chapter 6)
+AWS Academy Module 6 Activities
+Chapter 6 (Module 6) notes
+"Computing (Database Services)" (new tab) (1:16)
+"AWS Database Services" (new tab) (6:07)
+"Amazon Relational Database Service (Amazon RDS)" (new tab) (7:22)
+"Amazon Aurora" (new tab) (3:14)
+"Amazon DynamoDB" (new tab) (5:54)
+"Amazon Database Migration Service (Amazon DMS)" (new tab) (6:57)
+"Module Wrap-Up" (new tab) (1:13)
+
+
+Complete the Module 6 knowledge check
+•	Amazon Aurora is a compatible database that is up to 5 times faster than standard MySQL database. Availability and performance is enhanced by enabling multiple replicas.
+•	Amazon Aurora can have up to 15 Aurora Replicas for a single DB cluster within an AWS Region 
+•	Global Tables are a feature of Amazon DynamoDB builds a global footprint by replicating tables automatically across selected regions
+•	Amazon Neptune should be prioritized for the banks database if they want to graph connected data. Neptune is best for graph database service
+•	AWS Database Migration Service can automatically convert data from a MySQL database to Amz Aurora.
+•	Amazon Relational Database Service(Amazon RDS) will handle all routine database tasks such as patching and backups
+•	NoSQL database schemas are dynamic 
+•	Amazon Relations Database Service(Amazon RDS) manages PostreSQL (RDS service manages Postgres)
+•	Amazon DynamoDB is a NoSQL database option
+•	Amazon Aurora should be considered if there is a need for a MySQL and PostgreSQL compatible relational database
+•	The max number of read replicas that an Amazon Aurora database cluster can have is 15
