@@ -1,5 +1,7 @@
 This Course (Top of the list item)
 https://lrps.wgu.edu/provision/281270628
+Recommended Music to study with:
+https://www.youtube.com/watch?v=eUAd5f936Yg
 
 Specifically https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/learn/quiz/5293744#overview
 
@@ -36,8 +38,13 @@ Why hosted connections over dedicated? This is a good question
 https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithConnections.html
 FYI Hosted offers slower speeds dedicated does “modern” port speeds
 •	VPC Endpoint services is a good way to allow internal web applications to not to be exposed to the internet 
-
+•	
 Redoing this quiz (lots of cloudwatch stuff)
 https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/learn/quiz/5293388#overview
-A CloudWatch Logs metric filter can be created to filter for the word “Error” to then have a CloudWatch alarm based on that metric filter
+•	A CloudWatch Logs metric filter can be created to filter for the word “Error” to then have a CloudWatch alarm based on that metric filter
+•	A Unified CloudWatch Agent can push memory usage as a custom metric to CloudWatch in order to monitor EC2 memory usage
+•	Compliance can be evaluated using AWS config 
+•	If a configuration falls out of config AWS CloudTrail is a good way to find out who made the change
 
+
+	
