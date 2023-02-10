@@ -26,3 +26,10 @@ For example in 10.0.0.0/24 10.0.0.0 through 10.0.0.3 and 10.0.0.255 are not avai
 Further reading on reserved IP addresses 
 Subnets for your VPC - Amazon Virtual Private Cloud
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html#types-of-vpc-endpoints-for-s3
+•	If EC2 instances are not getting assigned public hostnames and DNS isn’t working check to make sure Enable DNS Resolution and DNS hostnames in your VPC
+•	Peering connections (again) need to be set up again on both sides
+•	Enabling VPC flow logs helps you capture information inside your VPCs
+•	Hosted connections in AWS: 
+Speeds: For hosted connections, the possible values are 50 Mbps, 100 Mbps, 200 Mbps, 300 Mbps, 400 Mbps, 500 Mbps, 1 Gbps, 2 Gbps, 5 Gbps, and 10 Gbps
+
+https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithConnections.html
