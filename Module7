@@ -18,9 +18,9 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b0
 "Networking" (new tab) (1:17)
 ------------------------------------
 •	VPC virtual private cloud or VPC
-•	You will examine components of a vpc including subnets, route tables and gateways
+•	You will examine components of a VPC including subnets, route tables and gateways
 •	VPC connectivity options, security mechanisms and guidelines for VPC troubleshooting
-•	you will learn to troubleshoot basic VPC networking issues
+•	You will learn to troubleshoot basic VPC networking issues
 
 "AWS Cloud Networking" (new tab) (8:41)
 ------------------------------------
@@ -85,7 +85,7 @@ IPv6 in VPCs
 •	Instances created in custom VPCs require overriding the default setting to receive public IP addresses.
 •	Alternatively, configure the “Modify auto assign IP settings” on subnets to automatically assign public IP addresses to instances
 •	Unlike Elastic IP addresses, public IP addresses are not static <– FYI Elastic IP address is a reserved public IP address that you can assign to any EC2 instance in a particular region, until you choose to release it.
-•	Before an instance can be publicly accessed  it must be assigned a public IP address
+•	Before an instance can be publicly accessed it must be assigned a public IP address
 •	By enabling the subnet feature you can automate the assignment of an IPv4 or IPv6 address to EC2 instances that are launched into the subnet. – To enable the setting in the VPC console, go to the modify auto-assign IP settings configuration page for the subnet. Then select the Enable auto-assign public IPv4/IPv6 address checkbox. – Note that the assigned IP address is not an elastic one, the IP will be released when the instance is stopped or terminated. 
 •	Unlike an elastic IP address, which is a static IPv4 address that is reachable from the internet.
 •	Each VPC comes with an implicit router that directs traffic between the resources in each subnet, but also directs traffic out of the subnet. The router uses a route table to determine valid IP destinations out of a subnet. It also used the route table to determine the corresponding target that is used to reach the destination. 
@@ -112,7 +112,7 @@ One: Some network appliances prefer to be configured with multiple network inter
 •	You can also configure the additional interfaces with their own public and private IP addresses and their own security groups.
 •	Two: If you are connecting an instances to a service that is powered by AWS private link, you must create an interface endpoint for it that also creates a network interface. You must then attach the network interface to the invoking instance.
 •	When you create an AWS account AWS automatically creates a default VPC for you with a CIDR block of 172.31.0.0/16 (65,536 IP Addresses!) – This default VPC enables you to start using VPC features immediately.
-•	AWS also automatically creates an internet gateway,  a default route table and public subnet in the default VPC
+•	AWS also automatically creates an internet gateway, a default route table and public subnet in the default VPC
 •	The default route table includes rules to send traffic to the IP addresses in the VPC address range to a local route, it send traffic to any other IP address to the internet gateway
 •	Skipping down
 •	The AWS provided DNS server in a VPC is called AMZ route 53 resolver.
@@ -132,11 +132,11 @@ One: Some network appliances prefer to be configured with multiple network inter
 •	The second level of security is network access control lists or NACLs, with NACLs you can define the default security behavior of your subnets.
 •	The VPC or subnet layer security is typically controlled by the network security team. 
 •	Security groups are used to control behavior at the level of the instance or network interface.
-•	You might choose to use some form of third-party host based detection software that monitors individual ec2 instances for specific threats or issues , such as malware, OS vulnerabilities, and security auditing 
+•	You might choose to use some form of third-party host based detection software that monitors individual ec2 instances for specific threats or issues, such as malware, OS vulnerabilities, and security auditing 
 - More about layers in detail-
 •	Use security groups to restrict traffic in and out of the associated network interfaces
 •	FYI a VPC has a default security group that allows all outbound traffic, but denies all inbound traffic
-•	When you launch an instance in an VPC and do not specify a security group for it, the instance is automatically assigned to the default security group
+•	When you launch an instance in a VPC and do not specify a security group for it, the instance is automatically assigned to the default security group
 •	Rules are defined in two separate inbound and outbound tables, you specify allow rules but not deny rules.
 •	All rules are evaluated before traffic is allowed.
 •	All outbound traffic in response to an inbound request is permitted.
@@ -167,6 +167,7 @@ One: Some network appliances prefer to be configured with multiple network inter
 •	Don’t forget to use ping for connectivity checks
 •	If you cannot reach resources in a peered network verify that the peering request was approved, also verify that the CIDR block ranges are configured to allow access across the VPCs
 •	For further details about troubleshooting VPC peering, search for VPC peering connectively in the AWS documentation
+
 "Module Wrap-Up" (new tab) (1:25)
 •	Practice question with keywords
 •	Module 7 guided lab: Configure an Amazon Virtual private cloud
@@ -175,7 +176,7 @@ Practice questions to review (stuff I got wrong or I feel week on)
 •	Aws reserves 5 IP address in a subnet
 •	The main route table is associated with the subnet by default
 •	Which statements about a default VPC are true (pick 2):
- – got wrong, picked a default VPC spans multiple regions and “by default each default VPC is available to one AWS account. --- still don’t know what the correct ones are
+ – got wrong, picked a default VPC spans multiple regions and “by default each default VPC is available to one AWS account. --- Still don’t know what the correct ones are
 •	(kind of need practice on) a VPC can span multiple availability zones
 •	Which statements describe security groups (Choose two):
 A security group can be applied across multiple instances; multiple security groups can be assigned to an instance and security group associations can be added and modified after an instance in created
@@ -201,5 +202,9 @@ Complete the Module 7 knowledge check
 •	A valid target in a route table is elastic network interface ID, instance_ virtual _
  all of the above (need to capture all of these )
 •	A virtual private cloud (VPC) can span multiple available zones
-•	A security group can be applied across multiple instances; multiple security groups can be assigned to an instance; sand security groups can be assigned to an instance; and security associations can be added and modified after an instance is created 
-•	An Amazon VPC has a implicit router and default route table that routes local traffic within it 
+•	A security group can be applied across multiple instances
+multiple security groups can be assigned to an instance
+security groups can be assigned to an instance
+security associations can be added and modified after an instance is created 
+•	An Amazon VPC has an implicit router and default route table that routes local traffic within it 
+•	A subnet is a logical network segment within a virtual private cloud (VPC) that can only exist within a single availability zone
