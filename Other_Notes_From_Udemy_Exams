@@ -36,3 +36,8 @@ Why hosted connections over dedicated? This is a good question
 https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithConnections.html
 FYI Hosted offers slower speeds dedicated does “modern” port speeds
 •	VPC Endpoint services is a good way to allow internal web applications to not to be exposed to the internet 
+
+Redoing this quiz (lots of cloudwatch stuff)
+https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/learn/quiz/5293388#overview
+A CloudWatch Logs metric filter can be created to filter for the word “Error” to then have a CloudWatch alarm based on that metric filter
+
