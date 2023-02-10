@@ -31,5 +31,8 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endp
 •	Enabling VPC flow logs helps you capture information inside your VPCs
 •	Hosted connections in AWS: 
 Speeds: For hosted connections, the possible values are 50 Mbps, 100 Mbps, 200 Mbps, 300 Mbps, 400 Mbps, 500 Mbps, 1 Gbps, 2 Gbps, 5 Gbps, and 10 Gbps
-
+Dedicated (Direct) port speed values are 1 Gbps, 10 Gbps, and 100 Gbps
+Why hosted connections over dedicated? This is a good question
 https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithConnections.html
+FYI Hosted offers slower speeds dedicated does “modern” port speeds
+•	VPC Endpoint services is a good way to allow internal web applications to not to be exposed to the internet 
