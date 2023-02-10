@@ -24,6 +24,15 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860
 
 
 Complete the Module 5 knowledge check 
-These AWS services can increase the ease of running and managing Docker containers:
- ECS, EKS and Fargate
- AWS Lambda automatically scales to support incoming requests without the need for additional configuration, and it remains fault-tolerant 
+•	These AWS services can increase the ease of running and managing Docker containers:
+Elastic container services (ECS), Elastic Kubernetes service (EKS) and Fargate
+•	AWS Lambda automatically scales to support incoming requests without the need for additional configuration, and it remains fault-tolerant
+•	Tasks perform the work (when configured) in a workflow when using AWS Step Functions
+•	A customer should select Amazon Elastic Container Registry (Amazon ECR) if they need to store, manage and deploy Docker container images, with considerations for encryption, third party integrations, and High-Availability 
+•	AWS Fargate provides a managed service for running containers
+•	Trucking company benefits of containers : 
+•	Amazon S3 server-side encryption provides encryption for data at rest for Elastic Container registry (ECR)
+•	Amazon Elastic Container registry (ECR) uses defined polices with AWS Identify and access management (IAM) to control who has access to container images
+•	Amazon Elastic container service for Kubernetes (Amazon EKS) will deploy a cluster’s worker nodes across multiple availability zones so that a single point of failure can be eliminated 
+umm whats the difference between Amazon Elastic container service for Kubernetes and Kubernetes services (are these the same thing?)
+•	_ _ and _ describes how Kubernetes works? (might take several tries to determine these as the answer is not given)
