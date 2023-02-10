@@ -5,9 +5,28 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/c9ce4f8b0b
 
 Each VPC is defined within a region, you can have muliple VPCs in each region and you can have VPCs in as many regions as you want
 Within the VPCs you will also create subnets which can either be public or private
+•	There are three key areas to focus on for network operations:
+Network Virtual private cloud (VPC) is used to configure network environments in the cloud, resources like EC2 are launched in the VPC network environment, the VPC provides control over the isolation of the environment and its resources from each other. Each VPC is defined within a region, you can have multiple VPCs in each region and you can have VPCs in as many regions as you want (not region locked lol). Subnets can be public or private
+•	Compute
+•	Controlling Access
 
+Some AWS service features are region others are global and others exist only in the Availability zone in which they are created
+Examples:
+When a user defines an S3 bucket they specify the region where that bucket will exist
+When you create an AMI from an EC2 instance that AMI is only available in the region in which it was created, if you want to use that AMI in a different region, you must first copy it to the new region before you can use it to launch an EC2 instance
+Amazon CloudWatch metric, Amazon Elastic block store snapshots, Amazon ElastiCache clusters and VPCs are also all regional
+Random questions: region vs availability zone
+Regions is a large geographic area
+THINK REGION = AREA ON A MAP
+Availability zone is a data center inside of that large geographic area 
+THINK AVAILABILITY ZONE = DATA CENTER
+Soft and hard limits:
+Can be changed on request to AWS support like for example 20 running instance is a limit you might get a capacity error in that case create a support case in the AWS support center and request a service limit increase for the account
+Exceeding some soft limits might result in performance degradation
+Hard limits
+Example: SNS (simple notification service) API has a throttling feature, and has a limit of 100 subscribed transactions per second and cannot be changed
+Service quotas or soft limits search for AWS service quotas in the docs
 
-some AWS service features are region others are global and others exist only in the Availability zone in which they are created
-
-finish taking notes on this nugget
+-------------------
+Finish taking notes on this nugget
 https://emergingtalent.contentcontroller.com/ScormEngineInterface/dispatch/lti/ltiDispatch.html?studentId=mrondel%40wgu.edu&studentName=Rondel%2C+Matthew&redirectOnExitUrl=&config=%7B%22dispatchVersion%22%3A%221%22%2C%22contentUrl%22%3A%22https%3A%2F%2Femergingtalent.contentcontroller.com%2Fapi%2Flaunch%2Fbundle%2Fcontent%2F4%2FUrKB1hDx5xCOr1VoYG3Hb1nobhSQ%3Fltirolesecret%3D%26learnerid%3DLEARNER_ID%26fname%3DLEARNER_FNAME%26lname%3DLEARNER_LNAME%26pipeurl%3DPIPE_URL%26redirecturl%3DREDIRECT_URL_REGISTRATION_ARGUMENT%22%2C%22dispatchRoot%22%3A%22https%3A%2F%2Femergingtalent.contentcontroller.com%2FScormEngineInterface%2Fdispatch%2F%22%2C%22preLaunchConfigurationUrl%22%3A%22https%3A%2F%2Femergingtalent.contentcontroller.com%2Fapi%2Flaunch%2Fconfig%2Fbundle%2Fcontent%2F4%2FUrKB1hDx5xCOr1VoYG3Hb1nobhSQ%22%7D
