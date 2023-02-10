@@ -189,3 +189,17 @@ AWS Redshift = is a data ware house product it uses SQL to analyze structured an
 AWS Athena – provides a simplified, flexible way to analyze petabytes of data where it lives.
 Amazon ElastiCache – it’s a cache service for database performance or cases that don’t require durability
 
+--------------------------------------------------------------
+Complete the Module 7 knowledge check
+--------------------------------------------------------------
+•	A peering connection is the connection between two or more virtual private clouds (VPC’s)
+•	Amazon reserves 5 IP address in every subnet
+•	When you create a subnet, the main route table is associated with the subnet by default
+•	Best practice for IP addressing across multiple virtual private clouds (VPC’s) is to use non-overlapping IP addresses 
+•	Which statements about a default VPC are true (pick two) – need to find out
+
+•	A valid target in a route table is elastic network interface ID, instance_ virtual _
+ all of the above (need to capture all of these )
+•	A virtual private cloud (VPC) can span multiple available zones
+•	A security group can be applied across multiple instances; multiple security groups can be assigned to an instance; sand security groups can be assigned to an instance; and security associations can be added and modified after an instance is created 
+•	An Amazon VPC has a implicit router and default route table that routes local traffic within it 
