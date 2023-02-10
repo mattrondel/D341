@@ -1,0 +1,23 @@
+This Course
+https://lrps.wgu.edu/provision/281270628
+
+specifically
+https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/learn/quiz/5293744#overview
+
+Max CIDR Size in AWS is /16
+
+Security groups are stateful and if traffic can go out it can go back in
+
+NAT Gateway is a seemless and scalable way to provide internet access to EC2 instances in private subnets
+
+VPC peering need to be configured on both ends
+
+Direct Connect gateway is a globally available resource to span Virtual Private Clouds (VPCs) to spread across multiple AWS Regions
+
+Amazon S3 and DynamoDB have a VPC gateway endpoint 
+Gateway endpoint in AWS - Gateway endpoints do not enable AWS PrivateLink.no additional charge for using gateway endpoints.
+types of endpoint in VPCs:
+	Gateway
+	Interface
+Additiona reading on these endpoints
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html#types-of-vpc-endpoints-for-s3
