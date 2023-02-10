@@ -1,0 +1,13 @@
+Chapter 1 notes
+
+Module 1 link
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/c9ce4f8b0b8d4d59b7d29e73150c56a9/d8936707cfcb4947bbc9b095ae21c2be/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%406ae51b6ad8e14654acd99204610fb8e5
+
+Each VPC is defined within a region, you can have muliple VPCs in each region and you can have VPCs in as many regions as you want
+Within the VPCs you will also create subnets which can either be public or private
+
+
+some AWS service features are region others are global and others exist only in the Availability zone in which they are created
+
+finish taking notes on this nugget
+https://emergingtalent.contentcontroller.com/ScormEngineInterface/dispatch/lti/ltiDispatch.html?studentId=mrondel%40wgu.edu&studentName=Rondel%2C+Matthew&redirectOnExitUrl=&config=%7B%22dispatchVersion%22%3A%221%22%2C%22contentUrl%22%3A%22https%3A%2F%2Femergingtalent.contentcontroller.com%2Fapi%2Flaunch%2Fbundle%2Fcontent%2F4%2FUrKB1hDx5xCOr1VoYG3Hb1nobhSQ%3Fltirolesecret%3D%26learnerid%3DLEARNER_ID%26fname%3DLEARNER_FNAME%26lname%3DLEARNER_LNAME%26pipeurl%3DPIPE_URL%26redirecturl%3DREDIRECT_URL_REGISTRATION_ARGUMENT%22%2C%22dispatchRoot%22%3A%22https%3A%2F%2Femergingtalent.contentcontroller.com%2FScormEngineInterface%2Fdispatch%2F%22%2C%22preLaunchConfigurationUrl%22%3A%22https%3A%2F%2Femergingtalent.contentcontroller.com%2Fapi%2Flaunch%2Fconfig%2Fbundle%2Fcontent%2F4%2FUrKB1hDx5xCOr1VoYG3Hb1nobhSQ%22%7D
