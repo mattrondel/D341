@@ -45,6 +45,32 @@ https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associa
 •	A Unified CloudWatch Agent can push memory usage as a custom metric to CloudWatch in order to monitor EC2 memory usage
 •	Compliance can be evaluated using AWS config 
 •	If a configuration falls out of config AWS CloudTrail is a good way to find out who made the change
+•	KMS key policies controls access to KMS CMKs
+•	AWS Guard duty does not scan CloudWatch Logs
+•	You cannot run security assessments against Route 53
+•	AWS WAF  protects against common attacks like SQL injection
+•	Since RDS is a SAS product you only have to worry about things like Security group rules
+*** Only write down what you learned ***
+•	Amazon inspector allows you to analyze weekly for OS vulnerabilities
+•	Amazon guard duty is good for instances where you dev team might store credentials in the public and you want to make sure they don’t and notify you when they do
+•	AWS certificate manager is not integrated with EC2, it is however included with Elastic load balancer, Cloud front and API gateway
+•	AWS secrets manager is most suitable for storing RDS DB passwords with automatic rotation
+•	Amazon Cognito identify federation is ideal for giving your users access to their own personal space (via a mobile application) in S3
+•	IAM Access analyzer find resources that are accessible from outside of your AWS account 
+•	Amazon Cognito identify pools  can provide unauthenticated guess access to web applications hosted using AWS amplify
 
-
-	
+Section 16 Monitoring auditing and performance 
+**CloudWatch vs CloudTrail vs Config **
+CloudWatch 
+•	Performance monitoring (metric, CPU, network etc..) and dashboards
+•	Events and alerting
+•	Log aggregation and analysis
+CloudTrail
+•	Record API calls made within your account by everyone
+•	Can define trails for specific resources 
+•	Global search
+Config
+•	Record configuration changes
+•	Evaluate resources against compliance rules
+•	Get timeline of changes and compliance
+Note: EC2 memory usage is by default not pushed (must be pushed from inside the instance as a custom metric
