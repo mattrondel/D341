@@ -81,11 +81,20 @@ Section 13 Storage Quiz
 Storage gateway VM needs port 80 open 
 --
 Section 12 S3 security 
-Got lucky with S3 access logs and Athena, need to know what Athena does
-CORS – cross origin resource sharing, without CORS this would prevent a web page from calling APIs in a different domain like S3 object being called like webpages
-S3 pre-signed URL - are used to provide short-term access to a private object in your S3 bucket.
-MFA delete can help prevent accidental bucket deletions by requiring the user who initiates the delete action to prove physical possession of an MFA device. If you want to enable S3 versioning with MFA delete you need to enable s3 versioning too
-aws:sourceVpce is a policy condition to restrict access from specific VPC endpoints
-S3 Access Points are 
-
-pick up from here: https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/learn/quiz/5684350#overview
+SSE-C – server-side encryption with customer provided keys, c for customer
+SSE-S3 - server-side encryption with S3-managed encryption keys
+SSE-KMS - server-side encryption with AWS Key Management Service
+Athena provides a simplified, flexible way to analyze petabytes of data where it lives. (Assuming access logs are huge)
+•	CORS – cross origin resource sharing, without CORS this would prevent a web page from calling APIs in a different domain like S3 object being called like webpages. A website might load files from an S3 bucket if CORS is wrong then it wont work.
+•	S3 pre-signed URL - are used to provide short-term access to a private object in your S3 bucket.
+•	MFA delete can help prevent accidental bucket deletions by requiring the user who initiates the delete action to prove physical possession of an MFA device. If you want to enable S3 versioning with MFA delete you need to enable s3 versioning too
+•	aws:sourceVpce is a policy condition to restrict access from specific VPC endpoints e for endpoints
+•	S3 Access Points are good for managing large datasets you no longer need to manage a single complex bucket policy with 100’s of permissions. S3 access points allow you to create application specific access points permitting access to shared datasets with polices tailored to the specific application
+•	Enabling Default encryption on an s3 bucket is how to enable encryption by default (duh) or you can use a bucket policy to deny uploads without encryption like s3:x-amz-server-side-encryption
+---
+Section 10 S3 intro quiz
+•	Newly enabled versioning in an S3 bucket the existing files will have a null value for versioning
+•	S3 Cross-Region Replication (CRR) is a low cost and low latency to make a bucket available in different regions 
+•	In order to enable S3 replication between 2 buckets you first need version enabled on both sides
+•	Amazon glacier is slow like melting a glacier it takes hours not minutes
+•	Glacier flexible storage modes can be as quick as 1-5 minutes, 3-5 hours, or 5-12 hours but not seconds
