@@ -119,3 +119,6 @@ Section 6 HA and scalability
 •	Network load balancer, network stuff’
 •	A public IPv4 address is not a valid target while you create a target group for your application load balancer – not sure what this means
 Pick up from here: https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/learn/quiz/5293276#overview
+
+here too:
+https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/learn/quiz/5293272#overview
