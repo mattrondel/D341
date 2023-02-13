@@ -98,3 +98,17 @@ Section 10 S3 intro quiz
 •	In order to enable S3 replication between 2 buckets you first need version enabled on both sides
 •	Amazon glacier is slow like melting a glacier it takes hours not minutes
 •	Glacier flexible storage modes can be as quick as 1-5 minutes, 3-5 hours, or 5-12 hours but not seconds
+•	S3 bucket names are globally unique names like dev are probably taken already
+---
+Section 11 advanced S3 and Athena
+---
+•	S3 Analytics is a good way to get recommendations for S3 lifecycle rules
+•	Files that are no longer needed (deleted) need to expire (expiration actions)
+•	Athena is server less  for data analysis 
+•	S3 inventory can generate reports on replication and encryption status on objects in s3
+---
+Section 7 quiz
+Elastic beanstalk for sysops 
+•	To speed up runtime and os dependences and deployment through elastic beanstalk you can package and deploy a golden AMI
+•	Worker environment tier in ELB is a service to quickly host your applications, its an application that handles background-processing tasks.
+•	Web server environment tier in ELB is an a web application that handles HTTP(S) requests
