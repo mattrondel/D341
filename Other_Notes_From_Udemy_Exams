@@ -74,3 +74,18 @@ Config
 •	Evaluate resources against compliance rules
 •	Get timeline of changes and compliance
 Note: EC2 memory usage is by default not pushed (must be pushed from inside the instance as a custom metric
+---
+Quizes through udemy, go through them then at the end jot them down, look up stuff you don’t know, like CORS and MFA Delete
+--
+Section 13 Storage Quiz
+Storage gateway VM needs port 80 open 
+--
+Section 12 S3 security 
+Got lucky with S3 access logs and Athena, need to know what Athena does
+CORS – cross origin resource sharing, without CORS this would prevent a web page from calling APIs in a different domain like S3 object being called like webpages
+S3 pre-signed URL - are used to provide short-term access to a private object in your S3 bucket.
+MFA delete can help prevent accidental bucket deletions by requiring the user who initiates the delete action to prove physical possession of an MFA device. If you want to enable S3 versioning with MFA delete you need to enable s3 versioning too
+aws:sourceVpce is a policy condition to restrict access from specific VPC endpoints
+S3 Access Points are 
+
+pick up from here: https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/learn/quiz/5684350#overview
