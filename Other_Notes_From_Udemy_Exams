@@ -122,4 +122,10 @@ Pick up from here: https://wgu.udemy.com/course/ultimate-aws-certified-sysops-ad
 
 here too:
 https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/learn/quiz/5293272#overview
-HTTP is an application thus needs application load balencer
+•	HTTP is an application thus needs application load balancer
+---
+Section 15 - Databases for sysops
+---
+•	RDS Proxy?
+•	Read replicas can’t be encrypted if the master DB isn’t
+•	5 is your max RDS DB read replicas
