@@ -129,5 +129,7 @@ Section 15 - Databases for sysops
 •	RDS Proxy?
 •	Read replicas can’t be encrypted if the master DB isn’t
 •	5 is your max RDS DB read replicas
-Pick up from here: 
-https://wgu.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/learn/quiz/5293386#overview
+•	AWS Config can ensure that all ec2 instances are launched using approved AMIs
+•	Cost allocation tags allow you to separate costs into categories in AWS like environment
+•	AWS cost explorer can give you recommendations for type of reserved ec2 instances you should buy into to optimize costs
+•	AWS budgets will notify you when costs exceed thresholds
