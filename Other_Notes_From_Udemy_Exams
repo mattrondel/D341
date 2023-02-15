@@ -139,8 +139,10 @@ Other services
 Changing gears
 Do this exam but lookup what you don’t know before you answer it
 “borrow” from the azure app of look for the answer
+** Then lets do this with the PA**
 https://wgu.udemy.com/course/practice-exams-aws-certified-sysops-administrator-associate/learn/quiz/5107000/test#overview
 Listen to this stuff too:
 https://www.youtube.com/watch?v=LVbUNRwpXzw&t=296s
+
 •	Only the bucket owner (root account) can enable MFA delete you can only set it up with the CLI or API
 
