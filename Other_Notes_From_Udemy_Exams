@@ -133,3 +133,14 @@ Section 15 - Databases for sysops
 •	Cost allocation tags allow you to separate costs into categories in AWS like environment
 •	AWS cost explorer can give you recommendations for type of reserved ec2 instances you should buy into to optimize costs
 •	AWS budgets will notify you when costs exceed thresholds
+Other services
+•	Kibana supports the following authentication mechanisms: Multiple authentication providers. Basic authentication. Token authentication. Blahh not sure what this is – 
+--------- - --- - - - - - -- 
+Changing gears
+Do this exam but lookup what you don’t know before you answer it
+“borrow” from the azure app of look for the answer
+https://wgu.udemy.com/course/practice-exams-aws-certified-sysops-administrator-associate/learn/quiz/5107000/test#overview
+Listen to this stuff too:
+https://www.youtube.com/watch?v=LVbUNRwpXzw&t=296s
+•	Only the bucket owner (root account) can enable MFA delete you can only set it up with the CLI or API
+
