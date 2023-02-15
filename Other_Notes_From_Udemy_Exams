@@ -138,11 +138,14 @@ Other services
 --------- - --- - - - - - -- 
 Changing gears
 Do this exam but lookup what you don’t know before you answer it
-“borrow” from the azure app of look for the answer
+“borrow” from the azure app of look for the answer, (use expanded view)
 ** Then lets do this with the PA**
 https://wgu.udemy.com/course/practice-exams-aws-certified-sysops-administrator-associate/learn/quiz/5107000/test#overview
 Listen to this stuff too:
 https://www.youtube.com/watch?v=LVbUNRwpXzw&t=296s
-
+Put in # next to what you ether learn or comments like I don’t know but I wish I knew so when you go back you can recall thoughts
 •	Only the bucket owner (root account) can enable MFA delete you can only set it up with the CLI or API
-
+•	#7 enable default encryption in s3?
+•	#8 stickiness on application load balancer
+•	#9 not sure
+•	 
