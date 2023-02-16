@@ -194,4 +194,23 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860
 •	Elastic container registry (ECR) can store, manage and deploy Docker images with considerations for encryption, 3rd party integrations and HA
 •	Fargate is a managed service for running containers
 •	S3 server side encryption is provides data at rest encryption
-•	Elastic container server for Kubernetes (EKS) is over multiple AZs – not regions 
+•	Elastic container server for Kubernetes (EKS) is over multiple AZs – not regions
+
+*** 2-16-2023*** getting started was the hardest thing this day, might been lack of sleep
+Module 6
+https://www.youtube.com/watch?v=LVbUNRwpXzw&t=296s
+•	Aurora can have up to 15 Aurora replicas for a single DB cluster within an AWS region
+•	Global tables are a feature of Dynamo DB building a global footprint automatically across selected regions. Global foot print = global tables
+•	Neptune is good for graphing connected data
+Neptune is used for graph use cases such as recommendation engines, fraud detection, knowledge graphs, drug discovery, and network security. Amazon Neptune is fully managed and handles the time-consuming tasks such as provisioning, patching, and backup, recovery, failure detection and repair.
+
+•	AWS database migration service can automatically convert data throughout a migration from Aurora 
+•	Relational database service (RDS) will handle all routine tasks
+•	Relational database service manages PostgreSQL
+•	Aurora should be considered if there is a need for a MySQL and PostgreSQL compatible database
+Aurora is a relational database management system built for the cloud with full MySQL and PostgreSQL compatibility. Fyi Aurora is the same color scheme as Postgres this is a good way to remember the relation 
+
+Module 7 networking (today is still a struggle though the b12 Hash gave me seems to have helped)
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860cb4a2abb91f13af016e906/efd58940e8f0457da8370b7dc70c5b46/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40b3e0759b073b4a6bb22b41f167e49d31
+
+
