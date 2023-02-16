@@ -224,3 +224,32 @@ o	VPCs cannot span regions so AWS creates a default VPC in each region VPCs can 
 o	Each region in your AWS account is provided a default VPC
 One default VPC per region, one subnet per availability zone 
 •	FYI one subnet per availability zone AKA datacenter in a region
+------ 
+Module 8 - Storage
+------ 
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/ca0a04c1f70444a2ab9bedc66dd73793/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40323f106fdf6045ca8fb9325d7ba54450
+•	FYI EBS volumes are tied to availability zones (data centers)
+•	Resource types, target tags, and schedule (of when duh) all need to be defined for Data lifecycle manager
+•	EBS Snapshots are based on deltas
+•	EC2 < - > EBS (EC2 connects to EBS as network storge)
+•	Version on S3 cannot be disable once enabled
+•	Lambda, SNS and SQS will send notifications of a bucket change
+•	Instance store aka ephemeral is great for a cache or buffer
+•	Glacier is slow like S3 is 5-12 hours slow for arching data
+•	Elastic file system (EFS) can span across multiple available zone (data centers) in different regions that’s what it’s called elastic 
+•	Version enabled would result in the addition of a marker when an object is deleted
+
+Module 9 – 
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/b724456924e449a18e0089d8e86c1163/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40a2ff5b6fb9ef438396e16f34e7b9e5dc
+•	CloudWatch alarms are real-time in response to changes
+•	Rate expressions events in CloudWatch
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
+
+•	CloudWatch alarms: Alarm, Insufficient data or OK
+•	CloudWatch alarms are sent when a metric value changes
+•	A dimension is a name/value pair that is used for metric identification 
+Info on Dimension:
+A dimension is a name/value pair that is part of the identity of a metric. Because dimensions are part of the unique identifier for a metric, whenever you add a unique name/value pair to one of your metrics, you are creating a new variation of that metric. For example, many Amazon EC2 metrics publish Instance Id as a dimension name, and the actual instance ID as the value for that dimension.
+You can assign up to 30 dimensions to a metric.
+
+****** Need to look up cron rate etc like the reddit posts said   ****** 
