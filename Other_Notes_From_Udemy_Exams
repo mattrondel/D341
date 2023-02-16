@@ -153,7 +153,45 @@ Put in # next to what you ether learn or comments like I don’t know but I wish
 
 Pick up from here:
 https://wgu.udemy.com/course/practice-exams-aws-certified-sysops-administrator-associate/learn/quiz/5107000/test#overview
+after reading this reddit post I was thinking to stick closer to the main material
+https://old.reddit.com/r/WGUIT/comments/y2ospb/9_days_in_this_class_got_burnt_out_quick_and_just/
+---------------------- 2-15-2023----------------------
+•	Watched all of the AWS Academy videos
+•	Did the knowledge checks at the end of each module
+Starting from top to bottom lets lookup answers we don’t know notating what I didn’t know
 
+Module 1:
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/c9ce4f8b0b8d4d59b7d29e73150c56a9/d8936707cfcb4947bbc9b095ae21c2be/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%406ae51b6ad8e14654acd99204610fb8e5
 
+if you feel like you need it do the quiz a second time reading the stuff you got wrong and figure out why it’s right (if you can)
+•	ACLs are not defined within JSON documents they use? _____-looking for this answer through the videos, funny as they don’t have it
+•	Policy rule evaluations for IAM: an explicit ALLOW overrides the default denial of access to all resources unless an explicit DENT overrides it, all polices are evaluated before a request is allowed of denied and the evaluation order of the polices has no effect on outcome.
+•	AWS CLI supports ACSII-formatted tables, JSON, and Tab-delimited text (it actually can do others the this is the AWS correct for this test)
 
-	
+Module 2
+•	With AWS system manager you can put bash script commands into a command document that systems manager can run “AWS Systems Manager centralizes operational data from multiple AWS services and automates tasks across your AWS resources.”
+•	OpsWorks offerings are: Chef automate, OpsWorks for Puppet, and Stacks
+•	There are different SDKs for each programming languages supported by AWS
+•	AWS Systems Manager Insights provide a dashboard for viewing operational data
+
+Module 3
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860cb4a2abb91f13af016e906/95391ae470ae4870af5ad38e071343e9/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%4083c7a67134da406fa0c17a31cc27f701
+•	AMIs provide the required information that is needed to launch an instance
+•	The first step when implementing an AMZ EC2 instance is to determine the AMI that will be used
+•	A running lifecycle state retains the public IP address of the Ec2 instance when you stop, terminate you lose the state of the public IP address, reboots keep it
+•	An instance profile is a container that allow AWS IAM role information to be attached to an EC2 instance. “An instance profile is a container for an IAM role that you can use to pass role information to an Amazon EC2 instance when the instance starts”
+•	Module 4
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860cb4a2abb91f13af016e906/12b95de0ec1d47ce8fe8a135079093d6/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40495c2c79514e4afeba1e0a1f96ae6c6b
+•	Route 53 is a cheap way to route end users to Ec2 and ELBs
+•	If an Auto scaling group cannot scale up in EC2 CPU utilization increases to match capacity with auto scaling
+•	ALBs support containers
+•	Health checks are performed on all targets that are registered to a group
+•	An ALB (application based load balancer) supports content-based routing (application = content)
+•	Creating alarms that are only triggered by sustained changes can reduce thrashing
+Module 5
+
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860cb4a2abb91f13af016e906/9396d5a9a12745669810a6ccffabbf43/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%405cdc1d7661f544c08441f37f21b8b4da
+•	Elastic container registry (ECR) can store, manage and deploy Docker images with considerations for encryption, 3rd party integrations and HA
+•	Fargate is a managed service for running containers
+•	S3 server side encryption is provides data at rest encryption
+•	Elastic container server for Kubernetes (EKS) is over multiple AZs – not regions 
