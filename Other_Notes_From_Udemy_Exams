@@ -242,9 +242,12 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b0
 Module 9 – 
 https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/b724456924e449a18e0089d8e86c1163/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40a2ff5b6fb9ef438396e16f34e7b9e5dc
 •	CloudWatch alarms are real-time in response to changes
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 •	Rate expressions events in CloudWatch
 https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
-
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 •	CloudWatch alarms: Alarm, Insufficient data or OK
 •	CloudWatch alarms are sent when a metric value changes
 •	A dimension is a name/value pair that is used for metric identification 
