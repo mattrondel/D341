@@ -254,5 +254,20 @@ https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
 Info on Dimension:
 A dimension is a name/value pair that is part of the identity of a metric. Because dimensions are part of the unique identifier for a metric, whenever you add a unique name/value pair to one of your metrics, you are creating a new variation of that metric. For example, many Amazon EC2 metrics publish Instance Id as a dimension name, and the actual instance ID as the value for that dimension.
 You can assign up to 30 dimensions to a metric.
-
+*******************************************************************
+**********************Go up if you haven’t already**********************
 ****** Need to look up cron rate etc like the reddit posts said   ****** 
+**********************Go up if you haven’t already**********************
+*******************************************************************
+
+Module 10
+https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/e2c5cdc6d64041f2afa6bed15c19c91f/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%408e1001473b274ebaabfb8cc0da0cf30c
+•	Inherited tags count against the total tag limit for a resource
+Fyi the total tag limit for a resource is 50
+A resource can have a maximum of 50 user-applied tags. You might not be able to add new tags to a resource if you are approaching 50 user-applied tags. AWS managed system tags do not apply to the 50-tag limit. Tag keys must also be unique within your selected resources. You cannot add a new tag with a key that matches a tag key that already exists in your selected resources.
+•	Moth-to-date-spend ___
+•	Cost explorer vs cost usage reports ---- need to determine the correct one
+•	Cloudwatch should be used to find instances that are running idle and increasing costs
+FYI – CloudWatch alarms can be used to detect and shut down unused instances automatically 
+•	AWS Budgets allow you to enable monitoring and notifications on a daily or weekly basis
+•	AWS config can evaluate a rule on demand or based on a trigger (example when a resource is created or modified)
