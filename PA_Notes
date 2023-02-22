@@ -1,0 +1,50 @@
+PA review
+Remedies AWS issues 
+“An administrator needs to set up an Amazon CloudWatch alarm in response to high memory utilization by a web server running on an EC2 instance.
+ 
+What must be done as part of setting up an alarm?”
+Configure a custom metric 
+Why this is the answer?
+EC2 instances don’t natively report on memory unless you install the agent and have CloudWatch setup with Configure a custom metric
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mon-scripts.html
+--
+An administrator needs to create an Amazon CloudWatch alarm. The alarm should be triggered only when log entries of a web server running on an EC2 instance contain both the "ERROR" and the "Critical" strings.
+ 
+Which filter should be used to define a custom metric that will trigger the alarm?
+ERROR Critical
+Why this is correct?
+Need to find examples but the other options have odd characters between the words or hypen which isn’t right
+---
+An engineer needs to count the number of messages containing the term ERROR.
+ 
+Which CloudWatch feature should be used?
+Answer Metric filter
+Why is this correct another case or all the other are wrong
+--- 
+Which CloudWatch feature supports on-premises system-level metrics?
+Answer Custom dashboards 
+Why this is correct: on-prem means you need something custom
+--- 
+Which reporting frequency do CloudWatch dashboards use with detailed instance monitoring?
+60 seconds (1 minute mentioned in this doc)
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-cloudwatch-new.html
+--- 
+Which CloudWatch feature is used to detect state changes in an AWS environment?  
+CloudWatch the verb is uses is Events think Event Watch
+--- 
+Which expression should be used to trigger a Lambda function from a CloudWatch EventBridge event at 8:00 a.m. on weekdays?
+Cron is time short for Cronological
+Correct answer Cron(0 8 * * MON-FRI)
+Syntax breakdown
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
+--- 
+Which service works with Lambda to trigger corrective action if the health of an AWS service is failing?
+Answer EventBridge
+Why?
+I think of Events leading to corrective action
+--- 
+How does EventBridge provide a direct message to subscribers in response to a status change in an instance's health?
+Answer: SNS notifications 
+Why SNS and not Systems report, CloudWatch or logs?
+Direct message is the keyword here
+
