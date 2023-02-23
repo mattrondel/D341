@@ -1,5 +1,5 @@
 PA review
-Remedies AWS issues 
+Remedies AWS issues 20%
 “An administrator needs to set up an Amazon CloudWatch alarm in response to high memory utilization by a web server running on an EC2 instance.
  
 What must be done as part of setting up an alarm?”
@@ -46,5 +46,62 @@ I think of Events leading to corrective action
 How does EventBridge provide a direct message to subscribers in response to a status change in an instance's health?
 Answer: SNS notifications 
 Why SNS and not Systems report, CloudWatch or logs?
-Direct message is the keyword here
-
+Direct message is the keyword here, SNS is push based, supports email and text too, sns is a pub/sub service “SUBSCRIBERS” is the keyword 
+Systems report is too slow? Maybe 
+--- 
+What does EventBridge create to route events to targets?
+Start with what eventbridge is ,a serverless event router aka a serverless event bus. It uses routing rules not logs https://www.youtube.com/watch?v=hrZG1mr6H8I
+--- 
+Configures Network Connectivity - 20%
+An Amazon VPC subnet hosts an EC2 instance. The EC2 has the following configuration:
+•	It is associated with a single security group containing a single rule.
+•	It is configured to only accept SSH traffic from other EC2 instances on the same subnet.
+ 
+The HTTP traffic needs to be permitted to the EC2 instance from other EC2 instances on the same subnet.
+ 
+Answer Add a rule to the security group
+Why? Taking a rule away doesn’t help as it only has one rule to start, since your trying to get more than just ssh removing a rule from the subnets acl won’t help either as subnets are layer 3 and https is layer 7
+--- 
+Which solution should be used to allow VPCs to send data to one another in a full mesh configuration?
+Answer transit gateway
+Why: transit gateways send data from Vpcs and on prem networks through a central hub
+Gateway endpoints provide reliable connectivity to Amazon S3 and DynamoDB without requiring an internet gateway or a NAT device for your VPC. 
+Direct connect is a dedicated line installed to your data center to aws instead of a regular commercial line
+--- 
+Which two statements are correct regarding security groups?
+ 
+Choose 2 answers.
+Answer: Stateful and “only support allow rules”
+Why: Security group rules enable you to filter traffic based on protocols and port numbers. They are stateful , the allow rules I think I knew from firewall basics but I don’t recall where I found this nor was I able to find this mentioned
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html
+--- 
+Which type of rule should be used to protect against a distributed denial of service (DDoS) attack by determining the frequency of requests?
+Answer rate based
+Why? This is a case of all other answers are definitely wrong, ddos isn’t just http based and a URI is uniform resource identifier or stuff on the www that start with http: or mailto: - these are simply not of the right part of the osi layer. Also think rate is a frequency adjective.
+--- 
+A company deploys an application to multiple AWS Regions. The company requires a Route 53 routing policy that routes traffic based on a user's Region. The company also needs the ability to control the size of the geographic region for which traffic is routed.
+ 
+Which routing policy should this company use?
+Answer: Geoproximity routing policy
+Why? This one I admit is tricky since there are two “geo” words but since it asks for users location think the keyword here is proximity.
+--- 
+Which solution should be used to allow access to S3 static websites only through CloudFront?
+Answer: Origin access identity, this a case of all other are wrong and this isn’t the best answer only the most correct
+Why? 
+Shield advanced is for ddos protection
+Global Accelerator isn’t for CloudFront its for deterministic routing independent of dns at edge locations.
+Security group sounds correct but its not of the two mentioned in the below url of “CloudFront provides two ways to send authenticated requests to an Amazon S3 origin: origin access control (OAC) and origin access identity (OAI)”
+Security groups by definition, controls traffic that is allowed to reach and leave resources but 
+https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html
+--- 
+Which two protocol policies are supported by CloudFront? Pick 2
+https only and redirect to https
+Why? There is no http only, if https only was correct then that would negate the redirect choices  
+--- 
+49 Subnet question
+--- 
+Which two services can be used to store VPC flow logs?
+ 
+Choose 2 answers.
+Correct: S3 and CloudWatch
+Why: s3 sores stuff that’s what its for and 
