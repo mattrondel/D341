@@ -124,5 +124,31 @@ Skipped a lot of items that were pretty much obvious
  
 Which Amazon feature should be used?
 Correct answer EventBridge partner event bus
-Zendesk is a software as service company thus partner event bus
+Keyword on this is that Zendesk is a software as service company thus partner event bus
+--- 
+Implements AWS systems 17%
+An administrator needs to configure an existing Amazon Aurora instance as a data store for EC2 instances in us-east-1. The solution has the following requirements:
+ 
+The latency of write operations should be minimized.
+The impact of reporting workloads on write operations should be minimized.
+The lag of data used for reporting workloads should be minimized.
+ 
+Which solution should be implemented? 
+Correct answer Create a read replica in the same subnet
+This is correct because they keyword of low lag and low latency
+All others aren’t as low latency based.
+--- 
 
+
+14. An administrator needs to configure an existing Amazon Aurora deployment as a data store for EC2 instances located in us-east-1. The solution must meet the following requirements:
+ 
+Data will remain accessible following a single data center failure.
+The impact of read-only workloads on write workloads will be reduced.
+The latency of read operations will be minimized.
+ 
+What should be created? 
+
+correct answer: Replica in another Availability Zone of the same AWS Region
+why? 
+
+--- 
