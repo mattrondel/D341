@@ -104,4 +104,8 @@ Which two services can be used to store VPC flow logs?
  
 Choose 2 answers.
 Correct: S3 and CloudWatch
-Why: s3 sores stuff that’s what its for and 
+Why: s3 stores stuff that’s its main purpose, other answer is CloudWatch it stores them in the log group in the same region as your amazon connect instance, created automatically when Enable flow logging is turned on.
+https://docs.aws.amazon.com/connect/latest/adminguide/contact-flow-logs-stored-in-cloudwatch.html
+--- 
+51 flow logs
+
