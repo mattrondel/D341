@@ -107,11 +107,14 @@ Correct: S3 and CloudWatch
 Why: s3 stores stuff that’s its main purpose, other answer is CloudWatch it stores them in the log group in the same region as your amazon connect instance, created automatically when Enable flow logging is turned on.
 https://docs.aws.amazon.com/connect/latest/adminguide/contact-flow-logs-stored-in-cloudwatch.html
 --- 
-51 flow logs
+51 flow logs, looking at them and understanding them
 --- 
 Which service is used to query VPC flow logs for analysis?
 Correct is Athena
-DynamoDB is for ___ RedShift is for ___  ElastiCache is _____
+Other service choices, their primary use case and why you wouldn’t use it for VPC flow logs
+•	DynamoDB is for designed to run high-performance applications at any scale.
+•	RedShift is for used for large scale data storage and analysis
+•	ElastiCache is for cases that don't require durability like session stores, gaming leaderboards, streaming, and analytics
 --- 
 Where are CloudFront access logs stored?
 This is a case of other services are not correct for storage and lets spell it out to confuse the reader 
@@ -124,7 +127,7 @@ Skipped a lot of items that were pretty much obvious
  
 Which Amazon feature should be used?
 Correct answer EventBridge partner event bus
-Keyword on this is that Zendesk is a software as service company thus partner event bus
+Keyword on this is that Zendesk is a software as Service Company thus partner event bus
 --- 
 Implements AWS systems 17%
 An administrator needs to configure an existing Amazon Aurora instance as a data store for EC2 instances in us-east-1. The solution has the following requirements:
@@ -148,7 +151,7 @@ The latency of read operations will be minimized.
  
 What should be created? 
 
-correct answer: Replica in another Availability Zone of the same AWS Region
+Correct answer: Replica in another Availability Zone of the same AWS Region
 why? 
 
 ---
