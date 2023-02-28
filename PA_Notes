@@ -1,5 +1,9 @@
+https://github.com/mattrondel/D341/blob/main/PA_Notes
+
 PA review
+****************************
 Remedies AWS issues 20%
+****************************
 “An administrator needs to set up an Amazon CloudWatch alarm in response to high memory utilization by a web server running on an EC2 instance.
  
 What must be done as part of setting up an alarm?”
@@ -119,7 +123,9 @@ Other service choices, their primary use case and why you wouldn’t use it for 
 Where are CloudFront access logs stored?
 This is a case of other services are not correct for storage and lets spell it out to confuse the reader 
 ---- 
+****************************
 18% provisioning 
+****************************
 Got most right going to cover what wasn’t. right or I got lucky
 Skipped a lot of items that were pretty much obvious 
 
@@ -129,7 +135,9 @@ Which Amazon feature should be used?
 Correct answer EventBridge partner event bus
 Keyword on this is that Zendesk is a software as Service Company thus partner event bus
 --- 
+****************************
 Implements AWS systems 17%
+****************************
 An administrator needs to configure an existing Amazon Aurora instance as a data store for EC2 instances in us-east-1. The solution has the following requirements:
  
 The latency of write operations should be minimized.
@@ -137,21 +145,35 @@ The impact of reporting workloads on write operations should be minimized.
 The lag of data used for reporting workloads should be minimized.
  
 Which solution should be implemented? 
-Correct answer Create a read replica in the same subnet
+Correct answer Create a read replica in the same subnet, same subnet means same network
 This is correct because they keyword of low lag and low latency
 All others aren’t as low latency based.
+Why? Because multi-region or multi-AZ deployments would add latency a read-only in another AZ is because the same thing of putting it in another network somewhere farther away
 --- 
 
 
-14. An administrator needs to configure an existing Amazon Aurora deployment as a data store for EC2 instances located in us-east-1. The solution must meet the following requirements:
- 
-Data will remain accessible following a single data center failure.
-The impact of read-only workloads on write workloads will be reduced.
-The latency of read operations will be minimized.
- 
-What should be created? 
-
-Correct answer: Replica in another Availability Zone of the same AWS Region
-why? 
-
+14. An administrator needs to configure an existing Aurora deployment as a data store for EC2 instances located in us-east-1. The solution must meet the following requirements:
+•	Data will remain accessible following a single data center failure.
+•	The impact of read-only workloads on write workloads will be reduced.
+•	The latency of read operations will be minimized.
+ What should be created? 
+•	Correct answer: Replica in another Availability Zone of the same Region
+Translated meaning replica in another data center of the same region
+First off us-east-1 doesn’t matter it’s the guts of the question that matters
+Keyword is “an existing Aurora deployment”
+Why? 
+•	Same region satisfies “latency of read operations will be minimized.” 
+Things to know first:
+Region means geographical area
+Availability Zone - a logical data center is a logical data center in a region available for use by any one. Each zone in a region has redundant and separate power, networking and connectivity to reduce the likelihood of two zones failing simultaneously.
+Info on Aurora:
+Aurora is a fully managed, highly optimized database from AWS that is available in MySQL and PostgreSQL compatible engines. Aurora features separation of the compute and storage layers, which makes it highly resilient and performant at scale.
+An Aurora database cluster consists of one or more database instances. The primary database instance supports read and write operations there is only one primary database instance in a cluster, all other instances are replicas that only support read operations. 
+Also: An Aurora configuration with only a single DB instance is still a cluster, because the underlying storage volume involves multiple storage nodes distributed across multiple Availability Zones.
+This questions doesn’t mention clusters so you don’t need to think about multi-master clusters
+I don’t think (need to find out if I’m wrong) 
+Not correct and why options (if you can find them): 
+•	Replica in another AWS Region – 
+•	Primary instance in another Availability Zone of the same AWS Region – 
+•	Primary instance in another AWS Region – 
 ---
