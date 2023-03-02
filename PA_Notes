@@ -177,3 +177,8 @@ Not correct and why options (if you can find them):
 •	Primary instance in another Availability Zone of the same AWS Region – 
 •	Primary instance in another AWS Region – 
 ---
+57. EC2 Hibernate vs EC2 instance store vs EC2 backup
+EC2 Hibernate
+EC2 instance store
+EC2 backup – this is like 
+
