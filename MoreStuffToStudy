@@ -1,3 +1,4 @@
+https://github.com/mattrondel/D341/edit/main/MoreStuffToStudy
 EventBridge and CloudWatch are interchangeable.
 Cron & RATE EXPRESSIONS I emphasize RATE! not regular
   •	SSM Vs Event Bridge Vs OpsWork Vs Fargate
@@ -18,7 +19,9 @@ VPC peering
 
 
 doc: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
-Anything pertaining to Patching will be SSM 
+Anything pertaining to Patching will be SSM
+AWS SSM patch manager automates the process of patching managed nodes with updates
+ https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html
 Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
 Know what VPC endpoints and the purpose.
 Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long
@@ -144,4 +147,4 @@ Study Strategy ---- Use the WGU material as your main source of study go over th
 
 udemy
 https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practice-exams-soa-c01/
- 
+
