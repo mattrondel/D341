@@ -8,7 +8,8 @@ Cron & RATE EXPRESSIONS I emphasize RATE! not regular
     Anything that mentions containers with Chef or Puppet is OPSWORK
 AWS Opswork is a configuration manager service that helps automate the deployments, configuration and management of infrastructure and application in the cloud. It simplifies the process of deploying and managing infrastructure and applications in the cloud its flexible and automated
 Fargate – is a serverless engine that lets you focus on building applications without managing servers
-  Anything with Managing containers without the mention of Chef/puppet is Fargate
+Anything with Managing containers without the mention of Chef/puppet is Fargate
+Fargate think container manager
 
 Know how VPC's are connected to onsite network
 Site to site VPN – 
