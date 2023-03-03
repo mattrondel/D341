@@ -197,3 +197,5 @@ unit
 Where Value is a positive integer and Unit can be minute(s), hour(s), or day(s). A rate expression starts when you create the scheduled event rule. For a singular value the unit must be singular (for example, rate(1 day)), otherwise plural (for example, rate(5 days)).
 Items that use cron and rate as settings
 CloudWatch, Lambda, EventBridge, systems manager
+https://docs.aws.amazon.com/systems-manager/latest/userguide/reference-cron-and-rate-expressions.html#reference-cron-and-rate-expressions-maintenance-window
+link for details on rate
