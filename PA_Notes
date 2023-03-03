@@ -181,4 +181,19 @@ Not correct and why options (if you can find them):
 EC2 Hibernate
 EC2 instance store
 EC2 backup – this is like 
+---
+Lamda rate not cron
+https://docs.aws.amazon.com/lambda/latest/dg/services-cloudwatchevents-expressions.html
+assuming lamda doesn’t use cron its rate cronss syntax is:
+cron(Minutes Hours Day-of-month Month Day-of-week Year)
+rates is:
+EventBridge (CloudWatch Events) rate expressions have the following format.
+rate(Value Unit)
 
+value
+    A positive number.
+unit
+    The unit of time. Different units are required for values of 1, such as minute, and values over 1, such as minutes.
+Where Value is a positive integer and Unit can be minute(s), hour(s), or day(s). A rate expression starts when you create the scheduled event rule. For a singular value the unit must be singular (for example, rate(1 day)), otherwise plural (for example, rate(5 days)).
+Items that use cron and rate as settings
+CloudWatch, Lambda, EventBridge, systems manager
