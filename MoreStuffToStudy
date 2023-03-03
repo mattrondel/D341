@@ -11,7 +11,7 @@ Fargate – is a serverless engine that lets you focus on building applications 
 
 Know how VPC's are connected to onsite network
 Site to site VPN – 
-Direct connect
+Direct connect main use is on-prem to aws cloud 
 Transit gateway 
 VPN cloudhub
 VPC peering
