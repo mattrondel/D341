@@ -178,18 +178,17 @@ Not correct and why options (if you can find them):
 •	Primary instance in another AWS Region – 
 ---
 57. EC2 Hibernate vs EC2 instance store vs EC2 backup
-EC2 Hibernate
-EC2 instance store
-EC2 backup – this is like 
+EC2 Hibernate - gives you the ability to launch instances, set them up as desired, hibernate them, and then quickly bring them back to life when you need them.
+EC2 instance store – is temporary block level storage also known as ephemeral storage
+EC2 backup – this is like vmware shapshots
 ---
-Lamda rate not cron
+Lamda rate not cron but be familir with crons syntax just in case
 https://docs.aws.amazon.com/lambda/latest/dg/services-cloudwatchevents-expressions.html
-assuming lamda doesn’t use cron its rate cronss syntax is:
-cron(Minutes Hours Day-of-month Month Day-of-week Year)
-rates is:
+lamda crons syntax is:
 EventBridge (CloudWatch Events) rate expressions have the following format.
+cron (Minutes Hours Day-of-month Month Day-of-week Year)
+rates is:
 rate(Value Unit)
-
 value
     A positive number.
 unit
