@@ -23,7 +23,8 @@ An engineer needs to count the number of messages containing the term ERROR.
  
 Which CloudWatch feature should be used?
 Answer Metric filter
-Why is this correct another case or all the other are wrong
+Why is this correct another case or all the other are wrong?
+Metric filters define the terms and patterns to look for in log data as it is sent to CloudWatch Logs.
 --- 
 Which CloudWatch feature supports on-premises system-level metrics?
 Answer Custom dashboards 
