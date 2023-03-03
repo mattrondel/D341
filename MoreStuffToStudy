@@ -1,14 +1,22 @@
-EventBridge and CloudWatch are interchangeable
+EventBridge and CloudWatch are interchangeable.
 Cron & RATE EXPRESSIONS I emphasize RATE! not regular
   •	SSM Vs Event Bridge Vs OpsWork Vs Fargate
-  SSM - 
+  SSM – this is AWS Systems Manager, it allows you to safely automate common and repetitive IT operations and management tasks.
   Eventbridge -  EventBridge
   OpsWork – OpsWorks
     Anything that mentions containers with Chef or Puppet is OPSWORK
-  Fargate – 
+AWS Opswork is a configuration manager service that helps automate the deployments, configuration and management of infrastructure and application in the cloud. It simplifies the process of deploying and managing infrastructure and applications in the cloud its flexible and automated
+Fargate – is a serverless engine that lets you focus on building applications without managing servers
   Anything with Managing containers without the mention of Chef/puppet is Fargate
 
 Know how VPC's are connected to onsite network
+Site to site VPN – 
+Direct connect
+Transit gateway 
+VPN cloudhub
+VPC peering
+
+
 doc: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
 Anything pertaining to Patching will be SSM 
 Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
@@ -118,5 +126,3 @@ WGU material as your main source of study go over the youtube stuff for things y
 
 udemy
 https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practice-exams-soa-c01/
-
-
