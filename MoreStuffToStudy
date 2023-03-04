@@ -1,16 +1,10 @@
 https://github.com/mattrondel/D341/edit/main/MoreStuffToStudy
--EventBrodge-
+-EventBridge-
 EventBridge and CloudWatch are interchangeable.
-
 Cron & RATE EXPRESSIONS I emphasize RATE! not regular
 However do extra study on LAMBDA and RATE/CRON.
 EventBridge and cron expression
 cron expressions and rate for Lambda functions.
-
-SSM Vs Event Bridge Vs OpsWork Vs Fargate
-SSM – this is AWS Systems Manager, it allows you to safely automate common and repetitive IT operations and management tasks.
-Know the difference between those and how they are used anything pertaining to Patching will be SSM
-Think SSM patching
 
 Read through the Course Chatter. People mentioned that you should know EventBridge well and understand cron expressions. And to be honest, a cron question came up on the OA and I was kind of unsure about the answer because it the syntax didn't really stick with me.
 EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines)
@@ -22,19 +16,37 @@ EventBridge and how it works, the file formats used and the language.
 EventBridge is used a lot here. 
 https://youtu.be/KX_AfyrhlgQ?t=2223
 
-CloudFormation and the functions, stuff like stacksets
+SSM Vs Event Bridge Vs OpsWork Vs Fargate
+SSM – this is AWS Systems Manager, it allows you to safely automate common and repetitive IT operations and management tasks.
+Know the difference between those and how they are used anything pertaining to Patching will be SSM
+Think SSM patching
+-SSM Systems manager-
+System Manager like a lot especially the automation documents.
+Anything pertaining to Patching will be SSM
+AWS SSM patch manager automates the process of patching managed nodes with updates
+ https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html
+Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
 
 -OpsWorks-
 OpsWorks – contianers with chef or puppet
 Anything that mentions containers with Chef or Puppet is OPSWORK
 Opsworks is a configuration manager service that helps automate the deployments, configuration and management of infrastructure and application in the cloud. It simplifies the process of deploying and managing infrastructure and applications in the cloud it’s flexible and automated
 
-SSM Vs Event Bridge Vs OpsWork Vs Fargate
 -Fargate-
 Anything with Managing containers without the mention of Chef/puppet is Fargate
-Fargate – is a serverless engine that lets you focus on building applications without managing servers
+Fargate – is a server less engine that lets you focus on building applications without managing servers
 Anything with Managing containers without the mention of Chef/puppet is Fargate
 Fargate think container manager
+
+-CloudFormation-
+Know cloud formation and the intrinsic functions.
+Know cloudwatch metrics and what default metrics are tracked vs which metrics needs the cloud watch agent. 
+Why you would need the cloudwatch agent: 
+Used on both on-prem (not managed by aws) and aws servers it allows you to collect custom metrics like if you have specific application-level metrics you want to monitor
+To install the agent package from Amazon Simple Storage Service (Amazon S3), using AWS Systems Manager, AWS CloudFormation, or by installing it manually using the command line.
+Spend adequate time learning about CloudFormation and the functions, stuff like stacksets as well. 
+CloudFormation and the functions, stuff like stacksets
+Stacksets info: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html
 
 Know how VPC's are connected to onsite network
 Site to site VPN - 
@@ -48,21 +60,10 @@ Direct Connect -
 Site-to-site VPN - 
  Know what are VPC endpoints and the purpose
 
--SSM Systems manager-
-System Manager like a lot especially the automation documents.
-Anything pertaining to Patching will be SSM
-AWS SSM patch manager automates the process of patching managed nodes with updates
- https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html
-Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
 Know what VPC endpoints and the purpose.
 Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long
 Know the difference between geolocation and geoproximity
 What is AWS Mace Vs Inspector Vs Guard Duty and how they are used
-Know cloud formation and the intrinsic functions.
-Know cloudwatch metrics and what default metrics are tracked vs which metrics needs the cloud watch agent. 
-Why you would need the cloudwatch agent: 
-Used on both on-prem (not managed by aws) and aws servers it allows you to collect custom metrics like if you have specific application-level metrics you want to monitor
-To install the agent package from Amazon Simple Storage Service (Amazon S3), using AWS Systems Manager, AWS CloudFormation, or by installing it manually using the command line.
 
 NAT instance vs NAT Gateway.
 WGU specific:
@@ -90,9 +91,6 @@ Useful stuff:
 Stephane Maarek's practice tests on Udemy
 First off the youtube video found here is extremely useful vital IMO :
 AWS SysOps Administrator Associate 2020 (PASS THE EXAM!) https://www.youtube.com/watch?v=KX_AfyrhlgQ
-
-Spend adequate time learning about CloudFormation and the functions, stuff like stacksets as well. 
-Stacksets info: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html
 
 System Manager like a lot especially the automation documents. 
 
