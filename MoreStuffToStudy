@@ -10,14 +10,17 @@ System Manager like a lot especially the automation documents.
 
 -SSM Systems manager-
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=20433s
-or
+or cheat sheet at:
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=22492s
 Also known as AWS Simple services manager (SSM)
+SSM is an umbrella of services used to automate the management of virtual machines 
 Anything pertaining to Patching will be SSM
-2 things you need for ssm to work the SSM agent (if you’re not already using an AWS backed image) and the SSM AWS Managed policy attached your IAM role (of AmazonSSMMangedCore)
 AWS SSM patch manager automates the process of patching managed nodes with updates
  https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html
 Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
+Big two are automation and run command
+SSM patch manager is just for that, patches can be installed on the regular by scheduling patches to run as a systems manager maintenance window task
+2 things you need for ssm to work the SSM agent (if you’re not already using an AWS backed image) and the SSM AWS Managed policy attached your IAM role (of AmazonSSMMangedCore)
 
 -EventBridge-
 https://youtu.be/KX_AfyrhlgQ?t=2223
