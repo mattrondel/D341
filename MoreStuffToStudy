@@ -9,29 +9,32 @@ Think SSM patching
 System Manager like a lot especially the automation documents.
 
 -SSM Systems manager-
+https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=20433s
 Anything pertaining to Patching will be SSM
 AWS SSM patch manager automates the process of patching managed nodes with updates
  https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html
 Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
 
 -EventBridge-
+https://youtu.be/KX_AfyrhlgQ?t=2223
 EventBridge and CloudWatch are interchangeable.
+Formally called cloudwatch events
 Cron & RATE EXPRESSIONS I emphasize RATE! not regular
 However do extra study on LAMBDA and RATE/CRON.
 EventBridge and cron expression
 cron expressions and rate for Lambda functions.
 
 Read through the Course Chatter. People mentioned that you should know EventBridge well and understand cron expressions. And to be honest, a cron question came up on the OA and I was kind of unsure about the answer because it the syntax didn't really stick with me.
-EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines)
 I would also look over the AWS documentation for things like: EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines), etc.
 Watch the EventBridge sections on the youtube video in the Course Tips
 EventBridge and CloudWatch are interchangeable
 Many eventbridge questions be family with it
 EventBridge and how it works, the file formats used and the language. 
 EventBridge is used a lot here. 
-https://youtu.be/KX_AfyrhlgQ?t=2223
+EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines)
 
 -OpsWorks-
+https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=5283s
 OpsWorks – contianers with chef or puppet
 AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet
 Anything that mentions containers with Chef or Puppet is OPSWORK
@@ -44,6 +47,7 @@ Anything with Managing containers without the mention of Chef/puppet is Fargate
 Fargate think container manager
 
 -CloudFormation-
+https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=36727s
 Know cloud formation and the intrinsic functions.
 Know cloudwatch metrics and what default metrics are tracked vs which metrics needs the cloud watch agent. 
 Why you would need the cloudwatch agent: 
@@ -53,7 +57,8 @@ Spend adequate time learning about CloudFormation and the functions, stuff like 
 CloudFormation and the functions, stuff like stacksets
 Stacksets info: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html
 
--Networking-
+-Cloud Networking-
+https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=10838s
 Know how VPC's are connected to onsite networks very IMPORTANT! Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out
 Know how VPC's are connected to onsite network
 Site to site VPN - 
@@ -110,4 +115,5 @@ Study Strategy ---- Use the WGU material as your main source of study go over th
 
 udemy
 https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practice-exams-soa-c01/
+
 
