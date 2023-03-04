@@ -1,4 +1,19 @@
 https://github.com/mattrondel/D341/edit/main/MoreStuffToStudy
+
+SSM Vs EventBridge Vs OpsWork Vs Fargate
+
+SSM – this is AWS Systems Manager, it allows you to safely automate common and repetitive IT operations and management tasks.
+SSM - systems manager think patching or patch management
+Know the difference between those and how they are used anything pertaining to Patching will be SSM
+Think SSM patching
+System Manager like a lot especially the automation documents.
+
+-SSM Systems manager-
+Anything pertaining to Patching will be SSM
+AWS SSM patch manager automates the process of patching managed nodes with updates
+ https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html
+Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
+
 -EventBridge-
 EventBridge and CloudWatch are interchangeable.
 Cron & RATE EXPRESSIONS I emphasize RATE! not regular
@@ -16,20 +31,9 @@ EventBridge and how it works, the file formats used and the language.
 EventBridge is used a lot here. 
 https://youtu.be/KX_AfyrhlgQ?t=2223
 
-SSM Vs Event Bridge Vs OpsWork Vs Fargate
-SSM – this is AWS Systems Manager, it allows you to safely automate common and repetitive IT operations and management tasks.
-Know the difference between those and how they are used anything pertaining to Patching will be SSM
-Think SSM patching
-System Manager like a lot especially the automation documents.
--SSM Systems manager-
-System Manager like a lot especially the automation documents.
-Anything pertaining to Patching will be SSM
-AWS SSM patch manager automates the process of patching managed nodes with updates
- https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html
-Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
-
 -OpsWorks-
 OpsWorks – contianers with chef or puppet
+AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet
 Anything that mentions containers with Chef or Puppet is OPSWORK
 Opsworks is a configuration manager service that helps automate the deployments, configuration and management of infrastructure and application in the cloud. It simplifies the process of deploying and managing infrastructure and applications in the cloud it’s flexible and automated
 
@@ -83,12 +87,6 @@ https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
 Research cron expressions and rate for Lambda functions. 
 Be familiar with cron syntax just in case
 
-SSM Vs Event Bridge Vs OpsWork Vs Fargate 
-SSM - systems manager think patching or patch management
-EventBridge
-OpsWorks
-Fargate
- 
 Study Strategy -- Use the WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding I'd recommend watching the youtube video at 2x speed first then go over the WGU materials as much of the exam will be based on that --labs are not necessary to pass but they'll def help -- I skipped the labs-- Pay close attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course
 Stephane Maarek's practice tests on Udemy
 First off the youtube video found here is extremely useful vital IMO :
@@ -106,7 +104,6 @@ Take the little practice test at the end of the material
 Take the PA, open-book style. Used it to research concepts or AWS services I was not very familiar with as I went along. If I thought I knew an answer, I'd go ahead and give that question a shot without looking at any material (this is usually how I take PAs)
 Take the PA later without help and made 100% (Understandably as I studied the questions awhile taking it)
 
-AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet
 
 Study Strategy ---- Use the WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding I'd recommend watching the youtube video at 2x speed first then go over the WGU materials as much of the exam will be based on that --labs are not necessary to pass but they'll def help -- I skipped the labs
 -- Pay close attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course -- see course chatter.
