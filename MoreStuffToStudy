@@ -60,14 +60,11 @@ Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
 Transit gateway - 
 Direct Connect - 
 Site-to-site VPN - 
-Know what are VPC endpoints and the purpose
 NAT instance vs NAT Gateway
 How VPC's are connected to onsite networks:
 https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/network-to-amazon-vpc-connectivity-options.html
 
 Know what VPC endpoints and the purpose.
-Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long
-Know the difference between geolocation and geoproximity
 
 -Mace Inspector Guard duty-
 Know what is AWS Mace Vs Inspector Vs Guard Duty and how they are used
@@ -92,7 +89,7 @@ EventBridge
 OpsWorks
 Fargate
  
-Study Strategy ---- Use the WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding I'd recommend watching the youtube video at 2x speed first then go over the WGU materials as much of the exam will be based on that --labs are not necessary to pass but they'll def help -- I skipped the labs-- Pay close attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course
+Study Strategy -- Use the WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding I'd recommend watching the youtube video at 2x speed first then go over the WGU materials as much of the exam will be based on that --labs are not necessary to pass but they'll def help -- I skipped the labs-- Pay close attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course
 Stephane Maarek's practice tests on Udemy
 First off the youtube video found here is extremely useful vital IMO :
 AWS SysOps Administrator Associate 2020 (PASS THE EXAM!) https://www.youtube.com/watch?v=KX_AfyrhlgQ
