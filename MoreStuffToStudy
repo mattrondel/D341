@@ -20,6 +20,7 @@ SSM Vs Event Bridge Vs OpsWork Vs Fargate
 SSM – this is AWS Systems Manager, it allows you to safely automate common and repetitive IT operations and management tasks.
 Know the difference between those and how they are used anything pertaining to Patching will be SSM
 Think SSM patching
+System Manager like a lot especially the automation documents.
 -SSM Systems manager-
 System Manager like a lot especially the automation documents.
 Anything pertaining to Patching will be SSM
@@ -48,58 +49,58 @@ Spend adequate time learning about CloudFormation and the functions, stuff like 
 CloudFormation and the functions, stuff like stacksets
 Stacksets info: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html
 
+-Networking-
+Know how VPC's are connected to onsite networks very IMPORTANT! Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out
 Know how VPC's are connected to onsite network
 Site to site VPN - 
 Direct connect main use is on-prem to aws cloud 
-Transit gateway 
 VPN cloudhub
 VPC peering
 Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
 Transit gateway - 
 Direct Connect - 
 Site-to-site VPN - 
- Know what are VPC endpoints and the purpose
+Know what are VPC endpoints and the purpose
+NAT instance vs NAT Gateway
+How VPC's are connected to onsite networks:
+https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/network-to-amazon-vpc-connectivity-options.html
 
 Know what VPC endpoints and the purpose.
 Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long
 Know the difference between geolocation and geoproximity
-What is AWS Mace Vs Inspector Vs Guard Duty and how they are used
 
-NAT instance vs NAT Gateway.
-WGU specific:
-Study the PA, every answer, even the wrong answers, and figure out why they're wrong.
-Use the WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding 
-Ok so I was able to pass this one on Friday here are my thoughts or some strategies that I found to be extremely useful, 
+-Mace Inspector Guard duty-
+Know what is AWS Mace Vs Inspector Vs Guard Duty and how they are used
+AWS Mace
+Inspector
+Guard duty
+How they are used 
+Know the difference between geolocation and geoproximity
+Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long
+Geolocation
+Geoproximity
 
 -Cron and Rate-
 Now for the stuff you absolutely need to know - Cron & RATE EXPRESSIONS I emphasize RATE! not regular, they will try to trick on this -- the video series does not cover this in detail at all please use this link 
 https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html 
+Research cron expressions and rate for Lambda functions. 
+Be familiar with cron syntax just in case
 
 SSM Vs Event Bridge Vs OpsWork Vs Fargate 
 SSM - systems manager think patching or patch management
 EventBridge
 OpsWorks
 Fargate
-
-Know how VPC's are connected to onsite networks very IMPORTANT! Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out. 
+ 
 Study Strategy ---- Use the WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding I'd recommend watching the youtube video at 2x speed first then go over the WGU materials as much of the exam will be based on that --labs are not necessary to pass but they'll def help -- I skipped the labs-- Pay close attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course
-Research cron expressions and rate for Lambda functions. 
-Be familiar with cron syntax just in case
-AWS Athena is for querying S3 objects – 
-Tip: Study the PA, every answer, even the wrong answers, and figure out why they're wrong.
-Useful stuff:
 Stephane Maarek's practice tests on Udemy
 First off the youtube video found here is extremely useful vital IMO :
 AWS SysOps Administrator Associate 2020 (PASS THE EXAM!) https://www.youtube.com/watch?v=KX_AfyrhlgQ
 
-System Manager like a lot especially the automation documents. 
-
 If a question mentions volume it talking about EBS
 File it referring to EFS
+AWS Athena is for querying S3 objects –
 Quite a few questions on CloudWatch, System Mgr, AWS Config and NACL/ALB.
-
--------------------------------------------
-Reddit stuff
 
 Watch all of the AWS Academy videos
 Do the knowledge checks at the end of each module
@@ -108,24 +109,7 @@ Take the little practice test at the end of the material
 Take the PA, open-book style. Used it to research concepts or AWS services I was not very familiar with as I went along. If I thought I knew an answer, I'd go ahead and give that question a shot without looking at any material (this is usually how I take PAs)
 Take the PA later without help and made 100% (Understandably as I studied the questions awhile taking it)
 
-Now for the stuff you absolutely need to know - Cron & RATE EXPRESSIONS I emphasize RATE! not regular, they will try to trick on this -- the video series does not cover this in detail at all please use this link https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
 AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet
-How VPC's are connected to onsite networks:
-Details: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/network-to-amazon-vpc-connectivity-options.html
-
-
-Know what is AWS Mace Vs Inspector Vs Guard Duty and how they are used
-AWS Mace
-Inspector
-Guard duty
-Know the difference between geolocation and geoproximity 
-How they are used know the difference between geolocation and geoproximity
-Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long
-Geolocation
-Geoproximity
-Know what are VPC endpoints and the purpose Also Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long know what is AWS Mace Vs Inspector Vs Guard Duty and 
-How they are used, know the difference between geolocation and geoproximity
-
 
 Study Strategy ---- Use the WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding I'd recommend watching the youtube video at 2x speed first then go over the WGU materials as much of the exam will be based on that --labs are not necessary to pass but they'll def help -- I skipped the labs
 -- Pay close attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course -- see course chatter.
