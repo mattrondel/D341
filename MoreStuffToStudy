@@ -10,7 +10,11 @@ System Manager like a lot especially the automation documents.
 
 -SSM Systems manager-
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=20433s
+or
+https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=22492s
+Also known as AWS Simple services manager (SSM)
 Anything pertaining to Patching will be SSM
+2 things you need for ssm to work the SSM agent (if you’re not already using an AWS backed image) and the SSM AWS Managed policy attached your IAM role (of AmazonSSMMangedCore)
 AWS SSM patch manager automates the process of patching managed nodes with updates
  https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html
 Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
@@ -35,7 +39,9 @@ EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines)
 
 -OpsWorks-
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=5283s
-OpsWorks – contianers with chef or puppet
+or
+https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=8088s
+OpsWorks – containers with chef or puppet
 AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet
 Anything that mentions containers with Chef or Puppet is OPSWORK
 Opsworks is a configuration manager service that helps automate the deployments, configuration and management of infrastructure and application in the cloud. It simplifies the process of deploying and managing infrastructure and applications in the cloud it’s flexible and automated
@@ -48,6 +54,8 @@ Fargate think container manager
 
 -CloudFormation-
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=36727s
+or 
+https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=40345s
 Know cloud formation and the intrinsic functions.
 Know cloudwatch metrics and what default metrics are tracked vs which metrics needs the cloud watch agent. 
 Why you would need the cloudwatch agent: 
@@ -59,6 +67,8 @@ Stacksets info: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/w
 
 -Cloud Networking-
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=10838s
+or
+https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=13917s
 Know how VPC's are connected to onsite networks very IMPORTANT! Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out
 Know how VPC's are connected to onsite network
 Site to site VPN - 
@@ -75,7 +85,7 @@ https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/netw
 
 Know what VPC endpoints and the purpose.
 
--Mace Inspector Guard duty-
+-Mace, Inspector, Guard duty-
 Know what is AWS Mace Vs Inspector Vs Guard Duty and how they are used
 AWS Mace
 Inspector
