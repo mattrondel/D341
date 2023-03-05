@@ -177,7 +177,9 @@ Practice questions to review (stuff I got wrong or I feel week on)
 •	The main route table is associated with the subnet by default
 •	Which statements about a default VPC are true (pick 2):
  – got wrong, picked a default VPC spans multiple regions and “by default each default VPC is available to one AWS account. --- Still don’t know what the correct ones are
-•	(kind of need practice on) a VPC can span multiple availability zones
+Tried AWS creates a default VPC in each region and AWS creates a default VPC in each AZ
+Default VPC can span multiple regions
+•	VPC can span multiple availability zones
 •	Which statements describe security groups (Choose two):
 A security group can be applied across multiple instances; multiple security groups can be assigned to an instance and security group associations can be added and modified after an instance in created
 •	(Kind of need practice on) an AMZ VPC has an implicit router and default route table that routes local traffic within it.
@@ -189,7 +191,10 @@ You can store (AMZ calls it publishes) VPC flow logs in the following locations:
 AWS Redshift = is a data ware house product it uses SQL to analyze structured and semi-structured data across data warehouses
 AWS Athena – provides a simplified, flexible way to analyze petabytes of data where it lives.
 Amazon ElastiCache – it’s a cache service for database performance or cases that don’t require durability
-
+What is an availability zone?
+An availability zone is a logical data center in a region available for use by any AWS customer
+Can a VPC have multiple AZs?
+Each AWS region has multiple availability zones (data centres), so when you create your VPC, it can be seamlessly replicated across multiple AZs
 --------------------------------------------------------------
 Complete the Module 7 knowledge check
 --------------------------------------------------------------
@@ -198,9 +203,7 @@ Complete the Module 7 knowledge check
 •	When you create a subnet, the main route table is associated with the subnet by default
 •	Best practice for IP addressing across multiple virtual private clouds (VPC’s) is to use non-overlapping IP addresses 
 •	Which statements about a default VPC are true (pick two) – need to find out
-
-•	A valid target in a route table is elastic network interface ID, instance_ virtual _
- all of the above (need to capture all of these )
+•	A valid target in a route table is elastic network interface ID, instance_ virtual _all of the above (need to capture all of these )
 •	A virtual private cloud (VPC) can span multiple available zones
 •	A security group can be applied across multiple instances
 multiple security groups can be assigned to an instance
