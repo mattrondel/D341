@@ -20,9 +20,12 @@ AWS SSM patch manager automates the process of patching managed nodes with updat
 Big two are automation and run command
 SSM patch manager is just for that, patches can be installed on the regular by scheduling patches to run as a systems manager maintenance window task
 2 things you need for ssm to work the SSM agent (if you’re not already using an AWS backed image) and the SSM AWS Managed policy attached your IAM role (of AmazonSSMMangedCore)
+In order to send custom application logs running on ec2 instances you need to install the SSM CloudWatch agent
 
 -EventBridge AKA CloudWatch-
 https://youtu.be/KX_AfyrhlgQ?t=2223
+or cheat sheet here:
+https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=13917s
 Eventbridge was formally called cloudwatch events
 EventBridge and CloudWatch are interchangeable.
 Cron & RATE EXPRESSIONS I emphasize RATE! not regular
@@ -38,6 +41,8 @@ Used on both on-prem (not managed by aws) and aws servers it allows you to colle
 To install the agent package from Amazon Simple Storage Service (Amazon S3), using AWS Systems Manager, AWS CloudFormation, or by installing it manually using the command line.
 Know CloudWatch metrics and what default metrics are tracked vs which metrics needs the cloud watch agent. 
 CloudWatch metrics:
+
+
 Many eventbridge questions be family with it
 EventBridge and how it works, the file formats used and the language. 
 EventBridge is used a lot here. 
@@ -147,7 +152,7 @@ AWS SysOps Administrator Associate 2020 (PASS THE EXAM!) https://www.youtube.com
 
 If a question mentions volume it talking about EBS
 File it referring to EFS
-AWS Athena is for querying S3 objects –
+AWS Athena is for querying S3 objects – Athena can also analyze CloudWatch logs from s3
 Quite a few questions on CloudWatch, System Mgr, AWS Config and NACL/ALB.
 
 Watch all of the AWS Academy videos
