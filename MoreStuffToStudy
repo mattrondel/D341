@@ -11,6 +11,7 @@ System Manager like a lot especially the automation documents.
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=20433s
 or cheat sheet at:
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=22492s
+
 Also known as AWS Simple services manager (SSM)
 Think patching is simple like simple services 
 SSM is an umbrella of services used to automate the management of virtual machines 
@@ -25,8 +26,10 @@ In order to send custom application logs running on ec2 instances you need to in
 -EventBridge AKA CloudWatch-
 https://youtu.be/KX_AfyrhlgQ?t=2223
 or cheat sheet here:
-https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=13917s
-Eventbridge was formally called cloudwatch events
+https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=3796s
+EventBridge is a serverless account wide or organization event bus
+Many AWS services emit event data, but for services that do not you can turn on cloud trail
+EventBridge was formally called CloudWatch events
 EventBridge and CloudWatch are interchangeable.
 Cron & RATE EXPRESSIONS I emphasize RATE! not regular
 However do extra study on LAMBDA and RATE/CRON.
@@ -34,29 +37,36 @@ EventBridge and cron expression
 cron expressions and rate for Lambda functions.
 Read through the Course Chatter. People mentioned that you should know EventBridge well and understand cron expressions. And to be honest, a cron question came up on the OA and I was kind of unsure about the answer because it the syntax didn't really stick with me.
 I would also look over the AWS documentation for things like: EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines), etc.
-Watch the EventBridge sections on the youtube video in the Course Tips
+Watch the EventBridge sections on the YouTube video in the Course Tips
 EventBridge and CloudWatch are interchangeable
-Why you would need the cloudwatch agent: 
+Why you would need the CloudWatch agent: 
 Used on both on-prem (not managed by aws) and aws servers it allows you to collect custom metrics like if you have specific application-level metrics you want to monitor
 To install the agent package from Amazon Simple Storage Service (Amazon S3), using AWS Systems Manager, AWS CloudFormation, or by installing it manually using the command line.
+Memory utilization (Am I running out of memory?)
+Disk space utilization (am I running out of disk space?)
+
 Know CloudWatch metrics and what default metrics are tracked vs which metrics needs the cloud watch agent. 
 CloudWatch metrics:
+https://youtu.be/KX_AfyrhlgQ?t=4051
 
 
-Many eventbridge questions be family with it
+Many EventBridge questions be family with it
 EventBridge and how it works, the file formats used and the language. 
 EventBridge is used a lot here. 
 EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines)
 
 -OpsWorks-
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=5283s
-or
+or cheatsheet
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=8088s
+OpsWorks is a config management service for the following:
+
+
 OpsWorks – containers with chef or puppet
-Think DevOps Opsworks, chef puppet etc
+Think DevOps OpsWorks, chef puppet etc
 AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet
 Anything that mentions containers with Chef or Puppet is OPSWORK
-Opsworks is a configuration manager service that helps automate the deployments, configuration and management of infrastructure and application in the cloud. It simplifies the process of deploying and managing infrastructure and applications in the cloud it’s flexible and automated
+OpsWorks is a configuration manager service that helps automate the deployments, configuration and management of infrastructure and application in the cloud. It simplifies the process of deploying and managing infrastructure and applications in the cloud it’s flexible and automated
 
 -Fargate-
 Anything with Managing containers without the mention of Chef/puppet is Fargate
@@ -71,21 +81,25 @@ https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=40345s
 Know cloud formation and the intrinsic functions.
 When being asked to automate provisioning of resources or IaC think CloudFormation
 When CloudFormation encounters and error it will rollback with ROLLBACK_IN_PROGRESS
-
 CloudFormation templates larger than 0.05 mb (51,200 bytes) need to be added via s3 buckets
 Nested stacks helps you break up CloudFormation templates into smaller reusable templates that can be composed into larger templates
+At least one resource under resources must be defined for a CloudFormation template to be valid
 CloudFormation Template sections
 •	Metadata – extra information about your template
 •	Description – a description of what the template is supposed to do
-•	Parameters – is how you get user inputs into templates
+•	Parameters – is how you get user inputs into templates (think like programming)
 •	Transforms – Applies macros (like applying a mod which change the anatomy to be custom)
 •	Outputs – are values you can use to import into other stacks
 •	Mappings – maps keys to values, just like a lookup table
 •	Resources -defines the resources you want to provision, at least one resource is required
 •	Conditions – are whether resources are created or properties are assigned
 
+Stack Updates can be performed two different ways
+•	Direct updates – you directly update the stack, submit changes and CloudFormation deploys them
+•	Executing change sets – you can preview the changes to CloudFormation will make to your stack and you decide if you want to apply those changes
 
-Spend adequate time learning about CloudFormation and the functions, stuff like stacksets as well. 
+Serverless application model (SAM) is an extension of CloudFormation that lets you define serverless applications 
+Spend adequate time learning about CloudFormation and the functions, stuff like stack sets as well. 
 CloudFormation and the functions, stuff like stacksets
 Stacksets info: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html
 
@@ -146,7 +160,6 @@ Research cron expressions and rate for Lambda functions.
 Be familiar with cron syntax just in case
 
 Study Strategy -- Use the WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding I'd recommend watching the youtube video at 2x speed first then go over the WGU materials as much of the exam will be based on that --labs are not necessary to pass but they'll def help -- I skipped the labs-- Pay close attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course
-Stephane Maarek's practice tests on Udemy
 First off the youtube video found here is extremely useful vital IMO :
 AWS SysOps Administrator Associate 2020 (PASS THE EXAM!) https://www.youtube.com/watch?v=KX_AfyrhlgQ
 
@@ -165,6 +178,6 @@ Take the PA later without help and made 100% (Understandably as I studied the qu
 
 Study Strategy ---- Use the WGU material as your main source of study go over the youtube stuff for things you may have difficulty understanding I'd recommend watching the youtube video at 2x speed first then go over the WGU materials as much of the exam will be based on that --labs are not necessary to pass but they'll def help -- I skipped the labs
 -- Pay close attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course -- see course chatter.
-
+Stephane Maarek's practice tests on Udemy
 udemy
 https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practice-exams-soa-c01/
