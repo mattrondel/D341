@@ -23,16 +23,13 @@ Chapter 8
 •	"Amazon S3 Glacier" (new tab) (14:13)
 •	"Module Wrap-Up" (new tab) (1:22)
 Knowledge check 
-•	Amazon Elastic block store (Amazon EBS) volume is tied to availability zones
-•	Amazon Data lifecycle manager policies need to be specified:
-•	Resources type 
-•	Target tag
-•	Schedule
+•	Amazon Elastic block store (Amazon EBS) volume is tied to availability zones (data centers)
+•	Amazon Data lifecycle manager policies need to be specified: Resources type, Target tag, and Schedule
 •	Amazon elastic block store (Amazon EBS) snapshots are based on deltas, which means that only changes to previous snapshots are saved to Amazon simple storage service (S3) (Snapshots are based on deltas)
 •	Amazon EBS Elastic Block storage can be network-attached to an Amazon Elastic compute cloud (EC2) instance
 •	Once versioning is enabled on S3 buckets it cannot be disabled 
 •	AWS Lambda, SQS (all)
 •	Instance store (ephemeral) is best suited as a cache or buffer
 •	S3 glacier takes 5-12 hours to retrieve archived data by using the bulk retrieve option 
-•	Amazon EFS can span across multiple availability zones 
+•	Amazon EFS can span across multiple availability zones in different regions
 •	Versioning enabled would result in the addition of a marker when an object is deleted
