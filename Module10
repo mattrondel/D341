@@ -11,7 +11,7 @@ WGU exam top to bottom
 5.	Implements AWS Protection Services - 13% of assessment
 6.	Determines Optimal Cost and Performance Baseline - 12% of assessment
 
-AWS Academy Module 7 Activities
+AWS Academy Module 10 Activities
 Chapter 10
 https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/e2c5cdc6d64041f2afa6bed15c19c91f/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%408e1001473b274ebaabfb8cc0da0cf30c
 
@@ -20,15 +20,15 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b0
 •	"Cost Management Tools and Best Practices" (new tab) (9:06)
 •	"Module Wrap-Up" (new tab) (1:39)
 
+----------------------------------------
 Module 10 knowledge check
-
 •	Inherited tags count towards the total tag limit for a resource.
-•	Month-to-date Spend by Service displays a graph that illustrates the most used resources and the proportional costs of their use.
-•	AWS Trusted Advisor can identify underutilized load balancers and volumes 
-•	AWS Config can be used to define and enforce required tags
-•	AWS Cost Explorer displays visualizations of high-level historical and current and current account costs, but costs and usage reports generate granular usage reports in comma-separated values (CSV) format.
-•	Amazon CloudWatch should be used to find instances that are running idle and increasing costs
-•	AWS Budgets, a feature of Billing and cost management, enables monitoring and notifications on a daily or weekly basis
-•	Using a stopinator script is a best practice for reducing costs
-•	AWS Config can evaluate a rule on demand, or based on a trigger (for example, when a resource is created or modified) it will also evaluate when resources are running or not
+•	Month-to-date Spend by Service displays a graph that illustrates the most used resources and the proportional costs of their use. – This shows the top services that you use most and the proportion of your costs that service contributed to.
+•	AWS Trusted Advisor can identify underutilized load balancers and volumes. It provides recommendations that help you follow AWS best practices.
+•	AWS Config can be used to define and enforce required tags – IAM and organizations can do that too but that was not an option
+•	AWS Cost Explorer displays visualizations of high-level historical and current and current account costs, but Costs and Usage Reports generate granular usage reports in comma-separated values (CSV) format. (Think reports create csv files)
+•	Amazon CloudWatch should be used to find instances that are running idle and increasing costs (think watching your cloud usage IDK?)
+•	AWS Budgets, a feature of Billing and cost management, enables monitoring and notifications on a daily or weekly basis. Think budgets monitor spending
+•	Using a stopinator script is a best practice for reducing costs – think its got a funny name with stop in it
+•	AWS Config can evaluate a rule on demand, or based on a trigger (for example, when a resource is created or modified) it will also evaluate when resources are running or not – think config doesn’t care if its running or not like SolarWinds does
 •	IAM policies can enforce the use of tags for creating resources
