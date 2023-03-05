@@ -17,7 +17,6 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b0
 
 
 Summary of all of chapter 11? :
-
 "Creating Automated and Repeatable Deployments" (new tab) (1:08)
 ------------------------------------
 •	Skip this, this is just the what you will learn
@@ -55,7 +54,6 @@ Summary of all of chapter 11? :
 ------------------------------------
 •	Resource management life cycle:
  
-
 •	Resource provisioning – you need a repeatable process for instantiating resources consistently _ helps with this
 •	Configuration management tools such as EC2 systems manager and OpsWorks enables you to define an action that is performed in one or more instances.
 •	CloudWatch enables monitoring and performance, metrics provide visibility and your organization can respond automatically to events. CloudWatch provides the flexibility to  maintain infrastructure health
@@ -69,25 +67,18 @@ Summary of all of chapter 11? :
 "AWS CloudFormation" (new tab) (8:26)
 ------------------------------------
 I like this section
-
 "AWS CloudFormation (Part 2)" (new tab) (7:48)
 ------------------------------------
 "AWS CloudFormation (Part 3)" (new tab) (6:58)
 ------------------------------------
-
 "Continuous Deployment and Continuous Integration on AWS" (new tab) (7:41)
 ------------------------------------
-
 "Using Launch Templates Demonstration" (new tab) (6:54)
 ------------------------------------
-
 "Module Wrap-Up" (new tab) (1:24)
 
 
-
-
 Complete the Module 11 knowledge check
-
 •	One of the first things to check is if the user has the permission to create it if a resource creation fails
 •	Fn:Select intrinsic function should be used to refer to a value in a comma-delimited list within AWS CloudFormation
 •	The CloudFormation:Init code is the source of the error if a WaitConditions times out or returns an error
@@ -95,6 +86,6 @@ Complete the Module 11 knowledge check
 •	Custom AMIs are only available in the region where they were created
 •	EC2 auto scaling uses launch templates to increase capacity
 •	AWS CloudFormation templates can contain code describing AWS resources and AWS Cli Commands
-•	There is no native support for binary data in JSON documents
-•	CloudFormation init resource can provide metadata about an EC2 instance for the cfn-init helper script
-•	There is no limit  to the size of the repository you use with AWS CodeComit 
+•	There is no native support for binary data in JSON documents, bson does this but this is beyond aws studies 
+•	CloudFormation Init resource can provide metadata about an EC2 instance for the cfn-init helper script cfn-init can be used to retrieve and interpret resource metadata, install packages, create files, and start services. Don’t confuse this with cloud-init a Ubuntu-developed project that provides a standard to customize Cloud instances.
+•	There is no limit to the size of the repository you use with AWS CodeComit
