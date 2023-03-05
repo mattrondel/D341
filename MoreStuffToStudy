@@ -17,7 +17,6 @@ SSM is an umbrella of services used to automate the management of virtual machin
 Anything pertaining to Patching will be SSM
 AWS SSM patch manager automates the process of patching managed nodes with updates
  https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html
-Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
 Big two are automation and run command
 SSM patch manager is just for that, patches can be installed on the regular by scheduling patches to run as a systems manager maintenance window task
 2 things you need for ssm to work the SSM agent (if you’re not already using an AWS backed image) and the SSM AWS Managed policy attached your IAM role (of AmazonSSMMangedCore)
@@ -80,18 +79,19 @@ Both IPV4 and IPV6 CIDR blocks can be used
 Somethings cost you money like NAT gateway, VPC endpoints, VPN Gateway, Customer gateway
 Somethings are free like VPCs, route tables, NACLs, Internet gateways, security groups and subnets and VPC peering
 Know how VPC's are connected to onsite networks very IMPORTANT! 
-VPC peering is 
+VPC peering allows you to connect one VPC with another over a direct network route using private IP addresses. Peered instances behave just like they are on the same network 
+Internet gateway (IGW) allows your VPC to access the internet (duh)
+You can connect VPCs across same or different aws accounts and regions
+There is no transitive peering meaning you can’t go though one peer to get to another it uses a star configuration 
 How do VPCs connect to onsite networks?
 What is a Customer gateway –is a physical or virtual appliance that acts as a gateway between a customer's on-premises network and an Amazon Virtual Private Cloud (VPC)
  A customer gateway is a key component in setting up a site-to-site VPN (Virtual Private Network) connection between the customer's on-premises infrastructure and AWS VPC.
 Know how VPC's are connected to onsite network
 Site to site VPN - 
-Direct connect - main use is on-prem to aws cloud 
 VPN CloudHub - is a service provided by Amazon Web Services (AWS) that allows you to create a hub-and-spoke network topology to connect multiple on-premises data centers or branch locations to an Amazon Virtual Private Cloud (VPC) securely. – think Hub as in hub and spoke 
-VPC peering
 Transit gateway VS Direct Connect Vs Site-to-to site VPN know those inside out.
 Transit gateway - 
-Direct Connect - 
+Direct Connect - main use is on-prem to aws cloud
 Site-to-site VPN - 
 NAT instance vs NAT Gateway:
 NAT Instance - A NAT instance is a single EC2 instance configured to perform NAT. It can be launched in a public subnet and assigned an Elastic IP address, which will be used as the public IP address for instances in the private subnet to access the internet. NAT instances can be customized with additional software or security configurations, but they require manual configuration and maintenance.
