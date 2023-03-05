@@ -2,17 +2,17 @@ https://github.com/mattrondel/D341/edit/main/MoreStuffToStudy
 
 SSM Vs EventBridge Vs OpsWork Vs Fargate
 
+-SSM Systems manager-
 SSM – this is AWS Systems Manager, it allows you to safely automate common and repetitive IT operations and management tasks.
 SSM - systems manager think patching or patch management
 Know the difference between those and how they are used anything pertaining to Patching will be SSM
 Think SSM patching
 System Manager like a lot especially the automation documents.
-
--SSM Systems manager-
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=20433s
 or cheat sheet at:
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=22492s
 Also known as AWS Simple services manager (SSM)
+Think patching is simple like simple services 
 SSM is an umbrella of services used to automate the management of virtual machines 
 Anything pertaining to Patching will be SSM
 AWS SSM patch manager automates the process of patching managed nodes with updates
@@ -30,7 +30,6 @@ Cron & RATE EXPRESSIONS I emphasize RATE! not regular
 However do extra study on LAMBDA and RATE/CRON.
 EventBridge and cron expression
 cron expressions and rate for Lambda functions.
-
 Read through the Course Chatter. People mentioned that you should know EventBridge well and understand cron expressions. And to be honest, a cron question came up on the OA and I was kind of unsure about the answer because it the syntax didn't really stick with me.
 I would also look over the AWS documentation for things like: EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines), etc.
 Watch the EventBridge sections on the youtube video in the Course Tips
@@ -45,6 +44,7 @@ https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=5283s
 or
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=8088s
 OpsWorks – containers with chef or puppet
+Think DevOps Opsworks, chef puppet etc
 AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet
 Anything that mentions containers with Chef or Puppet is OPSWORK
 Opsworks is a configuration manager service that helps automate the deployments, configuration and management of infrastructure and application in the cloud. It simplifies the process of deploying and managing infrastructure and applications in the cloud it’s flexible and automated
@@ -85,19 +85,23 @@ Site-to-site VPN -
 NAT instance vs NAT Gateway
 How VPC's are connected to onsite networks:
 https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/network-to-amazon-vpc-connectivity-options.html
-
 Know what VPC endpoints and the purpose.
-
--Mace, Inspector, Guard duty-
-Know what is AWS Mace Vs Inspector Vs Guard Duty and how they are used
-AWS Mace
-Inspector
-Guard duty
-How they are used 
 Know the difference between geolocation and geoproximity
 Know what is used when Geoproximity is implemented whether it's Region/Zone or Lat/long
 Geolocation
 Geoproximity
+What is the difference between geoproximity routing policy and geolocation?
+Both Geolocation and Geoproximity routing policies route traffic based on the geographic location of the users and server resources
+Geoproximity routing policy additionally allows you to route more or less traffic to certain resources by specifying a value, known as a bias.
+Geolocation and geoproximity are both services offered by Amazon Web Services (AWS) that help with location-based data processing and analysis.
+Geolocation is focused on determining the physical location of an object or entity, while geoproximity is focused on routing traffic based on the proximity of the user to a specific point of interest.
+
+-Mace, Inspector, Guard duty-
+Know what is AWS Macie Vs Inspector Vs Guard Duty and how they are used
+AWS Macie - is a data security service that uses machine learning (ML) and pattern matching to discover and help protect your sensitive data.
+Inspector - Amazon Inspector is an automated vulnerability management service that continually scans AWS workloads for software vulnerabilities and unintended network exposure. – think like Splunk scanner or Splunk inspector 
+GuardDuty - Amazon GuardDuty is a security monitoring service that analyzes and processes data sources, such as data events logs, CloudTrail management event logs, DNS logs, Amazon EBS volume data, Kubernetes audit logs, Amazon VPC flow logs, and RDS login activity. It uses threat intelligence feeds, such as lists of malicious IP addresses and domains, and machine learning to identify unexpected, potentially unauthorized, and malicious activity within your AWS environment.
+How they are used 
 
 -Cron and Rate-
 Now for the stuff you absolutely need to know - Cron & RATE EXPRESSIONS I emphasize RATE! not regular, they will try to trick on this -- the video series does not cover this in detail at all please use this link 
