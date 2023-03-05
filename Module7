@@ -213,4 +213,4 @@ multiple security groups can be assigned to an instance
 security groups can be assigned to an instance
 security associations can be added and modified after an instance is created 
 •	An Amazon VPC has an implicit router and default route table that routes local traffic within it 
-•	A subnet is a logical network segment within a virtual private cloud (VPC) that can only exist within a single availability zone
+•	A subnet is a logical network segment within a virtual private cloud (VPC) that can only exist within a single availability zone – Think AZs (datacenters) can only have single subnets
