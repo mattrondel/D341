@@ -21,10 +21,10 @@ Big two are automation and run command
 SSM patch manager is just for that, patches can be installed on the regular by scheduling patches to run as a systems manager maintenance window task
 2 things you need for ssm to work the SSM agent (if you’re not already using an AWS backed image) and the SSM AWS Managed policy attached your IAM role (of AmazonSSMMangedCore)
 
--EventBridge-
+-EventBridge AKA CloudWatch-
 https://youtu.be/KX_AfyrhlgQ?t=2223
+Eventbridge was formally called cloudwatch events
 EventBridge and CloudWatch are interchangeable.
-Formally called cloudwatch events
 Cron & RATE EXPRESSIONS I emphasize RATE! not regular
 However do extra study on LAMBDA and RATE/CRON.
 EventBridge and cron expression
@@ -33,6 +33,11 @@ Read through the Course Chatter. People mentioned that you should know EventBrid
 I would also look over the AWS documentation for things like: EventBridge, S3, CloudFront, SystemsManager (patch manager and patch baselines), etc.
 Watch the EventBridge sections on the youtube video in the Course Tips
 EventBridge and CloudWatch are interchangeable
+Why you would need the cloudwatch agent: 
+Used on both on-prem (not managed by aws) and aws servers it allows you to collect custom metrics like if you have specific application-level metrics you want to monitor
+To install the agent package from Amazon Simple Storage Service (Amazon S3), using AWS Systems Manager, AWS CloudFormation, or by installing it manually using the command line.
+Know CloudWatch metrics and what default metrics are tracked vs which metrics needs the cloud watch agent. 
+CloudWatch metrics:
 Many eventbridge questions be family with it
 EventBridge and how it works, the file formats used and the language. 
 EventBridge is used a lot here. 
@@ -59,10 +64,22 @@ https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=36727s
 or 
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=40345s
 Know cloud formation and the intrinsic functions.
-Know cloudwatch metrics and what default metrics are tracked vs which metrics needs the cloud watch agent. 
-Why you would need the cloudwatch agent: 
-Used on both on-prem (not managed by aws) and aws servers it allows you to collect custom metrics like if you have specific application-level metrics you want to monitor
-To install the agent package from Amazon Simple Storage Service (Amazon S3), using AWS Systems Manager, AWS CloudFormation, or by installing it manually using the command line.
+When being asked to automate provisioning of resources or IaC think CloudFormation
+When CloudFormation encounters and error it will rollback with ROLLBACK_IN_PROGRESS
+
+CloudFormation templates larger than 0.05 mb (51,200 bytes) need to be added via s3 buckets
+Nested stacks helps you break up CloudFormation templates into smaller reusable templates that can be composed into larger templates
+CloudFormation Template sections
+•	Metadata – extra information about your template
+•	Description – a description of what the template is supposed to do
+•	Parameters – is how you get user inputs into templates
+•	Transforms – Applies macros (like applying a mod which change the anatomy to be custom)
+•	Outputs – are values you can use to import into other stacks
+•	Mappings – maps keys to values, just like a lookup table
+•	Resources -defines the resources you want to provision, at least one resource is required
+•	Conditions – are whether resources are created or properties are assigned
+
+
 Spend adequate time learning about CloudFormation and the functions, stuff like stacksets as well. 
 CloudFormation and the functions, stuff like stacksets
 Stacksets info: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html
