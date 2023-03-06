@@ -8,21 +8,48 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b0
 
 •	"Managing Resource Consumption" (new tab) (0:59)
 You will learn how to manage resource consumption by using tags and various cost management tools and best practices
-
 Topics: tagging
 Cost management tools and best practices
 AWS trusted advisor
 Labs: Guided lab: managing resources with tagging
 Challenge lab: optimize AWS resource utilization
-
 Tools and resources include tagging, CloudWatch and trusted advisor 
 You should be able to describe how to enforce tagging with AWS identity and access management policies
 
 •	"Tagging" (new tab) (8:15)
-A tag is a label that you assigned to an AWS resource it enables you to identify or categorize the resource in a meaningful way. A tag consists of a key and a value which you define. 
+A tag is a label that you assigned to an AWS resource it enables you to identify or categorize the resource in a meaningful way. 
+A tag consists of a key and a value which you define. 
 A Tag: is a key-value pair that can be attached to an AWS resource
 Allows you to identify and categorize resources.
+There are a few important things to remember about tags:
+•	You can tag many resources such as EC2, EBS, etc during creation.
+•	Separate tagging action is needed after the resource is created.
+•	Tag keys and values are case-sensitive
+•	Best practice is to use a consistent standard format 
+•	Some tags are built-in and cannot be removed. 
+•	Tag names with the aws:prefix are built-in for example, aws:createdBy or aws:cloudformation:<stack-name> tag.
+•	There are limits to the number of tags that you can create. 
+•	Maximum of 50 per resource
+•	You can only assign a tag to a resource after it is created
+•	Tag keys and values are case sensitive 
+•	A best practice is to use a consistent naming convention for AWS resources and tags.
+•	You cannot edit or delete tag keys or values with the aws:prefix. These tags are assigned by aws in a reserved for AWS use.
+•	Some tags are propagated or inherited. This is seen in services that can create other AWS resources, such as CloudFormation and Elastic Beanstalk. Generally when one of these services creates a resource, it tags that resource with a reference to itself. 
+
 https://docs.aws.amazon.com/config/latest/developerguide/required-tags.html
+Companies can also use tags to organize billing reports that reflect internal cost structures, and to achieve more accurate reporting for cost allocation.
+You can also write IAM policies that encored the use of specific tags. For example, you could use an IAM policy to enforce the use of the department and cost center tags when you create a resource. You can use these tags to develop more accurate reporting for cost allocation.
+You can implement your tagging strategy with IAM policies in many ways. For example, you can use an IAM policy to block the deletion of tags required by corporate standards or compliance requirements.
+You express tagging requirements in an IAM policy through the condition policy element.
+For more information about tagging ec2 instances and EBS volumes when they’re created, search for tag ec2 instances on Creation in the AWS documentation.
+Best practices for tagging:
+•	Create business-relevant tag groupings to organize resources along technical, business, and security dimensions. 
+•	Always use more tags than too few tags
+•	Use meaningful names for both tag keys and values
+•	Always use a standardized, case-sensitive format for tags, and implement it consistency across all resource groups
+•	Implement automated tools to help manage resource tags. For example use the Resource Groups Tagging API. With this API you can programmatically control tags. For example, you can use the API to tag and untag supported resources. You can also use the API to list all existing tag keys for an account.
+•	Always use meaningful names for both the tag and key values. These names should be relevant to your project or business needed, and be as descriptive as possible. For more information about tagging strategies, search for tagging strategies in the AWS documentation.
+
 
 
 
