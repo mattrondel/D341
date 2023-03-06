@@ -1,24 +1,35 @@
-•	1.5x speed 
-•	Turn on subtitles
-•	Watch first
-•	Watch again but take notes, like summarize or bullet list stuff in the video
-•	take a break when timer expires
-WGU exam top to bottom
-1.	Configures Network Connectivity - 20% of assessment
-2.	Remediates AWS Issues - 20% of assessment (got close on this)
-3.	Automates Cloud Provisioning - 18% of assessment
-4.	Implements AWS Systems - 17% of assessment
-5.	Implements AWS Protection Services - 13% of assessment
-6.	Determines Optimal Cost and Performance Baseline - 12% of assessment
 
 AWS Academy Module 10 Activities
+
 Chapter 10
+
 https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/e2c5cdc6d64041f2afa6bed15c19c91f/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%408e1001473b274ebaabfb8cc0da0cf30c
 
+
 •	"Managing Resource Consumption" (new tab) (0:59)
+You will learn how to manage resource consumption by using tags and various cost management tools and best practices
+
+Topics: tagging
+Cost management tools and best practices
+AWS trusted advisor
+Labs: Guided lab: managing resources with tagging
+Challenge lab: optimize AWS resource utilization
+
+Tools and resources include tagging, CloudWatch and trusted advisor 
+You should be able to describe how to enforce tagging with AWS identity and access management policies
+
 •	"Tagging" (new tab) (8:15)
+A tag is a label that you assigned to an AWS resource it enables you to identify or categorize the resource in a meaningful way. A tag consists of a key and a value which you define. 
+A Tag: is a key-value pair that can be attached to an AWS resource
+Allows you to identify and categorize resources.
+https://docs.aws.amazon.com/config/latest/developerguide/required-tags.html
+
+
+
+
 •	"Cost Management Tools and Best Practices" (new tab) (9:06)
 •	"Module Wrap-Up" (new tab) (1:39)
+
 
 ----------------------------------------
 Module 10 knowledge check
@@ -32,3 +43,5 @@ Module 10 knowledge check
 •	Using a stopinator script is a best practice for reducing costs – think its got a funny name with stop in it
 •	AWS Config can evaluate a rule on demand, or based on a trigger (for example, when a resource is created or modified) it will also evaluate when resources are running or not – think config doesn’t care if its running or not like SolarWinds does
 •	IAM policies can enforce the use of tags for creating resources
+
+lets take notes on tagging and do exercises
