@@ -21,7 +21,6 @@ When you configure an ELB Elastic load balancer which is part of the EC2 service
 •	"Module Wrap-Up" (new tab) (1:22)
 
 
-
 Complete the Module 4 knowledge check
 •	To ensure that applications are automatically adjusted for capacity to maintain steady, predictable performance at the lowest possible cost.
 Auto Scaling does not focus on any one resource because it only controls for the appropriate availability and quality of the overall service 
