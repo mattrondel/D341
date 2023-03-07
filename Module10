@@ -56,9 +56,10 @@ Common use for tagging are shutting down and and restarting all instances that h
 This involves tagging all instances, so they have an attribute to indicate the environment where they run eg development, test or production
 
 Another common use is for checking on compliance for tagging policies 
-For example To save costs you can create a script that automatically shuts down development instances on weekends and then restarts them at the beginning of the week
+For example To save costs you can create a script that automatically shuts down development instances on weekends and then restarts them at the beginning of the week.
 Companies can also use tags to organize billing reports that reflect internal cost structures, and to achieve more accurate reporting for cost allocation.
-You can also write IAM policies that encored the use of specific tags. For example, you could use an IAM policy to enforce the use of the department and cost center tags when you create a resource. You can use these tags to develop more accurate reporting for cost allocation.
+You can implement your tagging strategy with IAM polices in many ways
+You can also write IAM policies that enforce the use of specific tags. For example, you could use an IAM policy to enforce the use of the department and cost center tags when you create a resource. You can use these tags to develop more accurate reporting for cost allocation.
 You can implement your tagging strategy with IAM policies in many ways. For example, you can use an IAM policy to block the deletion of tags required by corporate standards or compliance requirements.
 You express tagging requirements in an IAM policy through the condition policy element.
 For more information about tagging ec2 instances and EBS volumes when they’re created, search for tag ec2 instances on Creation in the AWS documentation.
