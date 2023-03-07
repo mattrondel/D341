@@ -14,6 +14,7 @@ You will go over: Elastic load balancing, Ec2 Auto scaling and Route 53
 
 When you configure an ELB Elastic load balancer which is part of the EC2 service in the management console you can choose from three different types or load balancers: Application, Network or Classic 
 
+
 •	"Amazon EC2 Auto Scaling" (new tab) (12:53)
 •	"Amazon Route 53" (new tab) (7:20)
 •	"Amazon Route 53 Demonstration" (new tab) (20:23)
@@ -22,3 +23,14 @@ When you configure an ELB Elastic load balancer which is part of the EC2 service
 
 
 Complete the Module 4 knowledge check
+•	To ensure that applications are automatically adjusted for capacity to maintain steady, predictable performance at the lowest possible cost.
+Auto Scaling does not focus on any one resource because it only controls for the appropriate availability and quality of the overall service 
+•	Route 53 is a cost-effective way to route end users to EC2 instances and ELBs
+•	A possible final and optional step when you create a load balancer is to use the describe-target-health command to verify the health of the instances for any registered instances
+•	If CPU utilization of an EC2 instance (as part of an Auto scaling group) cannot continue scaling up it increases to match that with EC2 auto scaling 
+•	You can use Application load balancers with containers
+•	A health check is completed for all targets that are registered to a target group. This is specified by the load balancers listener rule.
+•	CloudWatch-driven, Instance Failure via Health check, Manually triggered, and Scheduled action are statements how EC2 scaling policies can be triggered 
+•	By setting alarms for sustained state changes you can reduce thrashing. 
+•	An Application Load Balancer (ALB) supports content-based routing
+•	A weighted routing policy routes traffic to several resources, based on established proportions.  (Think weight and proportions)
