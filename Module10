@@ -52,8 +52,11 @@ It then reports and non-compliant resource.
 The evaluation of a managed rule can occur when a resource changes, or on a periodic basis.
 For more information about the required-tags managed rule see below:
 https://docs.aws.amazon.com/config/latest/developerguide/required-tags.html
-go here: 3:09
-https://emergingtalent.contentcontroller.com/ScormEngineInterface/dispatch/lti/ltiDispatch.html?studentId=mrondel%40wgu.edu&studentName=Rondel%2C+Matthew&redirectOnExitUrl=&config=%7B%22dispatchVersion%22%3A%221%22%2C%22contentUrl%22%3A%22https%3A%2F%2Femergingtalent.contentcontroller.com%2Fapi%2Flaunch%2Fbundle%2Fcontent%2F44%2FUtHM63CFUXUVPxFT-wXuiR4v0Of6%3Fltirolesecret%3D%26learnerid%3DLEARNER_ID%26fname%3DLEARNER_FNAME%26lname%3DLEARNER_LNAME%26pipeurl%3DPIPE_URL%26redirecturl%3DREDIRECT_URL_REGISTRATION_ARGUMENT%22%2C%22dispatchRoot%22%3A%22https%3A%2F%2Femergingtalent.contentcontroller.com%2FScormEngineInterface%2Fdispatch%2F%22%2C%22preLaunchConfigurationUrl%22%3A%22https%3A%2F%2Femergingtalent.contentcontroller.com%2Fapi%2Flaunch%2Fconfig%2Fbundle%2Fcontent%2F44%2FUtHM63CFUXUVPxFT-wXuiR4v0Of6%22%7D
+Common use for tagging are shutting down and and restarting all instances that have a specific tag 
+This involves tagging all instances, so they have an attribute to indicate the environment where they run eg development, test or production
+
+Another common use is for checking on compliance for tagging policies 
+For example To save costs you can create a script that automatically shuts down development instances on weekends and then restarts them at the beginning of the week
 Companies can also use tags to organize billing reports that reflect internal cost structures, and to achieve more accurate reporting for cost allocation.
 You can also write IAM policies that encored the use of specific tags. For example, you could use an IAM policy to enforce the use of the department and cost center tags when you create a resource. You can use these tags to develop more accurate reporting for cost allocation.
 You can implement your tagging strategy with IAM policies in many ways. For example, you can use an IAM policy to block the deletion of tags required by corporate standards or compliance requirements.
