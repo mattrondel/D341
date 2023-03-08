@@ -185,5 +185,10 @@ https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practi
 AWS neptune does graphing of data
 Athena is for large sql data with s3 lakes
 SQS vs SNS
-The s is simple for both but NS stands for notification service think like text messaging, QS is Queueu servive like sending messages from one systm to another, comparable services is like RabbitMQ and Kafka (though not the same)
+The s is simple for both 
+NS stands for notification service think like text messaging or Push notifications. SNS is typically used for applications that need realtime notifications
+ SNS does not persist messages - it delivers them to subscribers that are present, and then deletes them.
+QS is Queueu servive like sending messages from one systm to another, comparable services is like RabbitMQ and Kafka (though not the same)
+ SQS is more suited for message processing use cases
+ SQS can persist messages (from 1 minute to 14 days)
 
