@@ -186,6 +186,7 @@ udemy
 ** https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practice-exams-soa-c01/ **
 
 AWS neptune does graphing of data
+ Neptune is a NoSQL Database as a Service
 Athena is for large sql data with s3 lakes
 SQS vs SNS
 The s is simple for both 
