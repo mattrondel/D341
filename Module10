@@ -5,6 +5,11 @@ Module 10 - resource consumption, tagging, cost management tool and best practic
 
 https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/e2c5cdc6d64041f2afa6bed15c19c91f/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%408e1001473b274ebaabfb8cc0da0cf30c
 
+Useful stuff from the student guide:
+https://www.youtube.com/watch?v=DAzL8EUrdUo
+
+Tagging restrictions:
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#tag-restrictions
 
 •	"Managing Resource Consumption" (new tab) (0:59)
 You will learn how to manage resource consumption by using tags and various cost management tools and best practices
@@ -44,12 +49,13 @@ Environment = Production
 Cost Center = Marketing
 Application = Promotions
 
-AWS config provides predefined customizable rules, to determine if your AWS resources comply with common best practices. These are call AWS managed rules
-You can customize the behavior of a managed rule to suit your needs. 
+AWS Config provides predefined customizable rules, to determine if your AWS resources comply with common best practices. These are call AWS Managed Rules
+You can customize the behavior of a Managed Rule to suit your needs. 
 You can specify the key of the required tag and optionally its value
 After you activate the rule, AWS config compares your resources to the defined conditions. 
 It then reports and non-compliant resource. 
 The evaluation of a managed rule can occur when a resource changes, or on a periodic basis.
+The Required tags feature of AWS Config checks if your resources have the tags that you specify
 For more information about the required-tags managed rule see below:
 https://docs.aws.amazon.com/config/latest/developerguide/required-tags.html
 Common use for tagging are shutting down and and restarting all instances that have a specific tag 
