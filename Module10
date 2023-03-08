@@ -11,7 +11,9 @@ https://www.youtube.com/watch?v=DAzL8EUrdUo
 Tagging restrictions:
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#tag-restrictions
 
+--------------------------------------------------------------------------------
 •	"Managing Resource Consumption" (new tab) (0:59)
+--------------------------------------------------------------------------------
 You will learn how to manage resource consumption by using tags and various cost management tools and best practices
 Topics: tagging
 Cost management tools and best practices
@@ -21,7 +23,9 @@ Challenge lab: optimize AWS resource utilization
 Tools and resources include tagging, CloudWatch and trusted advisor 
 You should be able to describe how to enforce tagging with AWS identity and access management policies
 
+--------------------------------------------------------------------------------
 •	"Tagging" (new tab) (8:15)
+--------------------------------------------------------------------------------
 A tag is a label that you assigned to an AWS resource it enables you to identify or categorize the resource in a meaningful way. 
 A tag consists of a key and a value which you define. 
 A Tag: is a key-value pair that can be attached to an AWS resource
@@ -77,9 +81,13 @@ Best practices for tagging:
 •	Implement automated tools to help manage resource tags. For example use the Resource Groups Tagging API. With this API you can programmatically control tags. For example, you can use the API to tag and untag supported resources. You can also use the API to list all existing tag keys for an account.
 •	Always use meaningful names for both the tag and key values. These names should be relevant to your project or business needed, and be as descriptive as possible. For more information about tagging strategies, search for tagging strategies in the AWS documentation.
 
-
+--------------------------------------------------------------------------------
 •	"Cost Management Tools and Best Practices" (new tab) (9:06)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
 •	"Module Wrap-Up" (new tab) (1:39)
+--------------------------------------------------------------------------------
 
 
 ----------------------------------------
