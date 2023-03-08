@@ -8,7 +8,7 @@ SSM - systems manager think patching or patch management
 Know the difference between those and how they are used anything pertaining to Patching will be SSM
 Think SSM patching
 System Manager like a lot especially the automation documents.
-https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=20433s
+** https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=20433s **
 or cheat sheet at:
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=22492s
 
@@ -103,6 +103,9 @@ Spend adequate time learning about CloudFormation and the functions, stuff like 
 CloudFormation and the functions, stuff like stacksets
 Stacksets info: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html
 
+-Config-
+
+
 -Cloud Networking-
 https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=10838s
 or
@@ -180,7 +183,7 @@ Study Strategy ---- Use the WGU material as your main source of study go over th
 -- Pay close attention to Chapters 7-11 esp Chapters 7 & 11 I've added the cheatsheet from the youtube course -- see course chatter.
 Stephane Maarek's practice tests on Udemy
 udemy
-https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practice-exams-soa-c01/
+** https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practice-exams-soa-c01/ **
 
 AWS neptune does graphing of data
 Athena is for large sql data with s3 lakes
@@ -193,3 +196,6 @@ QS is Queueu servive like sending messages from one systm to another, comparable
  SQS is more suited for message processing use cases
  SQS can persist messages (from 1 minute to 14 days)
 
+AWS Control Tower automates the setup of a new landing zone using best-practices blueprints for identity, federated access, and account structure
+AWS Control Tower provides three categories of guidance: mandatory, strongly recommended, and elective controls
+AWS Organizations enables you to manage your environment across multiple accounts centrally, AWS Control Tower automates many of the steps required to build your environment and govern at scale
