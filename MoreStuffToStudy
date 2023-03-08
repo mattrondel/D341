@@ -199,3 +199,4 @@ QS is Queueu servive like sending messages from one systm to another, comparable
 AWS Control Tower automates the setup of a new landing zone using best-practices blueprints for identity, federated access, and account structure
 AWS Control Tower provides three categories of guidance: mandatory, strongly recommended, and elective controls
 AWS Organizations enables you to manage your environment across multiple accounts centrally, AWS Control Tower automates many of the steps required to build your environment and govern at scale
+Multivalue answer routing distributes DNS responses across multiple IP addresses. If a web server becomes unavailable after a resolver caches a response, a client can try up to eight other IP addresses from the response to avoid downtime.
