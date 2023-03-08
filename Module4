@@ -18,9 +18,10 @@ When you configure an ELB Elastic load balancer which is part of the EC2 service
 •	"Amazon EC2 Auto Scaling" (new tab) (12:53)
 •	"Amazon Route 53" (new tab) (7:20)
 •	"Amazon Route 53 Demonstration" (new tab) (20:23)
+Different types of routing using R53 like simple routing, failover routing and geolocation routing 
+
+
 •	"Module Wrap-Up" (new tab) (1:22)
-
-
 Complete the Module 4 knowledge check
 •	To ensure that applications are automatically adjusted for capacity to maintain steady, predictable performance at the lowest possible cost.
 Auto Scaling does not focus on any one resource because it only controls for the appropriate availability and quality of the overall service 
