@@ -181,3 +181,9 @@ Study Strategy ---- Use the WGU material as your main source of study go over th
 Stephane Maarek's practice tests on Udemy
 udemy
 https://www.udemy.com/course/aws-certified-sysops-administrator-associate-practice-exams-soa-c01/
+
+AWS neptune does graphing of data
+Athena is for large sql data with s3 lakes
+SQS vs SNS
+The s is simple for both but NS stands for notification service think like text messaging, QS is Queueu servive like sending messages from one systm to another, comparable services is like RabbitMQ and Kafka (though not the same)
+
