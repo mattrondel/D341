@@ -39,9 +39,11 @@ Targets process events
 Rules match incoming events and routes them to targets for processing a single rule can route to multiple targets, all of which are processed in parallel.
 
 ---------------------------------------
-•	"AWS CloudTrail" (new tab) (7:57)
+•	"AWS CloudTrail" (and Athena) (new tab) (7:57)
+AWS Config provides multiple features to asses, audit, and evaluate the configurations of resources 
 ---------------------------------------
-
+CloudTrail Enables auditing of accounts by continuously logging account activity 
+Athena is a serverless interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. To use Athena, you point to your data in Amazon S3, define the schema, and start querying using standard SQL. Athena works with a variety of standard data formats, including CSV, JSON, ORC, Avro, and Parquet
 ---------------------------------------
 •	"Module Wrap-Up" (new tab) (1:12)
 ---------------------------------------
@@ -65,4 +67,3 @@ Type of the request
 •	Possible states of an Amazon CloudWatch are Alarm, Insufficient Data, and OK
 •	AWS Config can provide a list of all AWS resources used by an account
 •	AWS CloudWatch alarms are sent when a metric value changes
-
