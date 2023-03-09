@@ -14,6 +14,20 @@ Metrics are uniquely defined by a name, namespace and zero or more dimensions. E
 •	A dimension is a name-value pair that uniquely identifies a metric. You can assign up to 10 dimensions to a metric. Every metric has specific characteristics that describe it, and you can think of dimensions as categories for those characteristics. Dimensions help you design a structure for your statistics plan. You can use dimensions to filter the results that CloudWatch returns. You can assign up to 10 dimensions to a metric. You can think of dimensions as categories for properties
 •	A period is the length of time associated with a specific CloudWatch statistic. Periods are defined in number of seconds. You can adjust how the data is aggregated by changing the length of the period. Periods can be as shorts as 1 second to 1 day (86,400 seconds)
 Standard and custom metrics 
+Standard Metrics:
+•	Standard is grouped by service name
+•	Display graphically so selected metrics can be compared
+•	Metric cannot be deleted but they automatically expire after 15 months if no new service has published to them
+•	Reachable through CLI and APIs
+
+Custom Metrics:
+•	Groups by user-defined namespace
+•	Publish to CloudWatch using CLI, API or CloudWatch Agent
+CloudWatch Alarms have three states: OK, Alarm and Insufficient Data 
+Alarm state does not always constitute an emergency a restart might cause an alarm because the system is not in a steady state (false positive) 
+
+•	By default EC2 instances only report every 5 minutes (free tier) if you pay you can get up to 1 minute 
+•	https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-cloudwatch-new.html
 
 ---------------------------------------
 •	"Amazon CloudWatch Events" (new tab) (8:29)
