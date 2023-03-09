@@ -84,6 +84,15 @@ Best practices for tagging:
 --------------------------------------------------------------------------------
 •	"Cost Management Tools and Best Practices" (new tab) (9:06)
 --------------------------------------------------------------------------------
+•	AWS Billing dashboard - View overall status of your cost and usage. Access your monthly bill
+This provides a bills page that shows you the most up to date information on your costs and usage, including your monthly bill and a detailed breakdown of the AWS service that you use.
+
+•	AWS Cost Explorer – Visualize, understand and manage your costs and usage over time. Forecast future costs and usage. This tool allows you to identity trends, pinpoint cost drivers, and detect anomalies. – bar charts
+
+•	AWS Budgets –Set custom cost and usage budgets. Receive alerts when your costs or usage exceed them.
+
+•	Amazon CloudWatch – Monitor your usage charges. Receive an alert when they reach a specified threshold.
+
 
 --------------------------------------------------------------------------------
 •	"Module Wrap-Up" (new tab) (1:39)
