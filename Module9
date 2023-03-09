@@ -30,8 +30,13 @@ Alarm state does not always constitute an emergency a restart might cause an ala
 •	https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-cloudwatch-new.html
 
 ---------------------------------------
-•	"Amazon CloudWatch Events" (new tab) (8:29)
+•	"Amazon CloudWatch Events (and CloudWatch logs)" (new tab) (8:29)
 ---------------------------------------
+Read first then watch
+CloudWatch Events is a near-real-time steam 
+Event is a change in your environment, you can also create custom application-level events and publish them to CloudWatch Events. Scheduled events can be setup on a periodic basis
+Targets process events 
+Rules match incoming events and routes them to targets for processing a single rule can route to multiple targets, all of which are processed in parallel.
 
 ---------------------------------------
 •	"AWS CloudTrail" (new tab) (7:57)
