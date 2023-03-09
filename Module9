@@ -39,11 +39,22 @@ Targets process events
 Rules match incoming events and routes them to targets for processing a single rule can route to multiple targets, all of which are processed in parallel.
 
 ---------------------------------------
-•	"AWS CloudTrail" (and Athena) (new tab) (7:57)
+•	"AWS CloudTrail" (plus config and Athena) (new tab) (7:57)
 AWS Config provides multiple features to asses, audit, and evaluate the configurations of resources 
 ---------------------------------------
 CloudTrail Enables auditing of accounts by continuously logging account activity 
 Athena is a serverless interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. To use Athena, you point to your data in Amazon S3, define the schema, and start querying using standard SQL. Athena works with a variety of standard data formats, including CSV, JSON, ORC, Avro, and Parquet
+Use AWS Config for configuration management to:
+•	Retrieve inventory of resources
+•	Discover new and delete resources
+•	Record configuration changes continuously
+•	Get notified when configurations change
+Use AWS Config Rules:
+•	Setup rules to check configuration changes that are recorded
+•	Use predefined managed rules, or create custom rules
+•	Author custom rules using Lambda
+•	View a dashboard for visualizing compliance and identifying offending changes
+•	Is involved automatically for continuous assessment 
 ---------------------------------------
 •	"Module Wrap-Up" (new tab) (1:12)
 ---------------------------------------
@@ -58,10 +69,10 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b0
 •	A dimension is a name/value pair that is used for metric identification, and can assist with the design structure for a statistics plan, A dimension is a name/value pair that is part of the identity of a metric. You can assign up to 30 dimensions to a metric.
 •	Amazon Simple storage server (S3) Can be used with AWS CloudTrail to store event logs
 •	AWS CloudTrail allows an Admin to determine for a given request made to AWS config: 
-Who Made the Request 
-Source IP address of the request
-Time of the Request
-Type of the request
+•	Who Made the Request 
+•	Source IP address of the request
+•	Time of the Request
+•	Type of the request
 •	Custom metrics is a feature of amazon CloudWatch that would you use to publish a statistic on service memory usage for an HTTP server running on an Amazon EC2 instance
 •	An Amazon CloudWatch event indicates a change in resource in your AWS environment
 •	Possible states of an Amazon CloudWatch are Alarm, Insufficient Data, and OK
