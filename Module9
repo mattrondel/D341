@@ -40,7 +40,6 @@ Rules match incoming events and routes them to targets for processing a single r
 
 ---------------------------------------
 •	"AWS CloudTrail" (plus config and Athena) (new tab) (7:57)
-AWS Config provides multiple features to asses, audit, and evaluate the configurations of resources 
 ---------------------------------------
 CloudTrail Enables auditing of accounts by continuously logging account activity 
 Athena is a serverless interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. To use Athena, you point to your data in Amazon S3, define the schema, and start querying using standard SQL. Athena works with a variety of standard data formats, including CSV, JSON, ORC, Avro, and Parquet
@@ -55,6 +54,9 @@ Use AWS Config Rules:
 •	Author custom rules using Lambda
 •	View a dashboard for visualizing compliance and identifying offending changes
 •	Is involved automatically for continuous assessment 
+
+•	AWS Config provides multiple features to asses, audit, and evaluate the configurations of resources 
+
 ---------------------------------------
 •	"Module Wrap-Up" (new tab) (1:12)
 ---------------------------------------
