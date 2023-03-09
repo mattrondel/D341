@@ -1,27 +1,36 @@
-•	1.5x speed 
-•	Turn on subtitles
-•	Watch first
-•	Watch again but take notes, like summarize or bullet list stuff in the video
-•	take a break when timer expires
-WGU exam top to bottom
-1.	Configures Network Connectivity - 20% of assessment
-2.	Remediates AWS Issues - 20% of assessment (got close on this)
-3.	Automates Cloud Provisioning - 18% of assessment
-4.	Implements AWS Systems - 17% of assessment
-5.	Implements AWS Protection Services - 13% of assessment
-6.	Determines Optimal Cost and Performance Baseline - 12% of assessment
-
-AWS Academy Module 7 Activities
+AWS Academy Module 9 Activities
 Chapter 9
 https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/b724456924e449a18e0089d8e86c1163/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40a2ff5b6fb9ef438396e16f34e7b9e5dc
-
+---------------------------------------
 •	"Monitoring and Security" (new tab) (0:52)
+---------------------------------------
+Just a welcome overview
+---------------------------------------
 •	"Amazon CloudWatch" (new tab) (12:11)
-•	"Amazon CloudWatch Events" (new tab) (8:29)
-•	"AWS CloudTrail" (new tab) (7:57)
-•	"Module Wrap-Up" (new tab) (1:12)
+---------------------------------------
+Metrics are a fundamental concept in CloudWatch. A metric represents a time-ordered set of data points that are published to CloudWatch. Think of a metric as a variable to monitor and the data point represent the values of that variable over time. Data points themselves can come from any application or business activity that you collect data from.
+Metrics are uniquely defined by a name, namespace and zero or more dimensions. Each data point has a timestamp and (optionally) a unit of measure. Metrics only exist in the region in which they are created.
+•	A namespace is a container for CloudWatch metrics. Metrics in different namespaces are isolated from each other, so that metrics from different applications are not mistakenly aggregated into the same statics. The namespaces use the naming convention AWS/<service> for example EC2 uses AWS/EC2 namespace.
+•	A dimension is a name-value pair that uniquely identifies a metric. You can assign up to 10 dimensions to a metric. Every metric has specific characteristics that describe it, and you can think of dimensions as categories for those characteristics. Dimensions help you design a structure for your statistics plan. You can use dimensions to filter the results that CloudWatch returns. You can assign up to 10 dimensions to a metric. You can think of dimensions as categories for properties
+•	A period is the length of time associated with a specific CloudWatch statistic. Periods are defined in number of seconds. You can adjust how the data is aggregated by changing the length of the period. Periods can be as shorts as 1 second to 1 day (86,400 seconds)
+Standard and custom metrics 
 
+---------------------------------------
+•	"Amazon CloudWatch Events" (new tab) (8:29)
+---------------------------------------
+
+---------------------------------------
+•	"AWS CloudTrail" (new tab) (7:57)
+---------------------------------------
+
+---------------------------------------
+•	"Module Wrap-Up" (new tab) (1:12)
+---------------------------------------
+
+
+---------------------------------------
 Module 9 knowledge check
+---------------------------------------
 https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/b724456924e449a18e0089d8e86c1163/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40a2ff5b6fb9ef438396e16f34e7b9e5dc
 •	Amazon Cloud Watch alarms are issued in near real-time in response to changes
 •	Amazon cloud watch events can be set to automatically trigger based on rate expressions
