@@ -1,4 +1,4 @@
-•	1.5x speed 
+\•	1.5x speed 
 •	Turn on subtitles
 •	Watch first
 •	Watch again but take notes, like summarize or bullet list stuff in the video
@@ -10,7 +10,27 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860
 ----------------------------------------------------------------
 "Computing (Servers)" (new tab) (1:25)
 ----------------------------------------------------------------
-
+Instance store also known as Ephemeral storage is temporary if a host reboots its kept but if its stepped or terminated will be lost and cannot be recovered 
+EBS optimized instances minimized I/O contention between EBS and other traffic from your instance which provides better performance guarantees 
+Different instance types provide different levels of network performance 
+OS boot storage is ether ephemeral or EBS
+Keypaid is used for SSH or RDP access
+AMIs consist of: 
+•	Template for instance volumes
+•	Launch permissions
+•	Block device mappings
+AMI choices:
+•	Amazon provided
+•	User built
+•	Community
+•	Marketplace  
+EBSs
+Options:
+SSD volumes
+Provisioned IOPS SSD
+General purpose
+Throughput optimized HDD (st1)
+Cold HDD (sc1)
 ----------------------------------------------------------------
 "Amazon EC2 Virtualization" (new tab) (15:16)
 ----------------------------------------------------------------
@@ -26,6 +46,7 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860
 ----------------------------------------------------------------
 "Securing Your AWS Instances" (new tab) (7:08)
 ----------------------------------------------------------------
+
 ----------------------------------------------------------------
 "Launch an Amazon EC2 Instance Demonstration" (new tab) (7:28)
 ----------------------------------------------------------------
@@ -33,4 +54,10 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860
 ----------------------------------------------------------------
 "Module Wrap-Up" (new tab) (1:35)
 ----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+Quiz time!!
+----------------------------------------------------------------
+
 
