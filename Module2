@@ -11,14 +11,78 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860
 -----------------------------------------------
 "Tooling and Automation” (new tab) (1:15)
 -----------------------------------------------
-
+short one with notes?
 -----------------------------------------------
 "AWS Systems Manager" (new tab) (9:01)
 -----------------------------------------------
+Systems manager is a management service that helps a user:
+•	Collect software inventory
+•	Apply OS patches
+•	Create system images
+•	Configure windows and Linux operating systems
+Systems manager is highly automation focused this enables configuration of on-prem and or aws systems
+The Run command feature allows you to remotely run scripts and programs. Run command allows to do the following:
+•	Use predefined commands 
+•	Create your own
+•	Chose instances or tags
+•	Choose controls or schedules
+•	Run the command
+State manager ensures that your ec2 instances are bootstrapped with specific software at startup
+Instead of storing sensitive data in config files you can use the System Manager Parameter store to store these parameters (think stuff like passwords, keys, license codes, database strings) then reference this information in applications or scripts.
+Systems Manager: Inventory – can collect inventory information about EC2 instances and the software installed on them like: 
+•	Application data
+•	Network configurations
+•	Server roles
+•	Files
+•	Updates
+•	Windows services
+•	System properties 
+Systems Manager: Inventory does not require you to login each to instance and the gathered data supports managing application assets, tracking licenses, monitoring file integrity, discovering applications not installed by traditional installer and more.
+Systems manager Built-In Insights can view:
+•	API calls from CloudTrail
+•	Resource configuration changes from AWS Config
+•	Software inventory
+•	Patch compliance status by resource group
+
+•	Systems Manager supports automation of repetitive operations and tasks
+•	Systems Manager provides a suite of features that help automate operational tasks across AWS and on-premises resources
+•	Patch manager and maintenance window features could be used to apply operating system patches based on a predefined schedule.
 
 -----------------------------------------------
 "Additional Administration and Development Tools" (new tab) (5:03)
 -----------------------------------------------
+AWS tools for PowerShell enable you to script operations on your AWS resources from PowerShell command line, these let you preform many of the same actions that are available in the AWS SDK for .NET
+AWS tools for PowerShell can be used for quick tasks like:
+•	Creating and configuring security groups
+•	Launching instances
+•	Creating and deleting S3 buckets
+•	Preforming IAM tasks, such as assigning a role to a user 
+•	Publishing CloudWatch metrics
+AWS tools for PowerShell support the same set of services and regions that are supported by the AWS SDKs
+AWS provides SDKs that are language specific, these SDKs also contain APIs
+CloudFormation is written in JSON or YAML
+CloudFormation allows a preview on how changes to a stack might impact their running resources such as whether your changes will delete or replace and critical resource.
+CloudFormation has drift detection which is if the stack drifts from its expect template configuration.
+•	CloudFormation allows a user to create, update and delete a set of resources spanning multiple AWS services as a single unit (stack)
+•	CloudFormation is written in JSON or YAML
+Key features include:
+•	Preview how proposed changes with impact environment
+•	Detect drift
+•	Enable extensibility 
+Resources in the stack can include EC2 instances, RDS instances, VPCs and many other resources created from AWS services.
+
+CloudFormation supports custom extensions to your stack template that can be built using Lambda. You could write custom provisioning in a Lambda function and configure a CloudFormation stack to trigger the Lambda function when it creates the stack
+OpsWorks – is a configuration management service that manages instances of Chef and puppet 
+There are three offerings: OpsWorks for Chef Automate, OpsWorks for Puppet Enterprise and OpsWorks Stacks 
+Aws Tools for PowerShell supports operations on AWS resources from the PowerShell command line
+CloudFormation enables you to create, update and delete infrastructure deployments predictability and repeatedly
+OpsWorks is a configuration management for automation that automates: infrastructure, application management, compliance testing and configuration testing.
+S3 object storage
+Good for hosting a static website do that by the following:
+Create a bucket to store stuff
+Configure the bucket to enable hosting and grant public read permissions to its content
+Uploading using the management console or CLI
+Go to the site at the endpoint URL that S3 assigns to it. The endpoint URL includes the bucket name and region  
 
 -----------------------------------------------
 "Module Wrap-Up" (new tab) (1:34)
