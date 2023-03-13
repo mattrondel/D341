@@ -83,6 +83,8 @@ Create a bucket to store stuff
 Configure the bucket to enable hosting and grant public read permissions to its content
 Uploading using the management console or CLI
 Go to the site at the endpoint URL that S3 assigns to it. The endpoint URL includes the bucket name and region  
+Note uploaded content should be stored in a folder hierarchy that reflects the website content structure and don’t forget the index.html
+Alternatively you can use route 53 to map to a domain name
 
 -----------------------------------------------
 "Module Wrap-Up" (new tab) (1:34)
