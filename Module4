@@ -10,11 +10,17 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860
 •	"Computing (Scaling and Name Resolution)" (new tab) (0:53)
 --------------------------------------------------------------------------------------
 You will go over: Elastic load balancing, Ec2 Auto scaling and Route 53
+R53 is a scalable cloud DNS web service
+R53 entries are often configured to point to an ELB load balancer
+Elastic Load Balancers (ELB) 
+Elastic Load Balancing (ELB) can handle the varying load of your application traffic in a single availability zone or across multiple availability zones
+Elastic Load Balancers (ELB) are often configured to point to auto scaling groups
+Elastic Load Balancers (ELB) provide three types of load balancers that all offer high availability, auto scaling and security to support making applications fault tolerant
+Each auto scaling group contains a collection of EC2 instances that share similar characteristics and are treated as a logical grouping for the purpose of scaling and management
 
 --------------------------------------------------------------------------------------
 •	"Scaling Amazon EC2 Instances" (new tab) (13:37)
 --------------------------------------------------------------------------------------
-
 When you configure an ELB Elastic load balancer which is part of the EC2 service in the management console you can choose from three different types or load balancers: Application, Network or Classic 
 --------------------------------------------------------------------------------------
 •	"Amazon EC2 Auto Scaling" (new tab) (12:53)
