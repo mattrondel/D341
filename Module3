@@ -14,7 +14,7 @@ Instance store also known as Ephemeral storage is temporary if a host reboots it
 EBS optimized instances minimized I/O contention between EBS and other traffic from your instance which provides better performance guarantees 
 Different instance types provide different levels of network performance 
 OS boot storage is ether ephemeral or EBS
-Keypaid is used for SSH or RDP access
+Key pair is used for SSH or RDP access
 AMIs consist of: 
 •	Template for instance volumes
 •	Launch permissions
