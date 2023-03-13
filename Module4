@@ -17,7 +17,20 @@ Elastic Load Balancing (ELB) can handle the varying load of your application tra
 Elastic Load Balancers (ELB) are often configured to point to auto scaling groups
 Elastic Load Balancers (ELB) provide three types of load balancers that all offer high availability, auto scaling and security to support making applications fault tolerant
 Each auto scaling group contains a collection of EC2 instances that share similar characteristics and are treated as a logical grouping for the purpose of scaling and management
-
+Elastic Load Balancers (ELB) 
+Elastic Load Balancers (ELB) are a common characteristic of web applications deployments. The Elastic Load Balancing (ELB) service routes client requests across multiple ec2 instances or ECS containers that are running your web application
+The load balancer also absorbs impact of DNS caching and there is no additional bandwidth charge for cross zone traffic
+Application load balancer support web socket and http/2 protocols and run in containers
+Ideal for http and https traffic
+Network load balancer – ideal for TCP or UDP traffic, recommended for VPC traffic
+Classic load balancer – intended for applications built within the classic ec2 networks, use network or application balancers
+Key features of ELBs:
+HA
+Health checks
+Security – security groups can be created that associated with load balancers. You can also create an internal (non-internet facing load balancer) 
+TLS termination – the load balancers include integrated certificate management and SSL decryption which allow you centrally manage the SSL setting of the load balancer and offload CPU intensive work from your applications 
+Layer 4 and 7 load balancing: transport or application 
+Operation monitoring – the ELB provide integration with CloudWatch metrics and request tracing which allows real time application monitoring  
 --------------------------------------------------------------------------------------
 •	"Scaling Amazon EC2 Instances" (new tab) (13:37)
 --------------------------------------------------------------------------------------
@@ -29,6 +42,7 @@ When you configure an ELB Elastic load balancer which is part of the EC2 service
 --------------------------------------------------------------------------------------
 •	"Amazon Route 53" (new tab) (7:20)
 --------------------------------------------------------------------------------------
+
 --------------------------------------------------------------------------------------
 •	"Amazon Route 53 Demonstration" (new tab) (20:23)
  --------------------------------------------------------------------------------------
