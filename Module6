@@ -3,13 +3,6 @@
 •	Watch first
 •	Watch again but take notes, like summarize or bullet list stuff in the video
 •	take a break when timer expires
-WGU exam top to bottom
-1.	Configures Network Connectivity - 20% of assessment
-2.	Remediates AWS Issues - 20% of assessment (got close on this)
-3.	Automates Cloud Provisioning - 18% of assessment
-4.	Implements AWS Systems - 17% of assessment
-5.	Implements AWS Protection Services - 13% of assessment
-6.	Determines Optimal Cost and Performance Baseline - 12% of assessment
 
 Module (chapter 6)
 https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860cb4a2abb91f13af016e906/efd58940e8f0457da8370b7dc70c5b46/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40b3e0759b073b4a6bb22b41f167e49d31
@@ -20,7 +13,15 @@ Chapter 6 (Module 6) notes
 "Computing (Database Services)" (new tab) (1:16)
 -------------------------------------------------------------------------------
 SQL category RDS and Redshift
+RDS has 6 possible engines including MySQL and Oracle
 
+For NoSQL:
+DynamoDB, Neptune and ElastiCache
+
+•	DynamoDB supports document key-value store models and transactional workloads
+•	Neptune is a graph database that supports applications that manipulate highly connected datasets
+•	Some features include: continuous backup to S3 and point-in time recovery with replication across AZs
+•	ElastiCache is for In-Memory data store and cache that supports (open source) Redis and memcached engines. Some features include: configure and launch cache nodes via Management console & and supports Memcache and Redis
 
 -------------------------------------------------------------------------------
 "AWS Database Services" (new tab) (6:07)
