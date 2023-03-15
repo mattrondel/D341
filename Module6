@@ -23,9 +23,18 @@ DynamoDB, Neptune and ElastiCache
 •	Some features include: continuous backup to S3 and point-in time recovery with replication across AZs
 •	ElastiCache is for In-Memory data store and cache that supports (open source) Redis and Memcache engines. Some features include: configure and launch cache nodes via Management console & and supports Memcache and Redis
 SQL and NoSQL
-Think of NoSQL as not only SQL
+Think of NoSQL as “not only SQL”
 NoSQL databases scale horizontally by increasing servers
+SQL is rows and column think like excel
+NoSQL is key-value and each row doesn’t have to contain data for each column
+Schemas: SQL is Fixed, NoSQL is Dynamic
+Scalability: SQL is Vertical, NoSQL is Horizontal 
+Data in NoSQL databases is queried by focusing on collections of documents.
 
+-Database usage scenarios-
+Name: 		Best Used for:
+RDS		Transactional stuff like ERP, CRM and ecommerce to log 
+Aurora		Aurora differentiator: open source, higher performance than RDS (Aurora is SQL)
 -------------------------------------------------------------------------------
 "AWS Database Services" (new tab) (6:07)
 -------------------------------------------------------------------------------
