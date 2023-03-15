@@ -21,7 +21,10 @@ DynamoDB, Neptune and ElastiCache
 •	DynamoDB supports document key-value store models and transactional workloads
 •	Neptune is a graph database that supports applications that manipulate highly connected datasets
 •	Some features include: continuous backup to S3 and point-in time recovery with replication across AZs
-•	ElastiCache is for In-Memory data store and cache that supports (open source) Redis and memcached engines. Some features include: configure and launch cache nodes via Management console & and supports Memcache and Redis
+•	ElastiCache is for In-Memory data store and cache that supports (open source) Redis and Memcache engines. Some features include: configure and launch cache nodes via Management console & and supports Memcache and Redis
+SQL and NoSQL
+Think of NoSQL as not only SQL
+NoSQL databases scale horizontally by increasing servers
 
 -------------------------------------------------------------------------------
 "AWS Database Services" (new tab) (6:07)
