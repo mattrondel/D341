@@ -13,7 +13,7 @@ Chapter 6 (Module 6) notes
 "Computing (Database Services)" (new tab) (1:16)
 -------------------------------------------------------------------------------
 SQL category RDS and Redshift
-RDS has 6 possible engines including MySQL and Oracle
+RDS has 6 possible engines (now 7) including MySQL and Oracle – M$ SQL, oracle, PostgreSQL, MAriaDB, MySQL, AMZ Aurora PostresSQL-compatable edition
 
 For NoSQL:
 DynamoDB, Neptune and ElastiCache
@@ -35,25 +35,51 @@ Data in NoSQL databases is queried by focusing on collections of documents.
 Name: 		Best Used for:
 RDS		Transactional stuff like ERP, CRM and ecommerce to log 
 Aurora		Aurora differentiator: open source, higher performance than RDS (Aurora is SQL)
+RedShift	Analytic applications for operational reporting and querying TB to EB scale data
+Neptune	Applications with use cases that require navigation of highly connected data like social news feeds, fraud detection and recommendations
+DynamoDB	internet scale applications like hospitality, dating and ridesharing that need to serve content and store structured and unstructured data
+Unsupported database engines or versions can be run using Ec2
+Each DB has a primary use case – make sure you are familiar with it, things to think of like: is the workload transactional, does it preform analytics, or does it require in memory cache?
+Primary use cases in a nut shell
+RDS – transactionS
+Aurora (both available in Serverless and server forms – it’s a relational database compatible with MySQL and PostgreSQL.
+Neptune - graph use cases such as recommendation engines, fraud detection, knowledge graphs, drug discovery, and network security. Neptune is highly available, with read replicas, point-in-time recovery, continuous backup to Amazon S3, and replication across Availability Zones.
+RedShift - used as a centralized repository that stores data from different sources in a unified schema and structure to create a single source of truth. This can then feed enterprise-wide reporting and analytics.
+DynamoDB
 -------------------------------------------------------------------------------
 "AWS Database Services" (new tab) (6:07)
 -------------------------------------------------------------------------------
-
+RDS is a fully-managed (SAAS) relational database service thatprovides six familiar database engines to choose from: Amazon Aurora,MySQL, MariaDB, Oracle, Microsoft SQL Server, and PostgreSQL.
+RDS supports three types of instance classes: Standard, Memory Optimized, and Burstable Performance.
+RDS provides three storage types: General Purpose SSD (also known as gp2), Provisioned IOPS SSD (also known as io1), and magnetic.
+RDS automatically does periodic backups (because it is fully managed)
+Backup options are Automatic and Manual
+After a DB instance is restored you must add the DB instance to the security group used by the DB instance used to create the DB snapshot if you want the same functionality as the previous DB instance
 -------------------------------------------------------------------------------
 "Amazon Relational Database Service (Amazon RDS)" (new tab) (7:22)
 -------------------------------------------------------------------------------
-
+See above I messed up and mixed the top two sections
 -------------------------------------------------------------------------------
 "Amazon Aurora" (new tab) (3:14)
 -------------------------------------------------------------------------------
-
+Aurora is compatible with MySQL and PostgreSQL
+Aurora is faster than a standard SQL and PostgreSQL
+Accepts familiar SQL queries 
+Server less version offers on-demand auto scaling
+Stores 6 copies of data across 3 AZs (Think 6 and 3 for Aurora)
+Aurora only does read replicas and you can do up to 15, multiple replicas can distribute the read workload
+Each DB cluster has one primary instance
 -------------------------------------------------------------------------------
 "Amazon DynamoDB" (new tab) (5:54)
 -------------------------------------------------------------------------------
+Reliable Non-relational
+Fully managed Saas
 
 -------------------------------------------------------------------------------
 "Amazon Database Migration Service (Amazon DMS)" (new tab) (6:57)
 -------------------------------------------------------------------------------
+Supports homogeneous migrations (such as Oracle to Oracle), and also heterogeneous migrations between different database platforms (such as Oracle to MySQL or MySQL to Amazon Aurora).
+
 
 -------------------------------------------------------------------------------
 "Module Wrap-Up" (new tab) (1:13)
