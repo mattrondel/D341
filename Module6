@@ -35,7 +35,7 @@ Data in NoSQL databases is queried by focusing on collections of documents.
 Name: 		Best Used for:
 RDS		Transactional stuff like ERP, CRM and ecommerce to log 
 Aurora		Aurora differentiator: open source, higher performance than RDS (Aurora is SQL)
-RedShift	Analytic applications for operational reporting and querying TB to EB scale data
+RedShift	Analytic applications for operational reporting and querying TB to EB scale data, think large warehouse data (data from multiple sources into one)
 Neptune	Applications with use cases that require navigation of highly connected data like social news feeds, fraud detection and recommendations
 DynamoDB	internet scale applications like hospitality, dating and ridesharing that need to serve content and store structured and unstructured data
 Unsupported database engines or versions can be run using Ec2
@@ -46,6 +46,7 @@ Aurora (both available in Serverless and server forms – it’s a relational da
 Neptune - graph use cases such as recommendation engines, fraud detection, knowledge graphs, drug discovery, and network security. Neptune is highly available, with read replicas, point-in-time recovery, continuous backup to Amazon S3, and replication across Availability Zones.
 RedShift - used as a centralized repository that stores data from different sources in a unified schema and structure to create a single source of truth. This can then feed enterprise-wide reporting and analytics.
 DynamoDB
+https://www.mongodb.com/databases/data-lake-vs-data-warehouse-vs-database
 -------------------------------------------------------------------------------
 "AWS Database Services" (new tab) (6:07)
 -------------------------------------------------------------------------------
