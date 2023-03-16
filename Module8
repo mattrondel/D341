@@ -13,14 +13,54 @@ WGU exam top to bottom
 
 AWS Academy Module 8 Activities
 Chapter 8
-
-
+-------------------------------------------------------------------------------------------------------------
 •	"Storage and Archiving" (new tab) (0:55)
+-------------------------------------------------------------------------------------------------------------
+Short stuff here
+-------------------------------------------------------------------------------------------------------------
 •	"Cloud Storage Overview" (new tab) (9:51)
+-------------------------------------------------------------------------------------------------------------
+If you need:
+Scalable NFS system for Linux workloads for Cloud and On-prem use EFS
+Hybrid cloud storage for on-prem that uses iSCSI, SMB and NFS – Storage Gateway
+Block storage ideal for database and applications - EBS
+
+EBS volumes are network attached think link mapped drives but more native and supports boot and data volumes
+EBS is network attached block storage
+EBS is persistent
+Snapshots are incremental and are stored in S3
+Instance Store
+Means non-persistent block-level on a shared subsystem 
+Reclaimed when instance terminated
+Idea use cases: Buffers, Cache and scratch data
+Instance store is temporary block storage attached to an instance that is attached to a host
+EFS is file storage for Linux based workloads
+EFS uses NFS and can be used with any AMI that supports it
+Multiple EC2 instances can use the same 
+THINK NFS = EFS 
+
+-------------------------------------------------------------------------------------------------------------
 •	"Amazon Elastic Block Store (Amazon EBS)" (new tab) (9:31)
+-------------------------------------------------------------------------------------------------------------
+See above stuff 
+-------------------------------------------------------------------------------------------------------------
 •	"Amazon Elastic File System" (new tab) (6:15)
+-------------------------------------------------------------------------------------------------------------
+Se above
+
+-------------------------------------------------------------------------------------------------------------
 •	"Amazon S3" (new tab) (15:05)
+-------------------------------------------------------------------------------------------------------------
+S3 versioning protects objects from accidental deletion and override
+If a delete occurs with versioning enabled it adds a delete marker, but the object is still retreavable by version ID
+If a delete occurs with versioning disabled/suspended 
+
+-------------------------------------------------------------------------------------------------------------
 •	"Amazon S3 Glacier" (new tab) (14:13)
+-------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------
 •	"Module Wrap-Up" (new tab) (1:22)
 Knowledge check 
 •	Amazon Elastic block store (Amazon EBS) volume is tied to availability zones (data centers)
