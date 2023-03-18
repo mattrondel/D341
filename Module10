@@ -112,4 +112,7 @@ Module 10 knowledge check
 •	AWS Config can evaluate a rule on demand, or based on a trigger (for example, when a resource is created or modified) it will also evaluate when resources are running or not – think config doesn’t care if its running or not like SolarWinds does
 •	IAM policies can enforce the use of tags for creating resources
 
-lets take notes on tagging and do exercises
+let’s take notes on tagging and do exercises
+
+Lab Notes:
+
