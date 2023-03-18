@@ -64,7 +64,20 @@ Use AWS Config Rules:
 •	"Module Wrap-Up" (new tab) (1:12)
 ---------------------------------------
 
+Lab notes:
+The CloudWatch Agent can be used to collect metrics from Amazon EC2 instances an on-premises servers including:
+•	System-level metrics from Amazon EC2 instances, such as: CPU allocation, free disk space and memory utilization. These metrics are collected from the machine itself and compliment the standard Amazon CloudWatch metrics collected by CloudWatch.
+•	System-level metrics from on-premises servers, enabling monitoring of hybrid environments and servers not managed by AWS.
+•	System and Application Logs from both Linux and Windows servers.
+•	Custom metrics from applications and services using the StatsD and collectd protocols.
 
+•	CloudWatch captures metrics about CPU, Disk and Network usage on the instance. These metrics view the instance 'from the outside' as a virtual machine but do not give insight into what is running 'inside' the instance, such as measuring free memory or free disk space. Fortunately, you can obtain information about what is happening inside the instance by using information captured by CloudWatch Agent, because CloudWatch Agent runs inside the instance to collect metrics.
+•	CloudWatch Events becomes aware of operational changes as they occur.
+•	CloudWatch Events is now EventBridge
+•	The Web Server instance will enter the stopping state. After a minute it will enter the stopped state.
+
+•	You should then receive an SMS message with details of the instance that was stopped.
+The message is formatted in JSON. To receive an easier-to-read message, you could create an AWS Lambda function that is triggered by CloudWatch Events. The Lambda function could then format a friendlier message and send it via Amazon SNS.
 ---------------------------------------
 Module 9 knowledge check
 ---------------------------------------
