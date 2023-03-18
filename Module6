@@ -13,7 +13,7 @@ Chapter 6 (Module 6) notes
 "Computing (Database Services)" (new tab) (1:16)
 -------------------------------------------------------------------------------
 SQL category RDS and Redshift
-RDS has 6 possible engines (now 7) including MySQL and Oracle – M$ SQL, oracle, PostgreSQL, MAriaDB, MySQL, AMZ Aurora PostresSQL-compatable edition
+RDS has 6 possible engines (now 7) including MySQL and Oracle – M$ SQL, oracle, PostgreSQL, MariaDB, MySQL, AMZ Aurora PostresSQL-compatable edition
 
 For NoSQL:
 DynamoDB, Neptune and ElastiCache
@@ -74,8 +74,11 @@ Each DB cluster has one primary instance
 "Amazon DynamoDB" (new tab) (5:54)
 -------------------------------------------------------------------------------
 Reliable Non-relational
-Fully managed Saas
-
+Fully managed SAAS product that can do point in time recovery, backup and restore for all your tables
+Ties in with IAM for access controls 
+Supports storing stuff in the form of JSON documents for storing, querying, and updating
+Integrates with CloudWatch so you can see throughput and latency request statistics 
+DynamoDB stores things in tables which contains items with attributes – this is similar to rows or tuples and attributes as columns
 -------------------------------------------------------------------------------
 "Amazon Database Migration Service (Amazon DMS)" (new tab) (6:57)
 -------------------------------------------------------------------------------
@@ -98,3 +101,5 @@ Complete the Module 6 knowledge check
 •	Amazon DynamoDB is a NoSQL database option
 •	Amazon Aurora should be considered if there is a need for a MySQL and PostgreSQL compatible relational database
 •	The max number of read replicas that an Amazon Aurora database cluster can have is 15
+
+NoSQL - 
