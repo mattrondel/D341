@@ -47,6 +47,13 @@ Commonly seen HTTP status codes
 ---------------------------------------------------------------------------------------------------------------
 •	"Amazon API Gateway" (new tab) (4:57)
 ---------------------------------------------------------------------------------------------------------------
+API Gateway handles all the tasks that are involved in accepting and processing concurrent API calls at scale. Tasks include traffic management, authorization and access control, monitoring, and API version management.
+You can use Amazon API Gateway to build an API.
+As your applications evolve and grow, your APIs will proliferate. Because of that, it is important to monitor and manage your APIs.
+API interfaces that you develop have a frontend and a backend. The frontend is used by the client applications to make requests. The parts of the API implementation that communicate with the other services is referred to as the backend.
+The frontend is encapsulated by method requests and method responses.
+The backend is encapsulated by requests and responses that integrate with the other services.
+Like most services you pay for only for what you use in this case its calls made to an API and data transferred out.
 
 ---------------------------------------------------------------------------------------------------------------
 •	"Containers on AWS" (new tab) (10:18)
