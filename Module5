@@ -3,7 +3,9 @@
 •	Watch first
 •	Watch again but take notes, like summarize or bullet list stuff in the video
 •	take a break when timer expires
+
 Module 5 – Lambda, APIs, API Gateway, Containers, Step Functions, Fargate and ECS
+
 https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860cb4a2abb91f13af016e906/9396d5a9a12745669810a6ccffabbf43/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%405cdc1d7661f544c08441f37f21b8b4da
 
 ---------------------------------------------------------------------------------------------------------------
@@ -28,6 +30,20 @@ The maximum runtime for a Lambda function is 15 minutes.
 •	"APIs and REST" (new tab) (7:18)
 ---------------------------------------------------------------------------------------------------------------
 APIs make computer software accessible to developers via code.
+HTTP status codes:
+100s – Informational
+200s – Success
+300s - Redirection
+400s - Client errors
+500s - Server errors
+HTTP status codes will be included in REST ASPI responses 
+Commonly seen HTTP status codes
+200 - Indicates success both request was received and accepted by the server “200 success”
+401 - Indicates a client error, Unauthorized, Authentication is required but the provided credentials were not accepted or perhaps no credentials were provided in the request. “401 Unauthorized”
+403 - Indicates a client error, Forbidden. The request was properly made, but the server is not allowing the request. “403 Forbidden”
+404 - Indicates a client error, Not Found. The resource is unavailable or could not be accessed. “404 not found”
+500 - Indicates an unspecific internal server error. “500 Unspecified”
+503 - Indicates the service is temporarily unavailable “503 unavailable”
 ---------------------------------------------------------------------------------------------------------------
 •	"Amazon API Gateway" (new tab) (4:57)
 ---------------------------------------------------------------------------------------------------------------
