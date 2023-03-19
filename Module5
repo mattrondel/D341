@@ -3,17 +3,46 @@
 •	Watch first
 •	Watch again but take notes, like summarize or bullet list stuff in the video
 •	take a break when timer expires
-Module 5 – Lambda, APIs, API Gateway, Containers, Fargate and ECS
+Module 5 – Lambda, APIs, API Gateway, Containers, Step Functions, Fargate and ECS
 https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860cb4a2abb91f13af016e906/9396d5a9a12745669810a6ccffabbf43/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%405cdc1d7661f544c08441f37f21b8b4da
 
+---------------------------------------------------------------------------------------------------------------
 •	"Computing (Containers and Serverless)" (new tab) (1:46)
+---------------------------------------------------------------------------------------------------------------
+This is just an overview in the pdf restating the topics
+---------------------------------------------------------------------------------------------------------------
 •	"AWS Lambda" (new tab) (9:24)
+---------------------------------------------------------------------------------------------------------------
+Lambda is a SaaS product yeah you don’t need to patch (add runtimes etc) it or nothing just throw code at it and pay the bill! – Again “Lambda allows code to run without provisioning (provoking) or managing servers” – provoking was misspelled in M$ word so I kept it
+Grr again there are compute options that are VMs and Container services like ECS (ITS IN THE DAMN NAME), however there is a third approach that is called serverless computing (SaaS)
+Lambda runs your code in a virtual private cloud (VPC) by default You can also optionally configure AWS Lambda to access resources behind your own VPC. This option allows you to use custom security groups and network access control lists
+You choose the amount of memory you want to allocate to your functions. Lambda allocates proportional CPU power, network bandwidth, and disk I/O
+Lambda Layers
+You can configure your Lambda function to pull in additional code and content in the form of layer. A layer is zip archive containing libraries, custom runtimes or other dependencies. With layers, you can use libraries in your function without needing to include them in your deployment package. 
+A function can use up to five layers at a time. The total unzipped size of the function and all layers cannot exceed the unzipped deployment package size limit of 250 MB. Layers let you keep your deployment package small, which makes development easier.
+Layers are extracted to the /opt directory in the function runtime environment.
+To add layers to a function, developers use the update-function-configuration command.
+Maximum memory allocation for a single Lambda function is 3 GB.
+The maximum runtime for a Lambda function is 15 minutes.
+---------------------------------------------------------------------------------------------------------------
 •	"APIs and REST" (new tab) (7:18)
+---------------------------------------------------------------------------------------------------------------
+APIs make computer software accessible to developers via code.
+---------------------------------------------------------------------------------------------------------------
 •	"Amazon API Gateway" (new tab) (4:57)
-•	"Containers on AWS" (new tab) (10:18)
-•	"Amazon Fargate and Amazon Elastic Container Service" (new tab) (13:03)
-•	"Module Wrap-Up" (new tab) (1:46)
+---------------------------------------------------------------------------------------------------------------
 
+---------------------------------------------------------------------------------------------------------------
+•	"Containers on AWS" (new tab) (10:18)
+---------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+•	"Amazon Fargate and Amazon Elastic Container Service" (new tab) (13:03)
+---------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+•	"Module Wrap-Up" (new tab) (1:46)
+---------------------------------------------------------------------------------------------------------------
 
 Complete the Module 5 knowledge check 
 •	These AWS services can increase the ease of running and managing Docker containers:
