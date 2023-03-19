@@ -79,7 +79,15 @@ Bin packaging – when there is limited space available on the hosts where conta
 Zombie containers is when you run containers that are no longer needed. 
 A Zombie containers is a Docker container that refuses to stop when issued a command.
 Zombie containers refuse to stop as it cannot process the INIT command to stop gracefully.
-You can work around zombie containers in ECS by using the “initProcessEnabled” flag as “PID 1” in the container as a task definition. Doing this allows for a graceful exit of all containers
+You can work around zombie containers in ECS by using the “initProcessEnabled” flag as “PID 1” in the container as a task definition. Doing this allows for a graceful exit of all containers.
+Disappearing containers is the issue of having containers that you need — but are no longer running
+ECS
+ECS – is a container management service that supports Docker it also allows you to run applications on a managed cluster of Amazon EC2 instances.
+Amazon ECS has a built – in scheduler (for flexible scheduling) or use a third - party scheduler, Apache Mesos. You can also perform task, service, or daemon scheduling.
+ECS APIs s make it straightforward to integrate third - party solutions
+ECS launches your containers in your own Amazon VPC (not sure why it wouldn’t) and thus allows you to use your VPC security groups. 
+No compute is shared with other customers (Bill Murry “which is nice”)
+ECS tasks are defined through JSON templates called “tasks definitions” where you specify one or more containers that are required for your task like Docker repo, Memory and CPU requirements, shared data volumes, and how the containers are linked to each other.
 ---------------------------------------------------------------------------------------------------------------
 •	"Amazon Fargate and Amazon Elastic Container Service" (new tab) (13:03)
 ---------------------------------------------------------------------------------------------------------------
@@ -95,7 +103,7 @@ Elastic container services (ECS), Elastic Kubernetes service (EKS) and Fargate
 •	Tasks perform the work (when configured) in a workflow when using AWS Step Functions
 •	A customer should select Amazon Elastic Container Registry (Amazon ECR) if they need to store, manage and deploy Docker container images, with considerations for encryption, third party integrations, and High-Availability 
 •	AWS Fargate provides a managed service for running containers
-•	Trucking company benefits of containers : 
+•	Trucking company benefits of containers: 
 •	Amazon S3 server-side encryption provides encryption for data at rest for Elastic Container registry (ECR)
 •	Amazon Elastic Container registry (ECR) uses defined polices with AWS Identify and access management (IAM) to control who has access to container images
 •	Amazon Elastic container service for Kubernetes (Amazon EKS) will deploy a cluster’s worker nodes across multiple availability zones so that a single point of failure can be eliminated 
