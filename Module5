@@ -54,11 +54,23 @@ API interfaces that you develop have a frontend and a backend. The frontend is u
 The frontend is encapsulated by method requests and method responses.
 The backend is encapsulated by requests and responses that integrate with the other services.
 Like most services you pay for only for what you use in this case its calls made to an API and data transferred out.
-
+API Gateway integrates with AWS Lambda so that you can create completely serverless APIs.
+When paired with CloudFront it allows you to take advantage of the network of edge locations that provide your users with the lowest latency for API requests and responses.
+You can also simultaneously run multiple versions of the same API, which allows you to quickly iterate, test, and release new versions.
+IAM can be setup to authorize access to your APIs
+If you use OAuth tokens or other authorization mechanisms, Amazon API Gateway can use AWS Lambda to run a Lambda authorizer to help you verify incoming requests.
+API gateway works tightly with Lambda so you can create serverless APIs
+First, you create REST APIs with Amazon API Gateway. Then, your mobile and web applications can use these APIs to call publicly available AWS services through the code that that you run in AWS Lambda.
+Amazon Cognito provides user management and authentication functions to secure the backend API.
 ---------------------------------------------------------------------------------------------------------------
 •	"Containers on AWS" (new tab) (10:18)
 ---------------------------------------------------------------------------------------------------------------
-
+Containers virtualize an operating system
+Containers share a virtualized operating system and run as resource-isolated processes.
+Containers hold everything that the software needs to run, such as libraries, system tools, code, and the   runtime.
+Containers provide process isolation
+Containers are isolated from each other, so you do not have to worry about libraries or dependencies being in sync for each service.
+Containers allow you to track versions of your application code and their dependencies.
 ---------------------------------------------------------------------------------------------------------------
 •	"Amazon Fargate and Amazon Elastic Container Service" (new tab) (13:03)
 ---------------------------------------------------------------------------------------------------------------
