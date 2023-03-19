@@ -87,11 +87,75 @@ Amazon ECS has a built – in scheduler (for flexible scheduling) or use a third
 ECS APIs s make it straightforward to integrate third - party solutions
 ECS launches your containers in your own Amazon VPC (not sure why it wouldn’t) and thus allows you to use your VPC security groups. 
 No compute is shared with other customers (Bill Murry “which is nice”)
-ECS tasks are defined through JSON templates called “tasks definitions” where you specify one or more containers that are required for your task like Docker repo, Memory and CPU requirements, shared data volumes, and how the containers are linked to each other.
+ECS tasks are defined through JSON templates called “tasks definitions” where you specify one or more containers that are required for your task like the Docker repo and image, Memory and CPU requirements, shared data volumes, and how the containers are linked to each other.
+Launch as many tasks as you want from a single task definition, which you register with the service.
 ---------------------------------------------------------------------------------------------------------------
 •	"Amazon Fargate and Amazon Elastic Container Service" (new tab) (13:03)
 ---------------------------------------------------------------------------------------------------------------
+Fargate is a technology for Amazon ECS that allows you to run containers without having to manage servers or clusters.
+ECS can use containers provisioned by Fargate to scale, load balance, and manage scheduling of your containers for availability
+All Amazon ECS clusters are heterogeneous – you can run both Fargate and Amazon ECS tasks in the same cluster.
+Fargate capabilities are available natively in Amazon ECS you don’t need to learn new API actions to run containers on Fargate.
+Fargate comes in 50 different combinations of CPU and memory.
+Pricing for CPU and memory is charged on a per-second basic with a 1 minute minimum
+Fargate and ECS stack
+Nice benefit is when a new version of Docker is released with Fargate, upgrades are taken care of for you. BECAUSE IT’S SERVERLESS!!!!
+ECS has two modes:
+“EC2 launch type” and “Fargate launch type”
+With Fargate launch type you only have to package your application in containers then define CPU and memory, network, and IAM policies then launch the application. Fargate is the serverless way to host your Amazon ECS workloads.
+(Not mentioned in the WGU doc, I looked it up) - EC2 launch type is used to run your containerized applications on EC2 instances that you register to your Amazon ECS cluster and manage yourself.
+Running containers as Fargate is a launch type decision, no need for additional plugins to add to containers
+RECAP FIRST:
+Fargate – serverless
 
+EC2 - run your containerized applications on Amazon EC2 instances that you register to your Amazon ECS cluster and manage yourself.
+Ok this is confusing:
+When to use Fargate over EC2
+Use EC2 when: 
+•	Using Spot or reserved instances 
+•	Ruining windows clusters 
+•	Needing granular control for compliance
+•	Requiring specialized hardware 
+Use Fargate when:
+•	Running containers without managing a fleet of EC2 instances
+•	Needing a quick start for a new app
+•	Porting a monolithic app
+•	Dealing with highly variable workloads
+Again Fargate is serverless no need to provision stuff to run containers
+If you want to get an app up and running quickly run Fargate, write a definition, and choose Fargate then your good to go
+For a monolithic app by containerizing the app then launching with Fargate, you can worry less about the cluster and focus on the app itself.
+If an app you need to deploy needs horizontal scalability e.g. unpredictable in the resources it will need then Fargate is the way to go
+If you are a heavy user of EC2 Spot or have reserved instances use EC2 for ECS tasks because there is no way to translate this to spot or reserved in Fargate
+If your running M$ windows containers ECS mode is still the best mode because this is not currently supported in Fargate 
+If you need granular control of your EC2 instances due to support compliance, governance requirements, broader customization options or specialized hardware you will need to stick with EC2
+Kubernetes
+Kubernetes open source container orchestration software that allows you to run any type of containerized application by using the same toolset on-premises
+Containers are run in logical groupings called pods and you can run and scale one or many containers together as a pod.
+Kubernetes control plane software decides when and where to run your pods, traffic routing, and scales your pods based on utilization or other metrics that you define.
+Each pod is given an IP address and a single DNS name, which Kubernetes uses to connect your services with each other and external traffic.
+Kubernetes lets you define complex containerized applications and run them at scale across a cluster of servers.
+Adding new functionality to Kubernetes is easy (its open source)
+EKS (Elastic container service)
+Kubernetes management runs across multiple Availability zones 
+ECR (Container registry)
+A fully managed Docker container registry integrated with Amazon ECS. Specify the Amazon ECR repository in your task definition, and Amazon ECS will retrieve the appropriate images for your applications
+ECR supports Docker Registry HTTP API version 2(NOT SURE WHAT THE CRAP THIS MEANS) SO YOU CAN interact with ecr using THE Docker CLI commands 
+ECR stores your container images in S3
+Namespaces allows you to organize your repositories based on your team’s existing workflows
+ECR uses IAM for access control
+You can transfer your container images to and from Amazon ECS via HTTPS and encrypts data at rest on S3
+ECR also supports Third -party integrations
+A single application can span multiple containers (interesting…)
+Kubernetes is an open source container orchestration software that allows you to deploy and manage containerized applications at scale.
+Step Functions 
+Step Functions allow the ability to coordinate services into serverless workflows
+Workflows are a series of steps
+Output of one step is input of the next like Step Functions enables Lambda and ECS to work together
+This allows you write less code
+You coordinate individual tasks by expressing your workflow as a state machine.
+Individual states make decisions based on their input, perform actions, and pass their output to other states
+States can perform different functions, For example, they can do some work (perform a task). Or, they can make a choice about which branch in the workflow to continue on.
+Tasks are configured to invoke code that is hosted in a function, container, or instance, which can then be run as many times as needed for a period of 1 year.
 ---------------------------------------------------------------------------------------------------------------
 •	"Module Wrap-Up" (new tab) (1:46)
 ---------------------------------------------------------------------------------------------------------------
