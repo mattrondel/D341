@@ -71,6 +71,15 @@ Containers hold everything that the software needs to run, such as libraries, sy
 Containers provide process isolation
 Containers are isolated from each other, so you do not have to worry about libraries or dependencies being in sync for each service.
 Containers allow you to track versions of your application code and their dependencies.
+Like VM sprawl Container sprawl occurs when the number of containers in your infrastructure grows significantly and container distribution is not being properly managed.
+Another issue is keeping track of the version differences of a container.
+Using ECR repository in your task definitions allows you to attach the “AmazonEC2ContainerServiceforEC2Role” to your instances. This allows Amazon EC2 to retrieve the appropriate images for the applications that are managed using Amazon ECR repositories where owners and version control is kept.
+Challenges of container management: 
+Bin packaging – when there is limited space available on the hosts where containers can run.
+Zombie containers is when you run containers that are no longer needed. 
+A Zombie containers is a Docker container that refuses to stop when issued a command.
+Zombie containers refuse to stop as it cannot process the INIT command to stop gracefully.
+You can work around zombie containers in ECS by using the “initProcessEnabled” flag as “PID 1” in the container as a task definition. Doing this allows for a graceful exit of all containers
 ---------------------------------------------------------------------------------------------------------------
 •	"Amazon Fargate and Amazon Elastic Container Service" (new tab) (13:03)
 ---------------------------------------------------------------------------------------------------------------
