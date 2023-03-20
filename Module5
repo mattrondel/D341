@@ -65,6 +65,7 @@ Amazon Cognito provides user management and authentication functions to secure t
 ---------------------------------------------------------------------------------------------------------------
 •	"Containers on AWS" (new tab) (10:18)
 ---------------------------------------------------------------------------------------------------------------
+WHAT THIS FOR EXTRA INFO https://www.youtube.com/watch?v=lef1qR7C_GE
 Containers virtualize an operating system
 Containers share a virtualized operating system and run as resource-isolated processes.
 Containers hold everything that the software needs to run, such as libraries, system tools, code, and the   runtime.
