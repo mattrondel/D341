@@ -139,7 +139,7 @@ EKS (Elastic container service)
 Kubernetes management runs across multiple Availability zones 
 ECR (Container registry)
 A fully managed Docker container registry integrated with Amazon ECS. Specify the Amazon ECR repository in your task definition, and Amazon ECS will retrieve the appropriate images for your applications
-ECR supports Docker Registry HTTP API version 2(NOT SURE WHAT THE CRAP THIS MEANS) SO YOU CAN interact with ecr using THE Docker CLI commands 
+ECR supports Docker Registry HTTP API version 2(NOT SURE WHAT THE CRAP THIS MEANS) SO YOU CAN interact with ECR using THE Docker CLI commands 
 ECR stores your container images in S3
 Namespaces allows you to organize your repositories based on your team’s existing workflows
 ECR uses IAM for access control
@@ -163,6 +163,7 @@ Tasks are configured to invoke code that is hosted in a function, container, or 
 Complete the Module 5 knowledge check 
 •	These AWS services can increase the ease of running and managing Docker containers:
 Elastic container services (ECS), Elastic Kubernetes service (EKS) and Fargate
+EKS is a cloud-based container management service that natively integrates with Kubernetes to deploy applications
 •	AWS Lambda automatically scales to support incoming requests without the need for additional configuration, and it remains fault-tolerant
 •	Tasks perform the work (when configured) in a workflow when using AWS Step Functions
 •	A customer should select Amazon Elastic Container Registry (Amazon ECR) if they need to store, manage and deploy Docker container images, with considerations for encryption, third party integrations, and High-Availability 
@@ -173,3 +174,4 @@ Elastic container services (ECS), Elastic Kubernetes service (EKS) and Fargate
 •	Amazon Elastic container service for Kubernetes (Amazon EKS) will deploy a cluster’s worker nodes across multiple availability zones so that a single point of failure can be eliminated 
 umm whats the difference between Amazon Elastic container service for Kubernetes and Kubernetes services (are these the same thing?)
 •	_ _ and _ describes how Kubernetes works? (might take several tries to determine these as the answer is not given)
+
