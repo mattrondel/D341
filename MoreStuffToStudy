@@ -1,4 +1,90 @@
 https://github.com/mattrondel/D341/edit/main/MoreStuffToStudy
+***********************************
+Stuff remembered
+
+macie needs s3 buckets?
+macie is sensitve data discovery
+
+Amazon DocumentDB is a managed proprietary NoSQL database service 
+
+cloudwatch
+exclude is - like when you excude from google searches
+
+
+application load balancer is for web servers duh
+
+cloudfront 
+
+elasticache vs cloudfront
+
+https://aws.amazon.com/premiumsupport/plans/
+support plans aws
+
+
+blue green deployments aws canary linerar etc
+
+
+codedeloy details
+
+the fuck is nimble studio
+ebs vs efs for on prem, who can use which one at the same time 
+EFS is for multiple servers having access to the same set of files
+
+Canary: a specific amount of traffic is shifted to the new version
+ during a certain period of time. When that time elapses, all the 
+ traffic goes to the new version. Linear: traffic is shifted to the new 
+ version incrementally in intervals until it gets all of it.
+
+https://docs.panther.com/alerts/alert-runbooks/built-in-policies/aws-ec2-instance-running-on-approved-instance-type
+
+
+
+cloudformation
+config
+
+Attach a load balancer to your Auto Scaling group
+
+-EventBridge AKA CloudWatch-
+https://youtu.be/KX_AfyrhlgQ?t=2223
+cloudwatch is for?
+
+stacksets removing in some region bu not all what happens when you do them
+
+need to watch netowkr stuff for aws vpcs whatever 
+
+aws sheild vs way for layer 7 proteection
+
+RDS - Fully Managed Relational Database
+Amazon EMR - Big Data Platform
+
+encryption in transit aws on prem to vpc
+
+billing alerts
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html
+
+differences between ebs vs efs
+EBS - for databases
+https://dzone.com/articles/confused-by-aws-storage-options-s3-ebs-amp-efs-explained
+
+EFS - for file sharing across applications, VMs etc
+https://dzone.com/articles/confused-by-aws-storage-options-s3-ebs-amp-efs-explained
+
+
+
+https://www.amazon.com/EagleTec-Mechanical-Keyboard-Industrial-Aluminium/dp/B086VRHTNG?th=1
+
+elastic LB
+https://aws.amazon.com/elasticloadbalancing/
+
+
+
+https://www.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/
+***********************************
+
+
+
+
+
 
 SSM Vs EventBridge Vs OpsWork Vs Fargate
 
