@@ -9,6 +9,34 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b0
 •	"Monitoring and Security" (new tab) (0:52)
 -----------------------------------------------------------------------------------------
 Just a welcome overview
+Docs sections
+CloudWatch integrates with more than 70 services For example, if you are running an HTTP server on an EC2 instance, you could publish a statistic on the memory usage of the httpd service. User activity is another example of a custom metric you can collect and monitor over a period of time.
+You can configure CloudWatch alarms that will trigger when a specific condition is met — for example,  if the CPU utilization of one of your instances exceeds 70 percent for more than 5 minutes.
+CloudWatch alarms can also be configured to publish notifications using Amazon Simple Notification Service (SNS) or Amazon Simple Queue Service (SQS). Other notifications could be monitored by a script or application that implements an auto - corrective measure, such as restarting an unreachable Amazon EC2 instance.
+The CloudWatch agent enables you to collect system- level metrics from Amazon EC2 instances or even from on -premises servers (that is, servers that are not managed by AWS).
+Metrics are the fundamental concept in CloudWatch. A metric represents a time - ordered set of data points that are published to CloudWatch. Think of a metric as a variable to monitor, and the data points represent the values of that variable over time. 
+A namespace is a container for CloudWatch metrics.
+A dimension is a name - value pair that uniquely identifies a metric. You can assign up to 10  dimensions to a metric
+A period is the length of time associated with a specific Amazon CloudWatch statistic.
+Standard metrics
+•	Standard metrics are grouped by service name
+•	Display graphically so they can be compared
+•	Only appear if you have used the service within the last 15 months
+•	Reachable through CLI or API
+Custom metrics
+•	Grouped by user-defined namespace (a container for CloudWatch metrics)
+•	Publishes to CloudWatch using CLI, API or CloudWatch agent
+To view available metrics using the AWS CLI, use the “list-metrics” command to list them. For example, running the command “aws cloudwatch list-metrics –namespace” AWS/S3 will list all of the available standard Amazon S3 metrics.
+Generating alerts based on billing data is a good way to detect a potential security violation of your AWS account. To detect this proactively, you could enable billing alerts in your account preferences, and then set CloudWatch alarms to alert you if estimated billing charges for the month have exceeded a specified threshold.
+CloudWatch dashboards are customizable home pages in the CloudWatch console that you can use to monitor your resources in a single view that you create.
+Automatic dashboards are pre-built with recommended best practices for AWS services.
+By default, the bottom part of the automatic dashboard shows Cross service dashboard metrics.
+If you name the new dashboard “CloudWatch-Default”, it will display on the main “CloudWatch:Overview” dashboard page.
+By default EC2 instances only report every 5 minutes (free tier) also called basic monitoring
+To enable detailed monitoring to an instance for once a minute it will cost extra
+CloudWatch standard metrics are complimentary
+Amazon CloudWatch basic monitoring provides metrics every 5 minutes. In contrast, detailed monitoring can provide metrics every minute.
+Amazon CloudWatch standard metrics are complimentary. Custom metrics and detailed monitoring are paid features.
 -----------------------------------------------------------------------------------------
 •	"Amazon CloudWatch" (new tab) (12:11)
 -----------------------------------------------------------------------------------------
@@ -36,20 +64,85 @@ Alarm state does not always constitute an emergency a restart might cause an ala
 •	By default EC2 instances only report every 5 minutes (free tier) if you pay you can get up to 1 minute 
 •	https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-cloudwatch-new.html
 
----------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 •	"Amazon CloudWatch Events (and CloudWatch logs)" (new tab) (8:29)
----------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 Read first then watch
 CloudWatch Events is a near-real-time steam 
 Event is a change in your environment, you can also create custom application-level events and publish them to CloudWatch Events. Scheduled events can be setup on a periodic basis
 Targets process events 
 Rules match incoming events and routes them to targets for processing a single rule can route to multiple targets, all of which are processed in parallel.
-
+Near real-time stream
+Using simple rules that you can configure, you can match events and route them to one or more target functions or streams.
+You can use CloudWatch Events to schedule automated actions that self-trigger at certain times using cron or rate expressions. For details on creating schedule expressions using Rate or Cron, see: https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events -schedule-expressions.html
+For CloudWatch Events, you should understand the following concepts
+“Events” –An event indicates a change in your AWS environment.
+“Targets” – A target processes events a target for example can be a AWS service like Lambda or Ec2 instance
+“Rules” –A rule matches incoming events and routes them to targets for processing. A single rule can route to multiple targets, all of which are processed in parallel.
+CloudWatch Events can trigger services, such as AWS Lambda, based on near real-time events.
+CloudWatch Logs
+You can use Amazon CloudWatch Logs to monitor, store, and access your log files from Amazon EC2 instances, CloudTrail, Route 53, and other sources.
+You can monitor your logs, in near-real time, for specific phrases, values, or patterns
+Log data can be stored and accessed indefinitely — and stored externally to EC2 instances so don’t worry about filling up HDDs
+Like cyber log collection CloudWatch is in three phases:
+1.	Configure –Decide what information you need to capture in your logs, and where and how it will be stored.
+2.	Configure – Decide what information you need to capture in your logs, and where and how it will be stored.
+3.	Analyze –After all the data is collected, it’s time to analyze. Using log data gives you greater visibility into the daily health of your systems. It can also provide information on upcoming trends in customer behavior, and insight into how customers are currently using your system.
+You must install the CloudWatch agent on any EC2 instance that you want to collect log data from
+Then aggregate data from a number of different Amazon EC2 instances into what are called log groups
+An admin can then create filters on a log group to look for specific strings or string patterns.
+CloudWatch Logs Insights is a part of the CloudWatch service that provides a built query with a few simple, but powerful, commands.
+For example an administrator then created a custom CloudWatch filter on the log group to search the log data for “404 page not found” HTTP error messages in the log. Then they can use that metric to trigger a CloudWatch alarm any time the 404Count exceeds a specified value
+CloudWatch Logs can collect application logs by filtering metric data points for events.
 ---------------------------------------
 •	"AWS CloudTrail" (plus config and Athena) (new tab) (7:57)
 ---------------------------------------
+CloudTrail is a service that generates logs of calls to the AWS API.
+If you care to know there are the services it covers: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html
+Though CloudTrail is full-featured, it does not track events that occur within an Amazon EC2 instance such as if somebody shuts down using SSH like sudo shutdown now
+CloudTrail can help answer stuff like:
+•	Who terminated something?
+•	Who changed a Security group?
+•	Any activity coming from an unknown IP address?
+•	What activities were denied due to lack of permissions?
+Steps to configure CloudTrail:
+FYI it only show the results from the last 90 days and are limited to management events with create, modify, and delete API calls, and account activity for or a complete record of account activity — including all management events, data events, and read -only activity—you must configure a CloudTrail trail.
+Steps are:
+Create or specify a bucket for logs 
+Configure trail to log read-only, write only or all management and data events. DEFAULT is: trails log all management events.
+Setup an SNS topic for delivery
+Optionally - configure CloudWatch Logs to receive logs from CloudTrail so that you can monitor for specific log events.
+Optionally add tags (custom key - value pairs) to your trail.
+Each JavaScript Object Notation (JSON) -formatted CloudTrail log file can contain one or more log entries. 
+A log entry represents a single request from any source and includes information about the requested action and response
+AWS CloudTrail enables auditing of AWS accounts by continuously logging account activity.
+AWS Service Integration with Amazon Athena
+Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL.
+To use Athena, you point to your data in Amazon S3, define the schema, and start querying using standard SQL. Most results are delivered within seconds.
+Athena works with a variety of standard data formats, including CSV, JSON, ORC, Avro, and Parquet.
+Athena is serverless just point it to your data in S3
+Amazon Athena automatically runs queries in parallel,
+To use Amazon Athena, just point to your data in Amazon S3, define the schema, and start querying using the built-in query editor
+
 CloudTrail Enables auditing of accounts by continuously logging account activity 
 Athena is a serverless interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. To use Athena, you point to your data in Amazon S3, define the schema, and start querying using standard SQL. Athena works with a variety of standard data formats, including CSV, JSON, ORC, Avro, and Parquet
+Results will display in the Athena Query Editor, however results can also be downloaded as CSV files
+Athena works easy with 
+•	CloudTrail logs
+•	Load balancer logs
+•	VPC flow logs
+AWS Config
+Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
+With AWS Config, you can:
+• Retrieve an inventory of AWS resources
+• Discover new and deleted resources
+• Record configuration changes continuously and determine your overall compliance against the configurations specified by your internal guidelines
+• Get notified when configurations change and dive into detailed resource configuration histories
+These features enable you to simplify compliance auditing, security analysis, change management, and operational troubleshooting
+AWS Config provides a rule system. You can use existing rules from AWS and from partners. You can also define your own custom rules by using AWS Lambda 
+AWS Config provides multiple features to assess, audit, and evaluate the configurations of AWS resources.
+
+
 Use AWS Config for configuration management to:
 •	Retrieve inventory of resources
 •	Discover new and delete resources
