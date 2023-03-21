@@ -14,6 +14,9 @@ https://old.reddit.com/r/WGU/comments/ko0m1q/c924_cloud_deployment_and_operation
 Other stuff unrealted to this class
 https://www.amazon.com/EagleTec-Mechanical-Keyboard-Industrial-Aluminium/dp/B086VRHTNG
 
+
 untap.in 
+
 mtg forge
+
 https://themagictavern.org/2020/12/31/squirrels-to-nuts-toski-casual-edh/
