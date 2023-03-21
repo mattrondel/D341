@@ -32,7 +32,14 @@ Key component types include:
 —	Virtual private gateway (VGW)
 —	Customer gateway – A customer gateway is a physical device or software application that is defined on the client side of a VPN connection
 
+A VPC is an isolated portion of the AWS Cloud that you provision so you can deploy AWS infrastructure service
+The IPV6 CIDR block uses a fixed prefix length of /56.
+You can only define VPCs with CIDR blocks of /16 through /28
+After you create a subnet, you can specify whether new Amazon EC2 instances that are launched into it should automatically have a public IP address assigned to them. 
 
+—	Amazon VPC helps provision logically isolated networks on AWS.
+—	Subnets are classified as public or private based on their associated route tables.
+—	Security groups are stateful and NACLs are stateless firewalls. They are applied at elastic network interface and subnet levels respectively.
 
 
 "AWS Cloud Networking" (new tab) (8:41)
