@@ -1,6 +1,7 @@
 # D341
 Notes from Cloud Deployment and Operations
 Also known as C924 the "other" harder class
+other degrees there is C923 Cloud Applications before this one
 
 Other stuff unrealted to this class
 https://www.amazon.com/EagleTec-Mechanical-Keyboard-Industrial-Aluminium/dp/B086VRHTNG
