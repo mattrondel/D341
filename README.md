@@ -12,6 +12,9 @@ https://old.reddit.com/r/WGU/comments/ko0m1q/c924_cloud_deployment_and_operation
 
 
 Other stuff unrealted to this class
+
+eagle tech et kg010
+
 https://www.amazon.com/EagleTec-Mechanical-Keyboard-Industrial-Aluminium/dp/B086VRHTNG
 
 
