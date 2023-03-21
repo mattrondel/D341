@@ -9,6 +9,54 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/04c9f97860
 --------------------------------------------------------------------------------------
 •	"Computing (Scaling and Name Resolution)" (new tab) (0:53)
 --------------------------------------------------------------------------------------
+Before you start using your Application Load Balancer, you must add one or more listeners.
+A listener is a process that checks for a connection request from a client to an instance by using the protocol and port that you specify.
+The listener rules that you define also determine how traffic from connecting clients are routed by the load balancer to one or more targets or target groups.
+A load balancer serves as the single point of contact for clients.
+When you create each listener rule, you specify a target group and conditions.
+Targets are organized into target groups. Each target group is used to route requests to one or more registered targets, such as EC2 instances or ECS container instances.
+An Application Load Balancer can have more than one listener
+Each rule specifies a target group, condition, and priority
+Health check are performed on all targets that are registered to a target group when the target group is specified in a listener rule for your load balancer.
+Use the “register-targets” command to register your instances with your target group.
+Use the “create– listener” command to create a listener for your load balancer.
+
+Some key takeaways from this section include:
+There are three types of load balancers: 
+•	Application load balancers
+•	Network load balancers
+•	Classic load balancers
+•Each listener checks for connection requests from clients, using the protocol and port that you configure, and then forwards requests to one or more target groups, based on the defined rules. 
+• Each rule specifies a target group, condition, and priority.
+EC2 Auto Scaling
+EC2 Auto Scaling helps you maintain application availability and allows you to automatically add or remove EC2 instances according to conditions you define.  
+If you have predictable load changes, you can set a schedule through Amazon EC2 Auto Scaling to plan your scaling activities.
+To configure EC2 Auto Scaling, you must first create a launch configuration, and then create an Auto Scaling group.
+To create a launch configuration, you must specify AWS Identity and Access Management (IAM) roles
+EC2 Auto Scaling tracks the health state of instances and terminates instances that are marked unhealthy.
+By default, EC2 Auto Scaling uses Amazon EC2 instance status checks.
+If an Auto Scaling group is behind a load balancer, either the load balancer's instance checks or the EC2 instance checks are used for health monitoring.
+External scripts can trigger the recycling of an instance by invoking the “aws autoscaling set-instance-health” command.
+EC2 Auto Scaling health checks enable you to create a steady-state group that ensures that a single instance is always running.
+
+EC2 Auto Scaling helps you maintain application availability and allows you to 
+automatically add or remove EC2 instances according to conditions you define. 
+• EC2 Auto Scaling consists of three parts: 
+•	Launch configuration/launch template
+•	Auto Scaling group
+•	Scaling policies
+•Scaling can be based on: 
+•	Instance health
+•	Amazon CloudWatch alarms
+•	Time schedule or past usage (prediction)
+•To create a launch configuration, specify:
+•	AWS Identity and Access Management (IAM) roles
+•	Security groups
+•	Storage
+•	Instance type
+•	User data
+•	Key Pairs
+
 You will go over: Elastic load balancing, Ec2 Auto scaling and Route 53
 R53 is a scalable cloud DNS web service
 R53 entries are often configured to point to an ELB load balancer
@@ -35,13 +83,47 @@ Operation monitoring – the ELB provide integration with CloudWatch metrics and
 •	"Scaling Amazon EC2 Instances" (new tab) (13:37)
 --------------------------------------------------------------------------------------
 When you configure an ELB Elastic load balancer which is part of the EC2 service in the management console you can choose from three different types or load balancers: Application, Network or Classic 
+See above
 --------------------------------------------------------------------------------------
 •	"Amazon EC2 Auto Scaling" (new tab) (12:53)
 --------------------------------------------------------------------------------------
-
+See above
 --------------------------------------------------------------------------------------
 •	"Amazon Route 53" (new tab) (7:20)
 --------------------------------------------------------------------------------------
+Route 53 provides an available and scalable (DNS) web service.
+A CNAME record can redirect DNS queries to any DNS record
+An alias record can only redirect queries to selected AWS resources, such as Amazon S3 buckets etc
+Route 53 supports seven different routing policies:
+1.	Simple routing policy – Use for a single resource that performs a given function for your domain for example, a web server that serves content for the example.com website THINK SIMPLE LIKE A SIMPLE WEBSITE
+2.	Weighted routing - Use to route traffic to multiple resources in proportions that you specify. THINK YOU PICK THE WEIGHT
+3.	Latency routing - Use when you have resources in multiple AWS Regions and you want to route traffic to the Region that provides the lowest latency THINK LATENCY IS PING
+4.	Failover routing– Use when you want to configure active - passive failover.
+5.	Geolocation routing– use when you want to route traffic based on the location of your users. THINK GEOLOCATION LIKE GEOCACING WHERE THE USER IS INVOLVED
+6.	Geoproximity routing– Use when you want to route traffic based on the location of your resources and, optionally, shift traffic from resources in one location to resources in another location. THINK PROMINTY LIKE PROXIMITY MINES IN GOLDENEYE THE OBJECT IS CLOSE
+7.	Multivalue answer routing– Use when you want Route 53 to respond to DNS queries, with up to eight healthy records selected at random. THINK MULIVALUSE OCTETS ( 8 )
+
+A blue/green deployment refers to a deployment where the risk of the site or application becoming unavailable is reduced because you are running two matching production environments. One environment is referred to as the blue environment, and the other environment is referred to as the green environment.
+Blue/green process might be done to migrate users to the new or upgraded green environment
+CloudWatch or Trail can be used to monitor one of the two environments it any problems are found in the new one R53 weighted can be deployed to shift users back to the running other servers
+When the new (possibly green?) environment is fully up and running without issues, the blue environment can gradually be shut down. Due to the potential latency of DNS records, a full shutdown of the blue environment can take anywhere from a day to a week.
+
+Amazon Route 53 supports multiple routing policies.
+—	•Simple routing policy
+—	•Weighted routing policy
+—	•Latency routing policy
+—	•Failover routing policy
+—	•Geolocation routing policy
+—	•Geoproximity routing policy
+—	•Multivalue answer routing policy
+
+•Amazon Route53 helps: 
+—	•Register / transfer domain names.
+—	•Resolve domain names to IP address.
+•Amazon Route53 supports multiple routing policies.
+•Amazon Route53 can route traffic to resources in different AWS regions as well as on premises resources.
+•Latency -based routing (LBR) enables you to use DNS to route user requests to the AWS Region that will give your users the fastest response.
+
 
 --------------------------------------------------------------------------------------
 •	"Amazon Route 53 Demonstration" (new tab) (20:23)
