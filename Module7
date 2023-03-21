@@ -20,6 +20,21 @@ https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b0
 •	VPC connectivity options, security mechanisms and guidelines for VPC troubleshooting
 •	You will learn to troubleshoot basic VPC networking issues
 
+
+In its most basic form, a cloud - based network is a private IP address space into which you can deploy computing resources. 
+A VPC can span multiple Availability Zones (data centers)
+Key component types include:
+—	Subnet
+—	Security group
+—	Primary network interface (elastic network interface)
+—	Primary network interface (elastic network interface)
+—	Router
+—	Virtual private gateway (VGW)
+—	Customer gateway – A customer gateway is a physical device or software application that is defined on the client side of a VPN connection
+
+
+
+
 "AWS Cloud Networking" (new tab) (8:41)
 ------------------------------------
 •	VPC is the foundation of an AWS cloud network infrastructure 
