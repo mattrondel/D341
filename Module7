@@ -12,9 +12,9 @@ WATCH THIS TOO https://www.youtube.com/watch?v=KX_AfyrhlgQ&t=8533s
 ***********************************************
 
 https://cgp-oex.wgu.edu/courses/course-v1:WGUx+OEX0032+v01/courseware/1d0dd255b077466687852c4230ec67b7/11a7788bdf2b4957acfd85bacc281c3f/2?activate_block_id=block-v1%3AWGUx%2BOEX0032%2Bv01%2Btype%40vertical%2Bblock%40af29d8fd25314ed0836c702a7a61400a
-
+------------------------------------------------------------------------------------------------------
 "Networking" (new tab) (1:17)
-------------------------------------
+------------------------------------------------------------------------------------------------------
 •	VPC virtual private cloud or VPC
 •	You will examine components of a VPC including subnets, route tables and gateways
 •	VPC connectivity options, security mechanisms and guidelines for VPC troubleshooting
@@ -42,8 +42,9 @@ After you create a subnet, you can specify whether new Amazon EC2 instances that
 —	Security groups are stateful and NACLs are stateless firewalls. They are applied at elastic network interface and subnet levels respectively.
 
 
+------------------------------------------------------------------------------------------------------
 "AWS Cloud Networking" (new tab) (8:41)
-------------------------------------
+------------------------------------------------------------------------------------------------------
 •	VPC is the foundation of an AWS cloud network infrastructure 
 •	In its most basic form a cloud-based network is a private IP address space where you can deploy computing resources , in AWS this private space is provided by Amazon VPC
 •	You can deploy AWS computing resources inside the virtual network such as EC2 or RDS
@@ -90,9 +91,10 @@ IPv6 in VPCs
 •	VPCs have an implicit router that routes all traffic in the VPC
 •	VPCs have a default route table that specifies the allow routes out of the VPC, this table defines a route or rule that allows all traffic for its CIDR IP address range to be routed locally
 
+------------------------------------------------------------------------------------------------------
 "Amazon VPC Components" (new tab) (12:57)
 	Covers: mostly subnet stuff
-------------------------------------
+------------------------------------------------------------------------------------------------------
 •	You can create up to 200 subnets per VPC
 •	For IPv4 minimum size of a subnet is /28 or 16 IP addresses 
 •	For IPv6 the subnet size is fixed to be /64 (fixed prefix length) and only on IPv6 CIDR block can be allocated to a subnet
@@ -188,7 +190,9 @@ One: Some network appliances prefer to be configured with multiple network inter
 •	If you cannot reach resources in a peered network verify that the peering request was approved, also verify that the CIDR block ranges are configured to allow access across the VPCs
 •	For further details about troubleshooting VPC peering, search for VPC peering connectively in the AWS documentation
 
+------------------------------------------------------------------------------------------------------
 "Module Wrap-Up" (new tab) (1:25)
+------------------------------------------------------------------------------------------------------
 •	Practice question with keywords
 •	Module 7 guided lab: Configure an Amazon Virtual private cloud
 •	Begin Module 7 Challenge lab: troubleshoot a VPC (to support the mom and pop café)
