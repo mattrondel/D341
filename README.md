@@ -35,6 +35,8 @@ For Cupboard:
 
 Loctite PL Premium 4 fl. oz. Polyurethane Adhesive
 
+https://www.youtube.com/watch?v=crkktHlPMYY
+
 Internet #
 
 203009252
