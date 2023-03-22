@@ -21,6 +21,9 @@ Magnet sheets for stickers
 
 https://www.amazon.com/Mr-Adhesive-Magnetic-Backing-Flexible/dp/B09ZLPQLRN/
 
+or 
+https://www.amazon.com/dp/B0B6FLH8V7
+
 
 untap.in 
 
