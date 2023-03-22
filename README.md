@@ -17,6 +17,10 @@ eagle tech et kg010
 
 https://www.amazon.com/EagleTec-Mechanical-Keyboard-Industrial-Aluminium/dp/B086VRHTNG
 
+Magnet sheets for stickers
+
+https://www.amazon.com/Mr-Adhesive-Magnetic-Backing-Flexible/dp/B09ZLPQLRN/
+
 
 untap.in 
 
