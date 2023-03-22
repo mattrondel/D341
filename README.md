@@ -30,3 +30,19 @@ untap.in
 mtg forge
 
 https://themagictavern.org/2020/12/31/squirrels-to-nuts-toski-casual-edh/
+
+For Cupboard:
+
+Loctite PL Premium 4 fl. oz. Polyurethane Adhesive
+
+Internet #
+
+203009252
+
+Model #
+
+1451588
+
+Store SKU #
+
+125307
