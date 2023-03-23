@@ -23,21 +23,23 @@ support plans aws
 
 blue green deployments aws canary linerar etc
 
+Canary: a specific amount of traffic is shifted to the new version
+ during a certain period of time. When that time elapses, all the 
+ traffic goes to the new version. Linear: traffic is shifted to the new 
+ version incrementally in intervals until it gets all of it.
+
+
 An Elastic IP address is a public IPv4 address, which is reachable from the internet. it is a static public IPv4 address associated with your AWS account in a specific Region
 When you stop/start your instance, the IP address will change. If you reboot the instance, it will keep the same IP addresses. Unfortunately, it is not possible for us to reassign the address to your instance as that address would have been released back into the pool used by other EC2 instances.
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html
 
-
+AWS sheild is for ddos protetion
+WAF is for layer 7 type stuff like xss and sql attacks
 codedeloy details
 
 the fuck is nimble studio
 ebs vs efs for on prem, who can use which one at the same time 
 EFS is for multiple servers having access to the same set of files
-
-Canary: a specific amount of traffic is shifted to the new version
- during a certain period of time. When that time elapses, all the 
- traffic goes to the new version. Linear: traffic is shifted to the new 
- version incrementally in intervals until it gets all of it.
 
 https://docs.panther.com/alerts/alert-runbooks/built-in-policies/aws-ec2-instance-running-on-approved-instance-type
 
@@ -73,14 +75,10 @@ https://dzone.com/articles/confused-by-aws-storage-options-s3-ebs-amp-efs-explai
 EFS - for file sharing across applications, VMs etc
 https://dzone.com/articles/confused-by-aws-storage-options-s3-ebs-amp-efs-explained
 
-
-
 https://www.amazon.com/EagleTec-Mechanical-Keyboard-Industrial-Aluminium/dp/B086VRHTNG?th=1
 
 elastic LB
 https://aws.amazon.com/elasticloadbalancing/
-
-
 
 https://www.udemy.com/course/ultimate-aws-certified-sysops-administrator-associate/
 ***********************************
