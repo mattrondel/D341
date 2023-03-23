@@ -37,14 +37,12 @@ Loctite PL Premium 4 fl. oz. Polyurethane Adhesive
 
 https://www.youtube.com/watch?v=crkktHlPMYY
 
-Internet #
+Internet # 203009252
 
-203009252
+Model # 1451588
 
-Model #
+Store SKU # 125307
 
-1451588
-
-Store SKU #
-
-125307
+For seat belts: 
+B'laster 16-SL Industrial Strength Silicone Lubricant 
+https://www.homedepot.com/p/Blaster-11-oz-Industrial-Strength-Silicone-Lubricant-Spray-16-SL/202529794
