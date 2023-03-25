@@ -13,6 +13,8 @@ exclude is - like when you excude from google searches
 
 application load balancer is for web servers duh
 
+split horizon dns aws
+
 cloudfront 
 
 elasticache vs cloudfront
