@@ -10,12 +10,14 @@ https://app.pluralsight.com/library/courses/aws-certified-solutions-architect---
 https://old.reddit.com/r/WGU/comments/ko0m1q/c924_cloud_deployment_and_operations_class_tips/
 
 
+#Other stuff unrealted to this class
+
 Sharables:
 http://learnmore.scholarsapply.org/northropgrumman
 
 274.90 credit card
 
-Other stuff unrealted to this class
+find and email over printable book for sara and 3 hole punch or staple items
 
 eagle tech et kg010
 
