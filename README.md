@@ -10,6 +10,10 @@ https://app.pluralsight.com/library/courses/aws-certified-solutions-architect---
 https://old.reddit.com/r/WGU/comments/ko0m1q/c924_cloud_deployment_and_operations_class_tips/
 
 
+Sharables:
+http://learnmore.scholarsapply.org/northropgrumman
+
+274.90 credit card
 
 Other stuff unrealted to this class
 
@@ -26,12 +30,6 @@ https://www.amazon.com/dp/B0B6FLH8V7
 
 
 June 4 -8
-
-untap.in 
-
-mtg forge
-
-https://themagictavern.org/2020/12/31/squirrels-to-nuts-toski-casual-edh/
 
 For Cupboard:
 
