@@ -1,3 +1,7 @@
+Go here dipshit
+
+https://portal.tutorialsdojo.com/courses/aws-certified-sysops-administrator-associate-practice-exams/
+
 # D341
 Notes from Cloud Deployment and Operations
 
