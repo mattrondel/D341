@@ -131,3 +131,32 @@ swap environment URL - this sounds most likley as it sounds like a dns backend s
 
 this also returned the blue green words again
 what is blue environment and what is green
+
+number 30
+patch automation for ec2
+	for shits and giggle what are these sservices:
+	audit manager
+	cloudwatch 
+	system manager <---
+	cloudformation
+due to lack of time left I hunted down the correct answer
+https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager.html
+"Patch Manager, a capability of AWS Systems Manager, automates the process of patching managed nodes"
+
+scedule patching for servers
+
+maint windows <- 
+operational insights
+metadata inventory
+parameter store
+https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-maintenance.html
+"define a schedule for when to perform potentially disruptive actions on your nodes such as patching an operating system"
+
+#32
+defining instances for systems manager to apply updates
+appconfig is a part of systems manager that .. I dont know but does not involve patching stuff
+AWS Systems Manager Explorer - looks like solarwinds but does not do patch stuff but Systems Manager Patch Manager show Data displayed in Explorer includes a count of noncompliant and critical noncompliant nodes.
+"Patch Manager uses patch baselines, which include rules for auto-approving patches within days of their release, as well as a list of approved and rejected patches."
+https://mng.workshop.aws/ssm/capability_hands-on_labs/patchmanager.html
+Me thnks its patch group
+" patch group is an optional method to organize instances for patching." (same url above
