@@ -117,9 +117,17 @@ clouldtrail is an audit trail like logs
 
 question 29
 elastic beanstalk
-what step is used to activate the application new verison after deployment to start available
-start with what are these things itss asking:
+what step is used to activate the application new verison after deployment to keep it available
+start with what are these things its asking (like what do these mean?)
 	rebuild environment URLs
 	compose envirnment
 	swap environment URL
 	clone environment
+	
+rebuild environment URLs - "To rebuild a running environment (console)" this sounds a lot like it went down
+compose envirnment - this retuned docker stuff
+swap environment URL - this sounds most likley as it sounds like a dns backend switch over
+
+
+this also returned the blue green words again
+what is blue environment and what is green
