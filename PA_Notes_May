@@ -1,0 +1,125 @@
+Thoughts during PA on AWS and stuff to look up
+
+this music
+https://www.youtube.com/watch?v=zMCOFQ_w03Q
+
+* when you review quesions the goal it to be able to recognoise what is definitly not correct *
+
+Score keeping of topics
+---------------------------
+cloud watch 11111111
+EC2 / SNS? SQS
+lambda eventbridge cron
+elastic load balencers 11
+
+---------------------------
+
+Lamda and event bridge question whats the answer?
+
+eventbridge 11
+what does eventbridge create to route events to targets?
+
+az aurora
+read replica?
+data reduntancy
+
+
+different types of load balancers, gateway, classic, internet facing and cross zone
+gateway was the answer used, but what is internet-facing
+what are charateristics of load balencers like what requires using more than one AZ?
+Application:
+With an Application Load Balancer however, it is a requirement that you enable at least two or more Availability Zones. This configuration helps ensure that the load balancer can continue to route traffic. 
+https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html
+
+elastic load balancers and percentages
+with application load balancers cross zone is always enabled at the load balancer level
+put 12% and 7% as this seems most realistic as A has more clients
+
+SIP and load balancers
+becuase the question neames a port number and UPD it makes me think its network , but sip is also an application, choose the network one
+
+restorable times for Distruted relationable data store services
+CLI vs Management console
+Aws cli describe-db-instances 
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIT.html
+
+S3 objects
+define when objects are moved from one store class to another
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html
+transition actions
+becuase its transtioning
+
+info is needed for cross-region replication aws
+"Requirements for replication"
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html
+
+question 23
+effects of converting an image to ebs backed ami
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ComponentsAMIs.html
+table below "Storage for the root device"
+btw its faster eg shorter boot time, no mention of encryption
+other part to this not a a prt of the question
+aws what are ebs backed amis?
+Backed AMIs is an EBS block volume created from an EBS snapshot
+The other AMI type is a instance store backed ami is / was a volume created from a template stored in s3
+
+cloudformation
+cloudformation feature used to define a collection of resources grouped as a single set
+change set , exports, stack set, policy
+what is a change set vs stack set
+change set - allows you to preview how a proposed change to a stanck might imact current running roesources
+stack set - defines all resources in each stack, this allows you to do this across regions using one template
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html
+"AWS CloudFormation StackSets"
+there are two metthods ofor updating stacks: direct update ( i think this means stack set) or creating and executing change sets
+change sets allow you to preview while 
+
+Blue green deployments for codedeply
+first off codedeploy automates code deployments to any instances such as on-prem or ec2
+blue green means 
+-choices are:
+all-at-once
+create services
+Linear - 
+canary
+what all of these mean:
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-bluegreen.html
+there are thesee ways traffic can shift on blue-green:
+
+	canary - traffic is shifted in two increments (why 2 I dont know), think of this in "two parts" you set the minutes between it
+	linear - done in equal increments with equal number of minutes between each increment
+	all-at-once - traffic is shifted from original task set to updated all at one (thus the name)
+
+MORE BLUE/GREEN
+"original task to the updated task at a single point in time"
+this sounds like taking it all at once from origninal to the updated
+
+question 27
+cloudformation
+cleaning up cloudformation applications with minimal effort and insure all resources are terminated
+options are (lets define them)
+	Delete all the resources as a single stack 
+	review the stack and delete each resource 
+	batch the resource and terminate stack
+	manage the resources using system manager
+I think just delete all resources as a single stack 
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html
+maybe not - During deletion, CloudFormation deletes the stack but doesn't delete the retained resources
+I'm leaning more towards
+	review the stack and delete each resource 
+
+what can you use to duplicate an environment using IAC?
+start with what of these are IAC products
+cloud formation - 
+cloudwatch is not its monitoring like solarwinds
+cloudfront is content delivery
+clouldtrail is an audit trail like logs 
+
+question 29
+elastic beanstalk
+what step is used to activate the application new verison after deployment to start available
+start with what are these things itss asking:
+	rebuild environment URLs
+	compose envirnment
+	swap environment URL
+	clone environment
