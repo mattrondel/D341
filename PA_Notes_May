@@ -186,6 +186,40 @@ Partnet event bus - 3rd partie software is considered partner
 
 * when you review quesions the goal it to be able to recognoise what is definitly not correct *
 
+#34
+Policy to use to ensure MFA is used on Read objects in S3
+Bucket policy <--
+Identiy policy
+password policy
+session policy
+Bucket policies set access to s3 buckets with and without MFA
+
+#35
+which IAM policy is applied directly to a user to control the users permission?
+Resource based policy
+Identity based <- permission like what can this person do?, your identity defines your permissions like admin, general, network Admin
+password policy
+session policy
+
+identity policy - these are attached to an IAM user group or role, they specifiy what the identity can do eg permissions
+session policy - policies that you pass as a paramneter when you programatically create a temp session for role or federated user
+password policy - this is simply a password policy like how many charters sybols etc
+Resource policy - specify who has access to the resource and what actions they can preform on it
+
+#36
+What solution send an alert whn usage charges exceed a threshold? (pick 2 MOFO)
+Billing dashboard
+Budgets
+Cloudwatch
+Cost explorer
+
+	google:"what can send alerts when charges exceed a threshold?" or "what does budgets do in aws"
+	Billing dashboard - 
+	Budgets - "lets you set custom cost and usage budgets that alert you when your budget thresholds are exceeded (or forcastged to exceed)
+	Cloudwatch - cloudwatch can do this "by using CLoudwatch you can better monitor your estimated aws charges.
+	Cost explorer - "lets you visualize, understand and manage your aws costs and usage over a daily or monlty graularity
+
+
 Score keeping of topics
 ---------------------------
 cloud watch 11111111
