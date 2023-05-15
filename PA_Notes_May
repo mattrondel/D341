@@ -23,6 +23,12 @@ az aurora
 read replica?
 data reduntancy
 
+#16
+classic load balancers - distrubutes traffic across muliple EC2 instances in muliple AZs , operates at request and connection levels
+Cross zone load balancers - 
+Gateway load balancer - layer 3 of osi model, mainly for network products like NGFW WAF IDS and IPS
+Application Load balancer - works at layer 7 
+https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/introduction.html
 
 different types of load balancers, gateway, classic, internet facing and cross zone
 gateway was the answer used, but what is internet-facing
@@ -31,29 +37,39 @@ Application:
 With an Application Load Balancer however, it is a requirement that you enable at least two or more Availability Zones. This configuration helps ensure that the load balancer can continue to route traffic. 
 https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html
 
+#18
 elastic load balancers and percentages
 with application load balancers cross zone is always enabled at the load balancer level
 put 12% and 7% as this seems most realistic as A has more clients
+I think this is meant to be a trick question as its drawn out its equal on all
+"cross zone load balancing distribute load balancing distributes load evently across all registered instances in all AZ's"
 
+#19
 SIP and load balancers
 becuase the question neames a port number and UPD it makes me think its network , but sip is also an application, choose the network one
 
+#20
 restorable times for Distruted relationable data store services
 CLI vs Management console
+-this is a case of "do you know the command if you saw it" in reality comparing it to the others its the most logical choice
 Aws cli describe-db-instances 
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIT.html
 
+#21
 S3 objects
+becuase the question is moving things this is considered a trasaction, other options dont make sense
 define when objects are moved from one store class to another
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html
 transition actions
 becuase its transtioning
 
+#22
 info is needed for cross-region replication aws
 "Requirements for replication"
+seriouly source and destination all other dont make any sense
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html
 
-question 23
+# 23
 effects of converting an image to ebs backed ami
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ComponentsAMIs.html
 table below "Storage for the root device"
@@ -67,14 +83,18 @@ cloudformation
 cloudformation feature used to define a collection of resources grouped as a single set
 change set , exports, stack set, policy
 what is a change set vs stack set
-change set - allows you to preview how a proposed change to a stanck might imact current running roesources
+A stack set lets you create stacks in accounts across regions by using a single cloud formation template
+	a stack instance referes to a stack in a target account withing a region is assocated with only one stack set...
+	a stack is a collection of resources that you can manage as a single unit, you can CUD a collection of resources by CUD stackss
+change set - allows you to preview how a proposed change to a stanck might imact current running resources (think changing a set needs a preview)
 stack set - defines all resources in each stack, this allows you to do this across regions using one template
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html
 "AWS CloudFormation StackSets"
 there are two metthods ofor updating stacks: direct update ( i think this means stack set) or creating and executing change sets
 change sets allow you to preview while 
+Also when you delete all resources in a single stack it insures all resources are terminated and is most efficent way to clean up
 
-Blue green deployments for codedeply
+Blue green deployments for code deploy
 first off codedeploy automates code deployments to any instances such as on-prem or ec2
 blue green means 
 -choices are:
@@ -85,7 +105,6 @@ canary
 what all of these mean:
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-bluegreen.html
 there are thesee ways traffic can shift on blue-green:
-
 	canary - traffic is shifted in two increments (why 2 I dont know), think of this in "two parts" you set the minutes between it
 	linear - done in equal increments with equal number of minutes between each increment
 	all-at-once - traffic is shifted from original task set to updated all at one (thus the name)
