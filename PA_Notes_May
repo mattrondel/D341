@@ -129,8 +129,8 @@ I'm leaning more towards
 
 what can you use to duplicate an environment using IAC?
 start with what of these are IAC products
-cloud formation - 
-cloudwatch is not its monitoring like solarwinds
+cloudformation -  this is the only IAC aaplication
+cloudwatch is not it its monitoring like solarwinds
 cloudfront is content delivery
 clouldtrail is an audit trail like logs 
 
@@ -144,9 +144,9 @@ start with what are these things its asking (like what do these mean?)
 	clone environment
 	
 rebuild environment URLs - "To rebuild a running environment (console)" this sounds a lot like it went down
-compose envirnment - this retuned docker stuff
-swap environment URL - this sounds most likley as it sounds like a dns backend switch over
-
+compose envirnment - this retuned docker stuff, like docker compose
+swap environment URL - this sounds most likley as it sounds like a dns backend switch over <-- correct
+Clone environment - 
 
 this also returned the blue green words again
 what is blue environment and what is green
@@ -156,14 +156,14 @@ patch automation for ec2
 	for shits and giggle what are these sservices:
 	audit manager
 	cloudwatch 
-	system manager <---
+	system manager <--- patching happens here
 	cloudformation
 due to lack of time left I hunted down the correct answer
 https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager.html
 "Patch Manager, a capability of AWS Systems Manager, automates the process of patching managed nodes"
 
+#31
 scedule patching for servers
-
 maint windows <- 
 operational insights
 metadata inventory
@@ -182,10 +182,7 @@ Me thnks its patch group
 think of it as a group of systems to be patched
 
 #33
-Thoughts during PA on AWS and stuff to look up
-
-this music
-https://www.youtube.com/watch?v=zMCOFQ_w03Q
+Partnet event bus - 3rd partie software is considered partner
 
 * when you review quesions the goal it to be able to recognoise what is definitly not correct *
 
