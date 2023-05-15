@@ -181,10 +181,6 @@ Me thnks its patch group
 " patch group is an optional method to organize instances for patching." (same url above
 think of it as a group of systems to be patched
 
-#33
-Partnet event bus - 3rd partie software is considered partner
-
-* when you review quesions the goal it to be able to recognoise what is definitly not correct *
 
 #34
 Policy to use to ensure MFA is used on Read objects in S3
@@ -387,15 +383,3 @@ parameter store
 https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-maintenance.html
 "define a schedule for when to perform potentially disruptive actions on your nodes such as patching an operating system"
 
-#32
-defining instances for systems manager to apply updates
-appconfig is a part of systems manager that .. I dont know but does not involve patching stuff
-AWS Systems Manager Explorer - looks like solarwinds but does not do patch stuff but Systems Manager Patch Manager show Data displayed in Explorer includes a count of noncompliant and critical noncompliant nodes.
-"Patch Manager uses patch baselines, which include rules for auto-approving patches within days of their release, as well as a list of approved and rejected patches."
-https://mng.workshop.aws/ssm/capability_hands-on_labs/patchmanager.html
-Me thnks its patch group
-" patch group is an optional method to organize instances for patching." (same url above
-think of it as a group of systems to be patched
-
-#33
-partnetr event bus
