@@ -214,10 +214,30 @@ Cloudwatch
 Cost explorer
 
 	google:"what can send alerts when charges exceed a threshold?" or "what does budgets do in aws"
-	Billing dashboard - 
+	Billing dashboard - could not find that dashboard can do alarms
 	Budgets - "lets you set custom cost and usage budgets that alert you when your budget thresholds are exceeded (or forcastged to exceed)
-	Cloudwatch - cloudwatch can do this "by using CLoudwatch you can better monitor your estimated aws charges.
+	Cloudwatch - cloudwatch can do this "by using Cloudwatch you can better monitor your estimated aws charges. "cloudwatch alarms is a feature of cloudwatch called metric alarm"
 	Cost explorer - "lets you visualize, understand and manage your aws costs and usage over a daily or monlty graularity
+
+
+#37
+Which solution is used to create multiple AWS accounts and to share instance reservations and cost savings across the accounts?
+Budgets - tracks your costs, usage, and coverage with custom budgets
+Organizations - "lets you creat enew aws accounts at no additional charge"
+Control tower - automated the creation of a landing zone with best practices blueprints 
+Guarduty - a threat detection service
+
+#38
+Which solution should be used to provide access to a dedicated encryption device? 
+CloudHSM - HSM is a device
+
+#39
+Which type of master key is used to create a single key that can be used to encrypt data? 
+synetric key - used to decript and decrypt data
+
+#40
+Which solution rotates Amazon RDS database credentials automatically?
+Secrets manager does what - enables you to easily rotate manage and retreave database credentials, api keys and other seccrets throughout thier life cycle
 
 
 Score keeping of topics
