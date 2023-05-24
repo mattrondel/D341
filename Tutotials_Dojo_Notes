@@ -105,3 +105,59 @@ AWS DataSync is just a data transfer tool
 You can use environment variables to adjust your function’s behavior without updating code. An environment variable is a pair of strings that are stored in a function’s version-specific configuration. The Lambda runtime makes environment variables available to your code and sets additional environment variables that contain information about the function and invocation request.
 
 To increase database security it is recommend that you use AWS Secrets Manager instead of environment variables to store database credentials.
+
+
+** Cost and Performance Optimization
+Amazon CloudWatch is basically a metrics repository. An AWS service — such as Amazon EC2 —puts metrics into the repository, and you retrieve statistics based on those metrics. If you put your own custom metrics into the repository, you can retrieve statistics on these metrics as well.
+
+You can use metrics to calculate statistics and then present the data graphically in the CloudWatch console. You can configure alarm actions to stop, start, or terminate an Amazon EC2 instance when certain criteria are met. In addition, you can create alarms that initiate Amazon EC2 Auto Scaling and Amazon Simple Notification Service (Amazon SNS) actions on your behalf.
+
+
+** Networking and Content Delivery
+
+To create an active-passive failover configuration with one primary record and one secondary record, you just create the records and specify Failover for the routing policy. When the primary resource is healthy, Route 53 responds to DNS queries using the primary record. When the primary resource is unhealthy, Route 53 responds to DNS queries using the secondary record.
+
+Check the health of EC2 instances and other resources (non-alias records)
+
+If you’re routing traffic to resources that you can’t create alias records for, such as EC2 instances, you create a record and a health check for each resource. Then you associate each health check with the applicable record. Health checks regularly check the health of the corresponding resources, and Route 53 routes traffic only to the resources that health checks report as healthy.
+
+
+** Deployment, Provisioning, and Automation
+
+Amazon RDS Proxy is a fully managed, highly available database proxy for Amazon Relational Database Service (RDS) that makes applications more scalable, more resilient to database failures, and more secure.
+
+Many applications, including those built on modern serverless architectures, can have a large number of open connections to the database server, and may open and close database connections at a high rate, exhausting database memory and compute resources. Amazon RDS Proxy allows applications to pool and share connections established with the database, improving database efficiency and application scalability.
+
+
+** Security and Compliance
+
+AWS Artifact is your go-to central resource for compliance-related information that matters to you. It provides on-demand access to AWS’ security and compliance reports and select online agreements. Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls. Agreements available in AWS Artifact include the Business Associate Addendum (BAA) and the Nondisclosure Agreement (NDA).
+
+** Networking and Content Delivery
+If your application is hosted in multiple AWS Regions, you can improve performance for your users by serving their requests from the AWS Region that provides the lowest latency.
+
+** Security and Compliance
+
+AWS Trusted Advisor is an online tool that provides you real-time guidance to help you provision your resources following AWS best practices. Trusted Advisor checks help optimize your AWS infrastructure, increase security and performance, reduce your overall costs, and monitor service limits. Whether establishing new workflows, developing applications, or as part of ongoing improvement, take advantage of the recommendations provided by Trusted Advisor on a regular basis to help keep your solutions provisioned optimally.
+
+** Security and Compliance
+
+AWS Organizations helps you centrally manage and govern your environment as you grow and scale your AWS resources. Using AWS Organizations, you can programmatically create new AWS accounts and allocate resources, group accounts to organize your workflows, apply policies to accounts or groups for governance, and simplify billing by using a single payment method for all of your accounts.
+
+In addition, AWS Organizations is integrated with other AWS services so you can define central configurations, security mechanisms, audit requirements, and resource sharing across accounts in your organization. AWS Organizations is available to all AWS customers at no additional charge.
+
+
+** Cost and Performance Optimization
+
+AWS Organizations offers policy-based management for multiple AWS accounts. With Organizations, you can create groups of accounts, automate account creation, apply and manage policies for those groups. Organizations enables you to centrally manage policies across multiple accounts, without requiring custom scripts and manual processes.
+
+**  Networking and Content Delivery
+
+Security Group vs Netwrok Access Control List
+
+https://tutorialsdojo.com/security-group-vs-nacl/
+
+
+** Security and Compliance
+
+AWS KMS is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data and uses FIPS 140-2 validated hardware security modules to protect the security of your keys. It is tightly integrated with S3 and Glacier to provide you with the tools you need to encrypt data at rest.
