@@ -1,0 +1,107 @@
+Review Mode set 3
+
+Remediate AWS issues 20%
+Network Concetivity 20%
+Cloud Provisioning 18%
+Implement AWS systems 17%
+AWS protection services 13%
+Optimimal cost and preformace baseline 12%
+
+
+** Monitoring, Logging, and Remediation
+
+AWS Personal Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you. While the Service Health Dashboard displays the general status of AWS services, Personal Health Dashboard gives you a personalized view into the performance and availability of the AWS services underlying your AWS resources.
+
+The dashboard displays relevant and timely information to help you manage events in progress, and provides proactive notification to help you plan for scheduled activities. With Personal Health Dashboard, alerts are triggered by changes in the health of AWS resources, giving you event visibility, and guidance to help quickly diagnose and resolve issues.
+
+CloudWatch only monitors the health of the resources that you own based on certain metrics but it does not check the underlying hardware that hosts the AWS resources.
+
+Service Health Dashboard monitors the entire health of the services provided by AWS in a global scale and not just your account
+
+CloudTrail is primarily used for API logging and not to check the health status of the AWS resources.
+
+
+** Security and Compliance
+
+To grant permission to everyone, also referred as anonymous access, you set the wildcard (“*”) as the Principal value. For example, if you configure your bucket as a website, you want all the objects in the bucket to be publicly accessible.
+
+
+** Cost and Performance Optimization
+
+If your EC2 instance goes from the pending state to the terminated state immediately after restarting then it could be caused by one of the following reasons:
+
+	You’ve reached your EBS volume limit.
+	An EBS snapshot is corrupt.
+	The root EBS volume is encrypted and you do not have permissions to access the KMS key for decryption.
+	The instance store-backed AMI that you used to launch the instance is missing a required part (an image.part.xx file).
+	
+
+** Monitoring, Logging, and Remediation
+
+You can aggregate the metrics for AWS resources across multiple accounts and Regions. For example, you can aggregate statistics for your EC2 instances that have detailed monitoring enabled. Instances that use basic monitoring are not included. Therefore, you must enable detailed monitoring (at an additional charge), which provides data in 1-minute periods.
+
+
+** Monitoring, Logging, and Remediation
+
+The AWS Health Dashboard is the single place to learn about the availability and operations of AWS services. You can view the overall status of AWS services, and you can sign in to view personalized communications about your particular AWS account or organization. Your account view provides deeper visibility into resource issues, upcoming changes, and important notifications.
+
+AWS Trusted Advisor is an online resource which helps you reduce cost, increase performance, and improve security by optimizing your AWS environment, and it also provides real time guidance to help you provision your resources while following AWS best practices. It does not, however, tell you if there are events that occur with AWS that will affect your business.
+
+AWS IAM is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated and authorized to use resources.
+
+AWS Billing Dashboard is used to monitor your AWS usage, and budget your costs. It shows all relevant information regarding your billing in AWS
+
+
+** Security and Compliance
+
+AWS CloudTrail is a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures API calls as events. For an ongoing record of events in your AWS account, you create a trail. A trail enables CloudTrail to deliver log files of events to an Amazon S3 bucket.
+
+Amazon Detective  collects the log data from your AWS resources automatically, and does not track the API calls.
+
+AWS IAM Access Analyzer this service only identifies the resources in your organization and accounts that are shared with an external entity.
+
+
+** Reliability and Business Continuity
+
+Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions. It can handle the varying load of your application traffic in a single Availability Zone or across multiple Availability Zones.
+
+Network Load Balancer is best suited for load balancing of TCP traffic where extreme performance is required. Operating at the connection level (Layer 4), Network Load Balancer routes traffic to targets within Amazon Virtual Private Cloud (Amazon VPC) and is capable of handling millions of requests per second while maintaining ultra-low latencies. Network Load Balancer is also optimized to handle sudden and volatile traffic patterns.
+
+
+** Networking and Content Delivery
+
+An Elastic IP address is a static IPv4 address designed for dynamic cloud computing. An Elastic IP address is allocated to your AWS account, and is yours until you release it. By using an Elastic IP address, you can mask the failure of an instance or software by rapidly remapping the address to another instance in your account. Alternatively, you can specify the Elastic IP address in a DNS record for your domain, so that your domain points to your instance.
+
+
+** Cost and Performance Optimization
+
+AWS Systems Manager gives you visibility and control of your infrastructure on AWS. Systems Manager provides a unified user interface so you can view operational data from multiple AWS services and allows you to automate operational tasks across your AWS resources. Systems Manager simplifies resource and application management, shortens the time to detect and resolve operational problems, and makes it easy to operate and manage your infrastructure securely at scale.
+
+These are the automation capabilities of Systems Manager that you can perform on EC2 instances:
+
+– Build automation to configure and manage instances and AWS resources.
+
+– Create custom runbooks or use pre-defined runbooks maintained by AWS.
+
+– Receive notifications about Automation tasks and runbooks by using Amazon EventBridge.
+
+– Monitor Automation progress and details by using the AWS Systems Manager console.
+
+
+** Reliability and Business Continuity
+
+Amazon RDS creates and saves automated backups of your DB instance during the backup window of your DB instance. RDS creates a storage volume snapshot of your DB instance, backing up the entire DB instance and not just individual databases. RDS saves the automated backups of your DB instance according to the backup retention period that you specify. By default, an RDS created from the AWS console has backup retention of 7 days. You can further modify this backup retention period between 0-35 days.
+
+Amazon Aurora backs up your cluster volume automatically and retains restore data for the length of the backup retention period. Aurora backups are continuous and incremental, so you can quickly restore to any point within the backup retention period. No performance impact or interruption of database service occurs as backup data is being written. You can specify a backup retention period, from 1 to 35 days, when you create or modify a DB cluster.
+
+S3 has a lifecycle policy but not a backup policy. Standard S3 is already very durable, and AWS has no options for automatic backup on S3.
+
+Although EBS volumes can be automatically backed up using AWS Backup, they don’t support auto-scaling storage-wise.
+
+AWS DataSync is just a data transfer tool
+
+** Security and Compliance
+
+You can use environment variables to adjust your function’s behavior without updating code. An environment variable is a pair of strings that are stored in a function’s version-specific configuration. The Lambda runtime makes environment variables available to your code and sets additional environment variables that contain information about the function and invocation request.
+
+To increase database security it is recommend that you use AWS Secrets Manager instead of environment variables to store database credentials.
