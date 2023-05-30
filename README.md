@@ -4,6 +4,7 @@ https://wgu.udemy.com/course/aws-certified-sysops-administrator-associate-traini
 
 also review the detailed notes from the PA
 
+Exam scenarios are the tits
 
 https://portal.tutorialsdojo.com/courses/aws-certified-sysops-administrator-associate-practice-exams/
 
