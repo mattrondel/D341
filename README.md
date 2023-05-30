@@ -1,3 +1,7 @@
+This test 10 at a time
+https://wgu.udemy.com/course/practice-exams-aws-certified-sysops-administrator-associate/learn/quiz/5388732/result/980823184#overview
+
+
 Go here dipshit
 
 https://wgu.udemy.com/course/aws-certified-sysops-administrator-associate-training/learn/lecture/36353570#overview
