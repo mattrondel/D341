@@ -2,6 +2,8 @@ Go here dipshit
 
 https://wgu.udemy.com/course/aws-certified-sysops-administrator-associate-training/learn/lecture/36353570#overview
 
+https://wgu.udemy.com/course/aws-certified-sysops-administrator-associate-training/learn/lecture/36353530#overview
+
 also review the detailed notes from the PA
 
 Exam scenarios are the tits
