@@ -1,0 +1,23 @@
+cloudwatch
+EBS vs efs what are these services used for like use cases
+can boot volumes and data base be using it?
+who all can share it?
+
+
+web access control lists 
+can it be used on application load balencer, elastic load balencer
+
+cloudwatch 
+
+what determines if you can use a elastic fabric adaptor
+instance group
+elastic fabric adaptor
+OS? instance type? group something something?
+
+gateway 
+
+placement groups whats the max amount of each?
+spread  was on the test 3, 7 or 21?
+7 21 cluster and spread
+
+TAM  and trusted advisor gets you what like enterprise, business basic and developer
